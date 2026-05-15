@@ -1,0 +1,9 @@
+{
+  "job_id": "BD4AD03D338EDEDAC0823027B7C466B4",
+  "qubits": [
+    0,
+    1,
+    2
+  ],
+  "circuit": "GHZ-3 baseline (default qubits)"
+}

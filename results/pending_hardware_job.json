@@ -1,0 +1,9 @@
+{
+  "job_id": "D1A7743C22965371380AA536F9FC3D61",
+  "qubits": [
+    78,
+    88,
+    97
+  ],
+  "circuit": "GHZ-3 optimal"
+}
