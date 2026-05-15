@@ -123,30 +123,40 @@ class PhysicallyBoundedZNE:
 
 
 def auto_select_model(scale_factors, expectation_values, bounds=(-1.0, 1.0)):
-    """Automatically select the best bounded ZNE model.
+    """Automatically select the best bounded ZNE model using AICc.
 
-    Tries all model families and returns the one with lowest residual error.
-    This is our novel contribution: automated physics-informed model selection.
+    Uses corrected Akaike Information Criterion to balance fit quality
+    against model complexity, preventing overfitting with few data points.
     """
     x = np.array(scale_factors)
     y = np.array(expectation_values)
+    n = len(x)
 
+    # Number of parameters per model
     candidates = [
-        ("polynomial_d1", PhysicallyBoundedZNE(bounds, "polynomial", 1)),
-        ("polynomial_d2", PhysicallyBoundedZNE(bounds, "polynomial", 2)),
-        ("exponential", PhysicallyBoundedZNE(bounds, "exponential", 1)),
-        ("poly_exp_d1", PhysicallyBoundedZNE(bounds, "poly_exp", 1)),
-        ("poly_exp_d2", PhysicallyBoundedZNE(bounds, "poly_exp", 2)),
+        ("polynomial_d1", PhysicallyBoundedZNE(bounds, "polynomial", 1), 2),
+        ("polynomial_d2", PhysicallyBoundedZNE(bounds, "polynomial", 2), 3),
+        ("exponential", PhysicallyBoundedZNE(bounds, "exponential", 1), 3),
+        ("poly_exp_d1", PhysicallyBoundedZNE(bounds, "poly_exp", 1), 3),
+        ("poly_exp_d2", PhysicallyBoundedZNE(bounds, "poly_exp", 2), 4),
     ]
 
-    best_name, best_model, best_residual = None, None, np.inf
-    for name, model in candidates:
+    best_name, best_model, best_aicc = None, None, np.inf
+    for name, model, k in candidates:
+        if k >= n:  # Can't fit model with more params than data points
+            continue
         try:
             model.fit(x, y)
             pred = np.array([model.predict(xi) for xi in x])
-            residual = np.sum((y - pred)**2)
-            if residual < best_residual:
-                best_name, best_model, best_residual = name, model, residual
+            rss = np.sum((y - pred)**2)
+            # AICc: AIC with small-sample correction
+            if rss > 0:
+                aic = n * np.log(rss / n) + 2 * k
+                aicc = aic + (2 * k * (k + 1)) / max(n - k - 1, 1)
+            else:
+                aicc = -np.inf
+            if aicc < best_aicc:
+                best_name, best_model, best_aicc = name, model, aicc
         except Exception:
             continue
 
