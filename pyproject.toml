@@ -4,16 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quantum-noise-optimizer"
-version = "0.3.0"
-description = "Noise-Aware Quantum Circuit Optimizer built on pyqpanda3"
+version = "0.4.0"
+description = "AI-accessible quantum error mitigation with physically-bounded ZNE"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [{name = "mapleleaflatte03"}]
-dependencies = ["pyqpanda3>=0.3.5", "numpy>=1.20"]
+dependencies = ["numpy>=1.20", "scipy>=1.10"]
 
 [project.optional-dependencies]
+qiskit = ["qiskit>=2.0", "qiskit-aer>=0.15"]
+pyqpanda = ["pyqpanda3>=0.3.5"]
+mcp = ["fastmcp>=3.0"]
+all = ["qiskit>=2.0", "qiskit-aer>=0.15", "qiskit-ibm-runtime>=0.40", "pyqpanda3>=0.3.5", "fastmcp>=3.0"]
 dev = ["pytest>=7.0"]
+
+[project.scripts]
+quantum-noise-mcp = "mcp_server.server:mcp.run"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["noise_optimizer*"]
+
+[tool.setuptools.package-dir]
+"" = "src"

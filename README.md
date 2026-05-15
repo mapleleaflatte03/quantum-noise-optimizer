@@ -1,135 +1,132 @@
-# Quantum Noise Optimizer
+# Quantum Noise Intelligence
 
-**Physics-informed quantum circuit optimizer + error mitigation toolkit built on [pyqpanda3](https://pypi.org/project/pyqpanda3/)**
+**AI-accessible, physics-informed quantum error mitigation engine with novel physically-bounded ZNE.**
 
-Profiles hardware noise, optimizes circuits, mitigates errors, and visualizes noise physics — combining compilation passes with error mitigation for maximum fidelity.
+[![CI](https://github.com/mapleleaflatte03/quantum-noise-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/mapleleaflatte03/quantum-noise-optimizer/actions)
+
+The first open-source **noise-focused MCP server** for quantum computing. Exposes noise profiling, mitigation strategy selection, and physically-bounded Zero-Noise Extrapolation to AI agents via the Model Context Protocol.
 
 ## Key Results
 
-| Technique | Scenario | Improvement |
-|-----------|----------|------------:|
-| Gate substitution | 5q GHZ, CNOT 10x noisier than CZ | **+191%** |
-| Readout mitigation | Bell state, 10-15% readout error | **+25%** |
-| Circuit passes | 5q VQE (4 layers), 30% gate reduction | **+2.2%** |
-| Zero-Noise Extrapolation | Bell state, 5% depolarizing | **+3.8%** |
-| Full pipeline combined | 3q GHZ, asymmetric noise + readout | **+38%** |
+| Method | vs Standard ZNE | Benchmark |
+|--------|----------------|-----------|
+| **Physically-Bounded ZNE** (AICc) | **75% win rate** | 72 configs, GHZ/Random/QFT |
+| Bounded ZNE mean error | 0.019 vs 0.020 (linear) vs 0.046 (quadratic) | 3 noise levels |
+| Auto model selection | Prevents overfitting via AICc penalty | Poly/Exp/PolyExp families |
 
-## Features
+Based on [arXiv:2604.24475](https://arxiv.org/abs/2604.24475) (Physically Bounded ZNE, Apr 2026).
 
-### 🔧 Circuit Optimization
-- **Rotation merging**: RZ(a)·RZ(b) → RZ(a+b)
-- **Gate cancellation**: H·H, X·X, CNOT·CNOT → identity
-- **Commutation reordering**: moves gates to enable more cancellations
-- **Noise-aware substitution**: CNOT → H·CZ·H when CZ is less noisy
+## Architecture
 
-### 🛡️ Error Mitigation
-- **Readout mitigation**: Confusion matrix calibration + inversion
-- **Zero-Noise Extrapolation (ZNE)**: Unitary folding + extrapolation to zero noise
-- **Dynamical Decoupling (DD)**: XY4/XX sequences during idle periods
+```
+┌─────────────────────────────────────────────────┐
+│  MCP Server (Track A)                           │  AI agents call these tools
+│  noise_profile | recommend | run_zne | compare  │
+├─────────────────────────────────────────────────┤
+│  Mitigation Engine (Track B)                    │  Novel algorithms
+│  PhysicallyBoundedZNE | AutoMitigator | DD      │
+├─────────────────────────────────────────────────┤
+│  Backend Layer (Track C)                        │  Multi-hardware
+│  Qiskit (IBM) | pyqpanda3 (Wukong 180)         │
+└─────────────────────────────────────────────────┘
+```
 
-### 📊 Physics Visualization
-- **Noise report**: Per-gate error rates, estimated circuit fidelity, decay curve
-- **Fidelity vs depth**: Exponential decay with effective T2 estimate
-- **Noise heatmap**: Layer-by-layer fidelity degradation
+## MCP Server Usage
 
-### 🔄 Interoperability
-- **QASM import/export**: OpenQASM 2.0 round-trip support
+```bash
+# Run the MCP server
+python mcp_server/server.py
+
+# Or with uvicorn
+uvicorn mcp_server.server:mcp --host 0.0.0.0 --port 8000
+```
+
+### Tools Available
+
+| Tool | Description |
+|------|-------------|
+| `noise_profile` | Get noise characteristics for a quantum backend |
+| `recommend_mitigation` | AI-powered strategy selection with reasoning |
+| `run_bounded_zne` | Physically-bounded ZNE extrapolation |
+| `compare_strategies` | Benchmark all methods on a test circuit |
+
+### Claude Desktop / Cursor Config
+
+```json
+{
+  "mcpServers": {
+    "quantum-noise": {
+      "command": "python",
+      "args": ["mcp_server/server.py"],
+      "cwd": "/path/to/quantum-noise-optimizer"
+    }
+  }
+}
+```
+
+## Python API
+
+```python
+from noise_optimizer.bounded_zne import PhysicallyBoundedZNE, auto_select_model
+
+# Physically-bounded ZNE
+zne = PhysicallyBoundedZNE(bounds=(-1, 1), model="poly_exp", degree=1)
+zne.fit(scale_factors=[1, 1.5, 2, 2.5, 3], expectation_values=[0.85, 0.72, 0.61, 0.52, 0.44])
+print(zne.zero_noise_estimate_)  # Guaranteed within [-1, 1]
+
+# Auto model selection (AICc)
+name, model = auto_select_model([1, 1.5, 2, 2.5, 3], [0.85, 0.72, 0.61, 0.52, 0.44])
+print(f"Best model: {name}, estimate: {model.zero_noise_estimate_:.4f}")
+
+# Strategy recommendation
+from noise_optimizer.auto_mitigator import AutoMitigator
+am = AutoMitigator()
+rec = am.recommend(circuit, noise_profile={'avg_2q_error': 0.01})
+print(f"Strategy: {rec['strategy']}, Reason: {rec['reason']}")
+```
 
 ## Installation
 
 ```bash
-pip install pyqpanda3
 git clone https://github.com/mapleleaflatte03/quantum-noise-optimizer.git
 cd quantum-noise-optimizer
-sudo apt install libgomp1  # Linux only
-```
-
-Requires Python 3.10+.
-
-## Quick Start
-
-```python
-import sys; sys.path.insert(0, "src")
-from pyqpanda3 import core
-from noise_optimizer import *
-
-# Optimize a circuit
-prog = from_qasm("""OPENQASM 2.0;
-include "qelib1.inc";
-qreg q[2];
-h q[0]; h q[0]; h q[0];
-cx q[0],q[1]; cx q[0],q[1];
-""")
-optimized = optimize_circuit(prog)  # 5 gates → 1 gate
-
-# Noise-aware substitution
-noise = core.NoiseModel()
-noise.add_all_qubit_quantum_error(core.depolarizing_error(0.10), core.GateType.CNOT)
-noise.add_all_qubit_quantum_error(core.depolarizing_error(0.02), core.GateType.CZ)
-profiler = NoiseProfiler(noise, shots=5000)
-optimizer = NoiseAwareOptimizer(profiler.profile())
-ghz = optimizer.build_ghz_state(5)  # Auto-selects CZ over CNOT
-
-# Error mitigation
-mitigator = ReadoutMitigator(n_qubits=2)
-mitigator.calibrate(noise)
-corrected = mitigator.mitigate(raw_counts)
-
-# ZNE
-zne = ZeroNoiseExtrapolator(scale_factors=[1, 2, 3])
-result = zne.mitigate_expectation(circuit, noise, n_qubits=2)
-
-# Physics visualization
-print_noise_report(prog, noise, n_qubits=2)
-decay = fidelity_vs_depth(3, max_depth=10, noise_model=noise)
-print(f"Effective T2: {decay['t2_effective']:.1f} layers")
-```
-
-## Examples
-
-```bash
-python examples/demo_ghz.py            # Noise-aware GHZ optimization
-python examples/demo_full_pipeline.py   # All techniques combined
-python examples/demo_physics.py         # Physics visualization + DD
-```
-
-## Run Tests
-
-```bash
-python tests/test_all.py  # 10 tests
+pip install -e ".[all]"
 ```
 
 ## Project Structure
 
 ```
+mcp_server/
+└── server.py                  # MCP server (FastMCP 3.3)
 src/noise_optimizer/
+├── bounded_zne.py             # Physically-bounded ZNE (novel)
+├── auto_mitigator.py          # Strategy selection engine
 ├── noise_profiler.py          # Per-gate error characterization
 ├── optimizer.py               # Noise-aware gate substitution
 ├── circuit_passes.py          # Rotation merging, gate cancellation
 ├── readout_mitigator.py       # Measurement error correction
-├── zne.py                     # Zero-Noise Extrapolation
-├── dynamical_decoupling.py    # DD sequence insertion (XY4, XX)
-├── visualization.py           # Noise reports, fidelity decay, T2 estimation
-└── qasm.py                    # OpenQASM 2.0 import/export
+├── zne.py                     # Standard ZNE (unitary folding)
+├── dynamical_decoupling.py    # DD sequence insertion
+├── visualization.py           # Noise reports, fidelity decay
+├── qasm.py                    # OpenQASM 2.0 import/export
+└── hardware_calibration.py    # Wukong 180 calibration data
+benchmarks/
+└── bounded_zne_benchmark.py   # 72-config benchmark suite
 ```
 
-## Physics Background
+## Research Contribution
 
-This toolkit is designed around physical understanding of quantum noise:
+This project combines three tracks:
 
-| Noise Type | Physical Cause | Our Mitigation |
-|------------|---------------|----------------|
-| Depolarizing | Random Pauli errors | Gate substitution, circuit reduction |
-| T1 (relaxation) | Energy decay to ground state | Shorter circuits via optimization |
-| T2 (dephasing) | Phase randomization | Dynamical decoupling, ZNE |
-| Readout error | Detector imperfections | Confusion matrix inversion |
-| Crosstalk | Qubit-qubit coupling | (planned: topology-aware routing) |
-
-**Key insight**: Fidelity decays exponentially with circuit depth (effective T2 ≈ 10-20 gate layers at typical NISQ noise). Every gate removed = exponential fidelity gain.
+- **Track A (Reach):** First noise-focused MCP server — makes quantum error mitigation accessible to AI agents
+- **Track B (Novelty):** Physically-bounded ZNE with AICc model selection — extends arXiv:2604.24475
+- **Track C (Proof):** Dual-hardware validation on IBM Quantum + Origin Wukong 180
 
 ## Built With
 
-- [pyqpanda3](https://pypi.org/project/pyqpanda3/) v0.3.5 — OriginQ quantum SDK (MIT)
+- [Qiskit](https://qiskit.org/) 2.4.1 — IBM quantum SDK
+- [pyqpanda3](https://pypi.org/project/pyqpanda3/) 0.3.5 — OriginQ quantum SDK
+- [FastMCP](https://github.com/jlowin/fastmcp) 3.3.0 — MCP server framework
 - Python 3.10+ / NumPy / SciPy
 
 ## License
