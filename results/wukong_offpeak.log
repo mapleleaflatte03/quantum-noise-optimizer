@@ -1,0 +1,9 @@
+[2026-05-15 16:07:27 UTC] ==================================================
+[2026-05-15 16:07:27 UTC] WUKONG OFF-PEAK SMART SUBMISSION
+[2026-05-15 16:07:27 UTC] Timeout: 90s per job
+[2026-05-15 16:07:27 UTC] Off-peak check: China 22:00-08:00 CST
+[2026-05-15 16:07:27 UTC] ==================================================
+[2026-05-15 16:07:27 UTC] 
+Attempt 1/24 (CST hour: 00:00, OFF-PEAK ✓)
+[2026-05-15 16:07:29 UTC]   Submitting GHZ-3 (qubits [78, 88, 97])...
+[2026-05-15 16:07:29 UTC]   Job ID: 2CC65D6337BEE0D5A3C95FF37476361F, waiting for result...
