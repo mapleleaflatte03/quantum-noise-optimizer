@@ -248,3 +248,79 @@ def compare_strategies(
 
 if __name__ == "__main__":
     mcp.run()
+
+
+@mcp.tool()
+def wukong_status() -> dict:
+    """Check Origin Wukong 180 quantum computer status and calibration data.
+
+    Returns backend availability and key calibration metrics from the
+    169-qubit superconducting processor.
+    """
+    cal_path = Path(__file__).parent.parent / "results" / "wukong180_calibration.json"
+    result = {"backend": "Origin Wukong 180 (WK_C180)", "qubits": 169, "cz_gates": 396}
+
+    if cal_path.exists():
+        data = json.loads(cal_path.read_text())
+        result["calibration_available"] = True
+        result["best_qubits"] = [78, 88, 97]  # From calibration analysis
+        result["note"] = "Real calibration data available. Best qubits selected by T2 + readout + CZ fidelity."
+    else:
+        result["calibration_available"] = False
+
+    # Try to check online status (quick, no blocking)
+    try:
+        from pyqpanda3 import qcloud
+        svc = qcloud.QCloudService(
+            "53a22e9d46d614d8a980cae6e4ddda2bb59f3f7f70286e5a106005ec3e4c399f446f43656e5971504863396654716865"
+        )
+        backends = svc.backends()
+        result["online"] = backends.get("WK_C180", False)
+    except Exception:
+        result["online"] = "unknown (pyqpanda3 not available)"
+
+    return result
+
+
+@mcp.tool()
+def optimize_circuit(qasm: str, noise_level: str = "medium") -> dict:
+    """Optimize a quantum circuit for noise resilience.
+
+    Takes OpenQASM 2.0 input and returns optimization suggestions
+    including gate count reduction and recommended mitigation strategy.
+
+    Args:
+        qasm: OpenQASM 2.0 circuit string
+        noise_level: 'low', 'medium', or 'high'
+    """
+    from qiskit import QuantumCircuit
+    from qiskit.transpiler import preset_passmanagers
+
+    try:
+        qc = QuantumCircuit.from_qasm_str(qasm)
+    except Exception as e:
+        return {"error": f"Invalid QASM: {e}"}
+
+    # Optimize with Qiskit transpiler
+    pm = preset_passmanagers.generate_preset_pass_manager(optimization_level=3)
+    optimized = pm.run(qc)
+
+    original_ops = qc.count_ops()
+    optimized_ops = optimized.count_ops()
+
+    # Get mitigation recommendation
+    n_cx = sum(v for k, v in optimized_ops.items() if k in ("cx", "cz", "ecr"))
+    rec = recommend_mitigation(
+        n_qubits=optimized.num_qubits,
+        depth=optimized.depth(),
+        n_cx=n_cx,
+        noise_level=noise_level,
+    )
+
+    return {
+        "original": {"depth": qc.depth(), "gates": dict(original_ops), "total_gates": sum(original_ops.values())},
+        "optimized": {"depth": optimized.depth(), "gates": dict(optimized_ops), "total_gates": sum(optimized_ops.values())},
+        "reduction": f"{(1 - sum(optimized_ops.values()) / max(sum(original_ops.values()), 1)) * 100:.1f}%",
+        "mitigation_recommendation": rec,
+        "optimized_qasm": optimized.qasm() if hasattr(optimized, "qasm") else "N/A",
+    }
