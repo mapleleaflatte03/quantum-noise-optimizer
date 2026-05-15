@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-05-15T10:33:18",
+  "status": "JOBS_SUBMITTED",
+  "backend": "WK_C180 (Origin Wukong 180)",
+  "hardware_specs": {
+    "data_qubits": 180,
+    "coupler_qubits": 251,
+    "T1_us": 33.02,
+    "T2_echo_us": 18.69,
+    "native_gates": ["RPhi", "CZ"],
+    "type": "superconducting"
+  },
+  "api_connection": "VERIFIED",
+  "transpilation": "VERIFIED (H+CNOT → RPhi+CZ, mapped to physical qubits 0,10)",
+  "jobs_submitted": [
+    {
+      "name": "Bell State",
+      "job_id": "D12A5999240360486312492A3F1CD407",
+      "circuit": "H(0) → CNOT(0,1) → Measure",
+      "shots": 1000,
+      "status": "SUBMITTED_TO_QUEUE"
+    },
+    {
+      "name": "GHZ-3 State",
+      "job_id": "9B5C662F10834EA0B72AF808CC10E150",
+      "circuit": "H(0) → CNOT(0,1) → CNOT(1,2) → Measure",
+      "shots": 1000,
+      "status": "SUBMITTED_TO_QUEUE"
+    }
+  ],
+  "additional_jobs": [
+    {"job_id": "1AC39148E5D1ECAC2595CAF98FAB4C9F", "note": "earlier test submission"},
+    {"job_id": "71915ADD6C23614100E32C724DBEE352", "note": "earlier test submission"}
+  ],
+  "notes": [
+    "API connection verified successfully",
+    "Circuit transpilation to native gates (RPhi+CZ) verified",
+    "Jobs submitted to hardware queue",
+    "Queue latency high at time of submission (hardware has pending jobs)",
+    "Results can be retrieved later via OriginQ console or API polling",
+    "60 seconds runtime claimed, valid until Jul 7, 2026"
+  ]
+}

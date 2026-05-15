@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Bell",
+    "job_id": "D12A5999240360486312492A3F1CD407",
+    "qubits": 2
+  },
+  {
+    "name": "GHZ-3",
+    "job_id": "9B5C662F10834EA0B72AF808CC10E150",
+    "qubits": 3
+  }
+]
