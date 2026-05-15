@@ -10,10 +10,11 @@ from .circuit_passes import (
     commute_and_cancel,
     circuit_stats,
 )
+from .readout_mitigator import ReadoutMitigator
 
 __version__ = "0.2.0"
 __all__ = [
     "NoiseProfiler", "NoiseAwareOptimizer", "Benchmark",
     "optimize_circuit", "merge_rotations", "cancel_inverse_pairs",
-    "commute_and_cancel", "circuit_stats",
+    "commute_and_cancel", "circuit_stats", "ReadoutMitigator",
 ]
