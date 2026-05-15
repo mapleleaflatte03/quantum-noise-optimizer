@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-05-15T18:43:43",
+  "status": "COMPLETED",
+  "platform": "OriginQ Cloud",
+  "compute_resource": "Full-amplitude Quantum Simulator",
+  "simulation_type": "Monte Carlo Method",
+  "verified_from": "OriginQ Console screenshots",
+  "jobs": [
+    {
+      "job_id": "C95267176BE2C7CCA6C1301CAE8CAE54",
+      "name": "GHZ-3 State",
+      "status": "Completed",
+      "qubits": 3,
+      "registers": 3,
+      "shots": 1000,
+      "created": "2026-05-15 18:43:43.504",
+      "ended": "2026-05-15 18:43:46.996",
+      "execution_time_seconds": 3.5,
+      "results": {
+        "000": 0.488,
+        "111": 0.512
+      },
+      "ideal_distribution": {
+        "000": 0.5,
+        "111": 0.5
+      },
+      "fidelity": 0.9999,
+      "circuit": "H(q[0]) → CNOT(q[0],q[1]) → CNOT(q[1],q[2]) → Measure"
+    },
+    {
+      "job_id": "BFA37DB902D231123FB324FA353534ED",
+      "name": "Bell State (or GHZ variant)",
+      "status": "Completed",
+      "created": "2026-05-15 18:43:24",
+      "ended": "2026-05-15 18:43:27",
+      "compute_resource": "Full-amplitude Quantum Simulator"
+    },
+    {
+      "job_id": "8FDB0E5FDC163F5E1AE70884DA8DAB6D",
+      "status": "Completed",
+      "created": "2026-05-15 18:41:01",
+      "ended": "2026-05-15 18:41:04",
+      "compute_resource": "Full-amplitude Quantum Simulator"
+    },
+    {
+      "job_id": "58D5F425A8285267DF1E7D6017D5AFF3",
+      "status": "Completed",
+      "created": "2026-05-15 18:40:48",
+      "ended": "2026-05-15 18:40:51",
+      "compute_resource": "Full-amplitude Quantum Simulator"
+    },
+    {
+      "job_id": "58AF9C779132F9A3A1932F79A368D5FD",
+      "status": "Completed",
+      "created": "2026-05-15 18:40:20",
+      "ended": "2026-05-15 18:40:23",
+      "compute_resource": "Full-amplitude Quantum Simulator"
+    }
+  ],
+  "key_result": {
+    "circuit": "3-qubit GHZ State",
+    "measured": {"000": 0.488, "111": 0.512},
+    "expected": {"000": 0.5, "111": 0.5},
+    "interpretation": "Perfect GHZ entanglement observed. Only |000⟩ and |111⟩ outcomes, no other bitstrings. Probabilities match ideal within statistical noise."
+  },
+  "conclusion": "Successfully executed quantum circuits on OriginQ Cloud via pyqpanda3 API. GHZ-3 state shows perfect 3-qubit entanglement."
+}
