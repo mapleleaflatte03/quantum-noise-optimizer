@@ -1,0 +1,3963 @@
+{
+  "chip_id": "WK_C180",
+  "timestamp": "2026-05-15",
+  "single_qubits": {
+    "0": {
+      "T1_us": 43.433,
+      "T2_us": 7.67,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.9211,
+      "frequency_GHz": 4819.577
+    },
+    "1": {
+      "T1_us": 24.757,
+      "T2_us": 3.533,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9601,
+      "frequency_GHz": 5186.983
+    },
+    "2": {
+      "T1_us": 32.944,
+      "T2_us": 5.738,
+      "gate_fidelity": 0.9987,
+      "readout_fidelity": 0.9535,
+      "frequency_GHz": 5526.115
+    },
+    "3": {
+      "T1_us": 31.093,
+      "T2_us": 2.534,
+      "gate_fidelity": 0.9968,
+      "readout_fidelity": 0.8306,
+      "frequency_GHz": 4779.77
+    },
+    "4": {
+      "T1_us": 37.739,
+      "T2_us": 3.672,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.8837,
+      "frequency_GHz": 5111.032
+    },
+    "5": {
+      "T1_us": 28.277,
+      "T2_us": 3.114,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9138,
+      "frequency_GHz": 4921.029
+    },
+    "6": {
+      "T1_us": 11.588,
+      "T2_us": 2.94,
+      "gate_fidelity": 0.9982,
+      "readout_fidelity": 0.9597,
+      "frequency_GHz": 5041.014
+    },
+    "7": {
+      "T1_us": 30.879,
+      "T2_us": 9.051,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9237,
+      "frequency_GHz": 4726.546
+    },
+    "8": {
+      "T1_us": 10.958,
+      "T2_us": 4.465,
+      "gate_fidelity": 0.9983,
+      "readout_fidelity": 0.9824,
+      "frequency_GHz": 5258.664
+    },
+    "9": {
+      "T1_us": 16.208,
+      "T2_us": 12.386,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9485,
+      "frequency_GHz": 4671.967
+    },
+    "10": {
+      "T1_us": 49.37,
+      "T2_us": 5.927,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.9693,
+      "frequency_GHz": 5333.169
+    },
+    "11": {
+      "T1_us": 18.73,
+      "T2_us": 3.935,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9489,
+      "frequency_GHz": 5244.04
+    },
+    "12": {
+      "T1_us": 50.242,
+      "T2_us": 4.15,
+      "gate_fidelity": 0.9981,
+      "readout_fidelity": 0.9551,
+      "frequency_GHz": 5384.833
+    },
+    "14": {
+      "T1_us": 30.643,
+      "T2_us": 8.043,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.8875,
+      "frequency_GHz": 4760.022
+    },
+    "15": {
+      "T1_us": 48.222,
+      "T2_us": 7.84,
+      "gate_fidelity": 0.9979,
+      "readout_fidelity": 0.9718,
+      "frequency_GHz": 5357.254
+    },
+    "16": {
+      "T1_us": 21.548,
+      "T2_us": 3.469,
+      "gate_fidelity": 0.9981,
+      "readout_fidelity": 0.9521,
+      "frequency_GHz": 5199.091
+    },
+    "17": {
+      "T1_us": 25.733,
+      "T2_us": 1.069,
+      "gate_fidelity": 0.9979,
+      "readout_fidelity": 0.9699,
+      "frequency_GHz": 5002.543
+    },
+    "18": {
+      "T1_us": 21.309,
+      "T2_us": 3.609,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9719,
+      "frequency_GHz": 5229.859
+    },
+    "19": {
+      "T1_us": 40.69,
+      "T2_us": 4.607,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.8991,
+      "frequency_GHz": 5288.148
+    },
+    "20": {
+      "T1_us": 25.765,
+      "T2_us": 4.071,
+      "gate_fidelity": 0.9986,
+      "readout_fidelity": 0.9194,
+      "frequency_GHz": 4885.27
+    },
+    "22": {
+      "T1_us": 46.746,
+      "T2_us": 4.667,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.95,
+      "frequency_GHz": 4920.934
+    },
+    "23": {
+      "T1_us": 32.312,
+      "T2_us": 3.642,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.9553,
+      "frequency_GHz": 5229.115
+    },
+    "24": {
+      "T1_us": 43.824,
+      "T2_us": 4.509,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9557,
+      "frequency_GHz": 5398.359
+    },
+    "25": {
+      "T1_us": 71.311,
+      "T2_us": 3.68,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.9266,
+      "frequency_GHz": 5103.396
+    },
+    "27": {
+      "T1_us": 27.928,
+      "T2_us": 3.992,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.9602,
+      "frequency_GHz": 4745.106
+    },
+    "28": {
+      "T1_us": 56.849,
+      "T2_us": 5.447,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.8802,
+      "frequency_GHz": 4830.103
+    },
+    "29": {
+      "T1_us": 31.502,
+      "T2_us": 26.274,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.9136,
+      "frequency_GHz": 4757.653
+    },
+    "30": {
+      "T1_us": 40.022,
+      "T2_us": 3.458,
+      "gate_fidelity": 0.9973,
+      "readout_fidelity": 0.9248,
+      "frequency_GHz": 4854.085
+    },
+    "31": {
+      "T1_us": 52.261,
+      "T2_us": 4.025,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.966,
+      "frequency_GHz": 5307.049
+    },
+    "32": {
+      "T1_us": 25.775,
+      "T2_us": 4.953,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9587,
+      "frequency_GHz": 5365.091
+    },
+    "33": {
+      "T1_us": 25.326,
+      "T2_us": 2.304,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9676,
+      "frequency_GHz": 5052.535
+    },
+    "34": {
+      "T1_us": 31.555,
+      "T2_us": 3.344,
+      "gate_fidelity": 0.9955,
+      "readout_fidelity": 0.9067,
+      "frequency_GHz": 4935.007
+    },
+    "35": {
+      "T1_us": 47.93,
+      "T2_us": 4.307,
+      "gate_fidelity": 0.9956,
+      "readout_fidelity": 0.9426,
+      "frequency_GHz": 5267.954
+    },
+    "36": {
+      "T1_us": 41.175,
+      "T2_us": 4.803,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9284,
+      "frequency_GHz": 5367.021
+    },
+    "37": {
+      "T1_us": 36.171,
+      "T2_us": 3.013,
+      "gate_fidelity": 0.9977,
+      "readout_fidelity": 0.9204,
+      "frequency_GHz": 4969.758
+    },
+    "38": {
+      "T1_us": 26.545,
+      "T2_us": 5.253,
+      "gate_fidelity": 0.9969,
+      "readout_fidelity": 0.9667,
+      "frequency_GHz": 5369.779
+    },
+    "39": {
+      "T1_us": 7.016,
+      "T2_us": 2.988,
+      "gate_fidelity": 0.9962,
+      "readout_fidelity": 0.9567,
+      "frequency_GHz": 5305.732
+    },
+    "40": {
+      "T1_us": 17.12,
+      "T2_us": 14.05,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.9582,
+      "frequency_GHz": 4659.22
+    },
+    "41": {
+      "T1_us": 7.655,
+      "T2_us": 3.502,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.9458,
+      "frequency_GHz": 4817.903
+    },
+    "42": {
+      "T1_us": 35.662,
+      "T2_us": 10.849,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9327,
+      "frequency_GHz": 4900.057
+    },
+    "44": {
+      "T1_us": 20.886,
+      "T2_us": 4.429,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9438,
+      "frequency_GHz": 5340.93
+    },
+    "45": {
+      "T1_us": 72.984,
+      "T2_us": 8.109,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.924,
+      "frequency_GHz": 5225.055
+    },
+    "46": {
+      "T1_us": 36.957,
+      "T2_us": 3.615,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9304,
+      "frequency_GHz": 4885.987
+    },
+    "47": {
+      "T1_us": 14.278,
+      "T2_us": 4.819,
+      "gate_fidelity": 0.995,
+      "readout_fidelity": 0.8882,
+      "frequency_GHz": 5339.766
+    },
+    "48": {
+      "T1_us": 41.562,
+      "T2_us": 5.753,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9748,
+      "frequency_GHz": 5266.053
+    },
+    "49": {
+      "T1_us": 24.12,
+      "T2_us": 5.131,
+      "gate_fidelity": 0.9987,
+      "readout_fidelity": 0.9074,
+      "frequency_GHz": 4926.16
+    },
+    "50": {
+      "T1_us": 14.194,
+      "T2_us": 6.174,
+      "gate_fidelity": 0.9981,
+      "readout_fidelity": 0.9345,
+      "frequency_GHz": 5440.167
+    },
+    "51": {
+      "T1_us": 21.418,
+      "T2_us": 5.231,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9453,
+      "frequency_GHz": 4718.994
+    },
+    "52": {
+      "T1_us": 17.869,
+      "T2_us": 5.946,
+      "gate_fidelity": 0.9963,
+      "readout_fidelity": 0.9168,
+      "frequency_GHz": 5413.006
+    },
+    "54": {
+      "T1_us": 46.31,
+      "T2_us": 4.141,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9422,
+      "frequency_GHz": 4853.178
+    },
+    "55": {
+      "T1_us": 26.41,
+      "T2_us": 4.633,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9239,
+      "frequency_GHz": 5297.982
+    },
+    "56": {
+      "T1_us": 36.284,
+      "T2_us": 5.894,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.896,
+      "frequency_GHz": 4899.556
+    },
+    "57": {
+      "T1_us": 45.98,
+      "T2_us": 5.681,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9704,
+      "frequency_GHz": 4809.075
+    },
+    "58": {
+      "T1_us": 33.707,
+      "T2_us": 5.474,
+      "gate_fidelity": 0.9986,
+      "readout_fidelity": 0.9801,
+      "frequency_GHz": 5159.983
+    },
+    "59": {
+      "T1_us": 50.174,
+      "T2_us": 2.6,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9427,
+      "frequency_GHz": 4930.946
+    },
+    "60": {
+      "T1_us": 29.752,
+      "T2_us": 3.678,
+      "gate_fidelity": 0.9986,
+      "readout_fidelity": 0.9747,
+      "frequency_GHz": 5297.844
+    },
+    "61": {
+      "T1_us": 54.202,
+      "T2_us": 2.475,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9381,
+      "frequency_GHz": 4990.067
+    },
+    "62": {
+      "T1_us": 71.141,
+      "T2_us": 3.352,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.9718,
+      "frequency_GHz": 4911.202
+    },
+    "63": {
+      "T1_us": 31.083,
+      "T2_us": 7.038,
+      "gate_fidelity": 0.9987,
+      "readout_fidelity": 0.9208,
+      "frequency_GHz": 4694.44
+    },
+    "64": {
+      "T1_us": 33.024,
+      "T2_us": 4.826,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.9551,
+      "frequency_GHz": 5170.129
+    },
+    "65": {
+      "T1_us": 33.947,
+      "T2_us": 7.805,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9503,
+      "frequency_GHz": 4835.835
+    },
+    "66": {
+      "T1_us": 14.329,
+      "T2_us": 3.826,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9756,
+      "frequency_GHz": 4722.826
+    },
+    "68": {
+      "T1_us": 30.627,
+      "T2_us": 4.476,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9813,
+      "frequency_GHz": 4795.118
+    },
+    "69": {
+      "T1_us": 34.359,
+      "T2_us": 4.179,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9622,
+      "frequency_GHz": 5371.045
+    },
+    "70": {
+      "T1_us": 15.2,
+      "T2_us": 2.486,
+      "gate_fidelity": 0.9982,
+      "readout_fidelity": 0.9453,
+      "frequency_GHz": 5322.919
+    },
+    "71": {
+      "T1_us": 35.756,
+      "T2_us": 6.199,
+      "gate_fidelity": 0.9977,
+      "readout_fidelity": 0.9334,
+      "frequency_GHz": 4837.05
+    },
+    "72": {
+      "T1_us": 37.103,
+      "T2_us": 4.978,
+      "gate_fidelity": 0.9978,
+      "readout_fidelity": 0.9188,
+      "frequency_GHz": 5354.891
+    },
+    "73": {
+      "T1_us": 46.623,
+      "T2_us": 7.163,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.9736,
+      "frequency_GHz": 4770.325
+    },
+    "74": {
+      "T1_us": 28.103,
+      "T2_us": 6.398,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.9603,
+      "frequency_GHz": 5405.306
+    },
+    "75": {
+      "T1_us": 42.809,
+      "T2_us": 4.612,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9352,
+      "frequency_GHz": 5327.086
+    },
+    "77": {
+      "T1_us": 44.304,
+      "T2_us": 5.422,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9793,
+      "frequency_GHz": 5320.787
+    },
+    "78": {
+      "T1_us": 57.273,
+      "T2_us": 15.474,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9575,
+      "frequency_GHz": 4791.824
+    },
+    "79": {
+      "T1_us": 47.962,
+      "T2_us": 4.287,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9535,
+      "frequency_GHz": 4864.991
+    },
+    "80": {
+      "T1_us": 43.276,
+      "T2_us": 3.519,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9461,
+      "frequency_GHz": 5296.32
+    },
+    "81": {
+      "T1_us": 46.685,
+      "T2_us": 8.256,
+      "gate_fidelity": 0.9977,
+      "readout_fidelity": 0.8823,
+      "frequency_GHz": 5331.946
+    },
+    "82": {
+      "T1_us": 35.263,
+      "T2_us": 6.701,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9548,
+      "frequency_GHz": 5473.042
+    },
+    "83": {
+      "T1_us": 48.481,
+      "T2_us": 13.195,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.98,
+      "frequency_GHz": 5167.92
+    },
+    "84": {
+      "T1_us": 24.966,
+      "T2_us": 6.017,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9607,
+      "frequency_GHz": 4790.771
+    },
+    "85": {
+      "T1_us": 20.618,
+      "T2_us": 3.888,
+      "gate_fidelity": 0.9953,
+      "readout_fidelity": 0.9413,
+      "frequency_GHz": 5164.138
+    },
+    "86": {
+      "T1_us": 116.989,
+      "T2_us": 3.765,
+      "gate_fidelity": 0.9977,
+      "readout_fidelity": 0.9831,
+      "frequency_GHz": 5255.374
+    },
+    "87": {
+      "T1_us": 9.563,
+      "T2_us": 5.537,
+      "gate_fidelity": 0.9978,
+      "readout_fidelity": 0.9402,
+      "frequency_GHz": 4884.576
+    },
+    "88": {
+      "T1_us": 35.201,
+      "T2_us": 3.948,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.966,
+      "frequency_GHz": 5244.804
+    },
+    "89": {
+      "T1_us": 7.977,
+      "T2_us": 4.169,
+      "gate_fidelity": 0.9978,
+      "readout_fidelity": 0.9398,
+      "frequency_GHz": 5375.193
+    },
+    "90": {
+      "T1_us": 26.539,
+      "T2_us": 5.576,
+      "gate_fidelity": 0.9997,
+      "readout_fidelity": 0.9252,
+      "frequency_GHz": 4935.545
+    },
+    "91": {
+      "T1_us": 31.165,
+      "T2_us": 3.034,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9701,
+      "frequency_GHz": 5044.456
+    },
+    "92": {
+      "T1_us": 27.765,
+      "T2_us": 4.709,
+      "gate_fidelity": 0.9981,
+      "readout_fidelity": 0.98,
+      "frequency_GHz": 5432.756
+    },
+    "93": {
+      "T1_us": 46.567,
+      "T2_us": 5.619,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9689,
+      "frequency_GHz": 5254.981
+    },
+    "94": {
+      "T1_us": 34.007,
+      "T2_us": 5.158,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9535,
+      "frequency_GHz": 4872.26
+    },
+    "95": {
+      "T1_us": 21.048,
+      "T2_us": 5.888,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9717,
+      "frequency_GHz": 5386.928
+    },
+    "96": {
+      "T1_us": 60.996,
+      "T2_us": 3.282,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9471,
+      "frequency_GHz": 5261.794
+    },
+    "97": {
+      "T1_us": 58.981,
+      "T2_us": 23.742,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9309,
+      "frequency_GHz": 4740.265
+    },
+    "98": {
+      "T1_us": 19.236,
+      "T2_us": 1.788,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.9088,
+      "frequency_GHz": 5097.898
+    },
+    "99": {
+      "T1_us": 20.582,
+      "T2_us": 0.608,
+      "gate_fidelity": 0.9996,
+      "readout_fidelity": 0.8976,
+      "frequency_GHz": 5222.038
+    },
+    "100": {
+      "T1_us": 36.336,
+      "T2_us": 10.52,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.967,
+      "frequency_GHz": 5522.521
+    },
+    "101": {
+      "T1_us": 11.66,
+      "T2_us": 4.352,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.891,
+      "frequency_GHz": 5125.478
+    },
+    "102": {
+      "T1_us": 25.537,
+      "T2_us": 4.595,
+      "gate_fidelity": 0.9985,
+      "readout_fidelity": 0.9727,
+      "frequency_GHz": 5315.506
+    },
+    "103": {
+      "T1_us": 12.094,
+      "T2_us": 4.995,
+      "gate_fidelity": 0.9959,
+      "readout_fidelity": 0.9351,
+      "frequency_GHz": 5353.314
+    },
+    "104": {
+      "T1_us": 13.169,
+      "T2_us": 6.179,
+      "gate_fidelity": 0.9983,
+      "readout_fidelity": 0.9624,
+      "frequency_GHz": 5265.772
+    },
+    "105": {
+      "T1_us": 22.143,
+      "T2_us": 6.063,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.8714,
+      "frequency_GHz": 4807.094
+    },
+    "106": {
+      "T1_us": 34.85,
+      "T2_us": 7.327,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9768,
+      "frequency_GHz": 5387.938
+    },
+    "107": {
+      "T1_us": 35.587,
+      "T2_us": 2.62,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9555,
+      "frequency_GHz": 5308.004
+    },
+    "108": {
+      "T1_us": 23.759,
+      "T2_us": 3.652,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9378,
+      "frequency_GHz": 4998.662
+    },
+    "109": {
+      "T1_us": 49.89,
+      "T2_us": 4.189,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9825,
+      "frequency_GHz": 5146.975
+    },
+    "110": {
+      "T1_us": 19.532,
+      "T2_us": 5.229,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9812,
+      "frequency_GHz": 5305.639
+    },
+    "111": {
+      "T1_us": 50.202,
+      "T2_us": 9.633,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9384,
+      "frequency_GHz": 4883.748
+    },
+    "112": {
+      "T1_us": 21.071,
+      "T2_us": 3.79,
+      "gate_fidelity": 0.9975,
+      "readout_fidelity": 0.9406,
+      "frequency_GHz": 5029.755
+    },
+    "113": {
+      "T1_us": 32.029,
+      "T2_us": 4.694,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.8709,
+      "frequency_GHz": 5479.665
+    },
+    "114": {
+      "T1_us": 34.389,
+      "T2_us": 2.913,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9839,
+      "frequency_GHz": 5314.166
+    },
+    "115": {
+      "T1_us": 25.447,
+      "T2_us": 8.274,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9471,
+      "frequency_GHz": 4826.118
+    },
+    "117": {
+      "T1_us": 8.15,
+      "T2_us": 4.135,
+      "gate_fidelity": 0.9976,
+      "readout_fidelity": 0.856,
+      "frequency_GHz": 5469.267
+    },
+    "118": {
+      "T1_us": 38.843,
+      "T2_us": 3.086,
+      "gate_fidelity": 0.9987,
+      "readout_fidelity": 0.9838,
+      "frequency_GHz": 5073.165
+    },
+    "119": {
+      "T1_us": 23.202,
+      "T2_us": 3.87,
+      "gate_fidelity": 0.9962,
+      "readout_fidelity": 0.942,
+      "frequency_GHz": 5455.064
+    },
+    "120": {
+      "T1_us": 22.416,
+      "T2_us": 7.899,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9462,
+      "frequency_GHz": 4757.05
+    },
+    "121": {
+      "T1_us": 38.89,
+      "T2_us": 16.718,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9167,
+      "frequency_GHz": 4922.163
+    },
+    "122": {
+      "T1_us": 39.69,
+      "T2_us": 6.62,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9118,
+      "frequency_GHz": 4853.754
+    },
+    "123": {
+      "T1_us": 32.497,
+      "T2_us": 3.998,
+      "gate_fidelity": 0.9987,
+      "readout_fidelity": 0.8292,
+      "frequency_GHz": 4892.703
+    },
+    "124": {
+      "T1_us": 57.524,
+      "T2_us": 3.617,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.952,
+      "frequency_GHz": 4963.135
+    },
+    "125": {
+      "T1_us": 29.173,
+      "T2_us": 1.865,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9244,
+      "frequency_GHz": 5285.892
+    },
+    "126": {
+      "T1_us": 6.815,
+      "T2_us": 3.506,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9748,
+      "frequency_GHz": 5100.217
+    },
+    "127": {
+      "T1_us": 36.562,
+      "T2_us": 4.419,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9392,
+      "frequency_GHz": 5486.268
+    },
+    "128": {
+      "T1_us": 27.194,
+      "T2_us": 7.01,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.949,
+      "frequency_GHz": 5069.101
+    },
+    "129": {
+      "T1_us": 14.296,
+      "T2_us": 6.219,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9262,
+      "frequency_GHz": 4998.226
+    },
+    "130": {
+      "T1_us": 28.331,
+      "T2_us": 5.014,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9464,
+      "frequency_GHz": 5381.078
+    },
+    "131": {
+      "T1_us": 36.047,
+      "T2_us": 2.46,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.93,
+      "frequency_GHz": 5333.983
+    },
+    "132": {
+      "T1_us": 35.981,
+      "T2_us": 4.667,
+      "gate_fidelity": 0.9995,
+      "readout_fidelity": 0.9318,
+      "frequency_GHz": 4989.09
+    },
+    "133": {
+      "T1_us": 23.197,
+      "T2_us": 5.367,
+      "gate_fidelity": 0.9974,
+      "readout_fidelity": 0.9449,
+      "frequency_GHz": 5378.904
+    },
+    "134": {
+      "T1_us": 34.411,
+      "T2_us": 8.668,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9376,
+      "frequency_GHz": 4899.172
+    },
+    "135": {
+      "T1_us": 19.919,
+      "T2_us": 2.88,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9837,
+      "frequency_GHz": 5255.484
+    },
+    "136": {
+      "T1_us": 22.564,
+      "T2_us": 6.689,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.9143,
+      "frequency_GHz": 5578.925
+    },
+    "137": {
+      "T1_us": 36.635,
+      "T2_us": 4.324,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9447,
+      "frequency_GHz": 5186.807
+    },
+    "138": {
+      "T1_us": 23.562,
+      "T2_us": 0.976,
+      "gate_fidelity": 0.9986,
+      "readout_fidelity": 0.9644,
+      "frequency_GHz": 5582.986
+    },
+    "139": {
+      "T1_us": 40.511,
+      "T2_us": 5.204,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.98,
+      "frequency_GHz": 5530.049
+    },
+    "140": {
+      "T1_us": 43.049,
+      "T2_us": 4.924,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9345,
+      "frequency_GHz": 5225.067
+    },
+    "141": {
+      "T1_us": 54.085,
+      "T2_us": 5.017,
+      "gate_fidelity": 0.9982,
+      "readout_fidelity": 0.941,
+      "frequency_GHz": 5398.042
+    },
+    "142": {
+      "T1_us": 51.35,
+      "T2_us": 4.127,
+      "gate_fidelity": 0.9985,
+      "readout_fidelity": 0.8739,
+      "frequency_GHz": 5328.745
+    },
+    "143": {
+      "T1_us": 48.169,
+      "T2_us": 3.092,
+      "gate_fidelity": 0.9986,
+      "readout_fidelity": 0.9493,
+      "frequency_GHz": 5234.072
+    },
+    "144": {
+      "T1_us": 14.833,
+      "T2_us": 6.782,
+      "gate_fidelity": 0.9952,
+      "readout_fidelity": 0.7653,
+      "frequency_GHz": 5420.034
+    },
+    "145": {
+      "T1_us": 14.094,
+      "T2_us": 9.089,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.919,
+      "frequency_GHz": 4988.262
+    },
+    "146": {
+      "T1_us": 16.877,
+      "T2_us": 6.838,
+      "gate_fidelity": 0.9979,
+      "readout_fidelity": 0.8976,
+      "frequency_GHz": 5587.879
+    },
+    "147": {
+      "T1_us": 28.39,
+      "T2_us": 5.153,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9865,
+      "frequency_GHz": 5453.58
+    },
+    "148": {
+      "T1_us": 44.951,
+      "T2_us": 3.756,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.9468,
+      "frequency_GHz": 5078.625
+    },
+    "149": {
+      "T1_us": 41.083,
+      "T2_us": 4.433,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9603,
+      "frequency_GHz": 4951.903
+    },
+    "150": {
+      "T1_us": 38.873,
+      "T2_us": 3.093,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9262,
+      "frequency_GHz": 5290.083
+    },
+    "151": {
+      "T1_us": 33.002,
+      "T2_us": 13.509,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9479,
+      "frequency_GHz": 4864.544
+    },
+    "152": {
+      "T1_us": 19.196,
+      "T2_us": 3.435,
+      "gate_fidelity": 0.9951,
+      "readout_fidelity": 0.9598,
+      "frequency_GHz": 5307.802
+    },
+    "153": {
+      "T1_us": 39.489,
+      "T2_us": 3.636,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9386,
+      "frequency_GHz": 5055.157
+    },
+    "154": {
+      "T1_us": 24.137,
+      "T2_us": 5.317,
+      "gate_fidelity": 0.9993,
+      "readout_fidelity": 0.9794,
+      "frequency_GHz": 5160.857
+    },
+    "155": {
+      "T1_us": 25.329,
+      "T2_us": 5.915,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.8982,
+      "frequency_GHz": 5078.088
+    },
+    "156": {
+      "T1_us": 33.908,
+      "T2_us": 5.157,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.8906,
+      "frequency_GHz": 5522.089
+    },
+    "157": {
+      "T1_us": 43.424,
+      "T2_us": 9.45,
+      "gate_fidelity": 0.9994,
+      "readout_fidelity": 0.9805,
+      "frequency_GHz": 4999.165
+    },
+    "158": {
+      "T1_us": 27.389,
+      "T2_us": 4.205,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9753,
+      "frequency_GHz": 4912.783
+    },
+    "159": {
+      "T1_us": 35.267,
+      "T2_us": 8.509,
+      "gate_fidelity": 0.9957,
+      "readout_fidelity": 0.9469,
+      "frequency_GHz": 4772.866
+    },
+    "160": {
+      "T1_us": 40.595,
+      "T2_us": 8.833,
+      "gate_fidelity": 0.998,
+      "readout_fidelity": 0.9805,
+      "frequency_GHz": 5477.042
+    },
+    "161": {
+      "T1_us": 19.524,
+      "T2_us": 4.252,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.9321,
+      "frequency_GHz": 4942.879
+    },
+    "162": {
+      "T1_us": 28.402,
+      "T2_us": 4.293,
+      "gate_fidelity": 0.9953,
+      "readout_fidelity": 0.8454,
+      "frequency_GHz": 5130.844
+    },
+    "163": {
+      "T1_us": 30.552,
+      "T2_us": 5.436,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.8413,
+      "frequency_GHz": 5546.855
+    },
+    "164": {
+      "T1_us": 25.263,
+      "T2_us": 4.242,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9402,
+      "frequency_GHz": 5046.544
+    },
+    "165": {
+      "T1_us": 56.544,
+      "T2_us": 3.704,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9655,
+      "frequency_GHz": 5106.838
+    },
+    "166": {
+      "T1_us": 26.448,
+      "T2_us": 1.929,
+      "gate_fidelity": 0.9964,
+      "readout_fidelity": 0.9781,
+      "frequency_GHz": 5140.925
+    },
+    "167": {
+      "T1_us": 34.804,
+      "T2_us": 9.242,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9419,
+      "frequency_GHz": 4814.896
+    },
+    "168": {
+      "T1_us": 56.535,
+      "T2_us": 5.342,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9424,
+      "frequency_GHz": 5418.998
+    },
+    "169": {
+      "T1_us": 52.828,
+      "T2_us": 3.86,
+      "gate_fidelity": 0.9986,
+      "readout_fidelity": 0.9223,
+      "frequency_GHz": 4935.039
+    },
+    "170": {
+      "T1_us": 35.098,
+      "T2_us": 9.657,
+      "gate_fidelity": 0.9989,
+      "readout_fidelity": 0.9385,
+      "frequency_GHz": 4773.999
+    },
+    "173": {
+      "T1_us": 25.708,
+      "T2_us": 3.793,
+      "gate_fidelity": 0.9991,
+      "readout_fidelity": 0.9431,
+      "frequency_GHz": 5343.232
+    },
+    "174": {
+      "T1_us": 25.554,
+      "T2_us": 6.001,
+      "gate_fidelity": 0.9984,
+      "readout_fidelity": 0.9435,
+      "frequency_GHz": 5320.9
+    },
+    "176": {
+      "T1_us": 10.847,
+      "T2_us": 5.188,
+      "gate_fidelity": 0.999,
+      "readout_fidelity": 0.9764,
+      "frequency_GHz": 5493.08
+    },
+    "177": {
+      "T1_us": 25.857,
+      "T2_us": 5.414,
+      "gate_fidelity": 0.9988,
+      "readout_fidelity": 0.9389,
+      "frequency_GHz": 5346.484
+    },
+    "178": {
+      "T1_us": 21.849,
+      "T2_us": 4.147,
+      "gate_fidelity": 0.9996,
+      "readout_fidelity": 0.9207,
+      "frequency_GHz": 4908.943
+    },
+    "179": {
+      "T1_us": 31.577,
+      "T2_us": 6.633,
+      "gate_fidelity": 0.9992,
+      "readout_fidelity": 0.92,
+      "frequency_GHz": 4864.022
+    }
+  },
+  "two_qubit_gates": [
+    {
+      "qubits": [
+        78,
+        88
+      ],
+      "CZ_fidelity": 0.9896
+    },
+    {
+      "qubits": [
+        79,
+        88
+      ],
+      "CZ_fidelity": 0.9982
+    },
+    {
+      "qubits": [
+        88,
+        97
+      ],
+      "CZ_fidelity": 0.977
+    },
+    {
+      "qubits": [
+        79,
+        89
+      ],
+      "CZ_fidelity": 0.9728
+    },
+    {
+      "qubits": [
+        80,
+        89
+      ],
+      "CZ_fidelity": 0.9382
+    },
+    {
+      "qubits": [
+        89,
+        98
+      ],
+      "CZ_fidelity": 0.9784
+    },
+    {
+      "qubits": [
+        101,
+        110
+      ],
+      "CZ_fidelity": 0.9786
+    },
+    {
+      "qubits": [
+        110,
+        119
+      ],
+      "CZ_fidelity": 0.9916
+    },
+    {
+      "qubits": [
+        110,
+        120
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        102,
+        111
+      ],
+      "CZ_fidelity": 0.9542
+    },
+    {
+      "qubits": [
+        111,
+        120
+      ],
+      "CZ_fidelity": 0.9334
+    },
+    {
+      "qubits": [
+        111,
+        121
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        103,
+        112
+      ],
+      "CZ_fidelity": 0.9664
+    },
+    {
+      "qubits": [
+        112,
+        121
+      ],
+      "CZ_fidelity": 0.9951
+    },
+    {
+      "qubits": [
+        112,
+        122
+      ],
+      "CZ_fidelity": 0.9805
+    },
+    {
+      "qubits": [
+        113,
+        122
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        113,
+        123
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        105,
+        114
+      ],
+      "CZ_fidelity": 0.981
+    },
+    {
+      "qubits": [
+        114,
+        123
+      ],
+      "CZ_fidelity": 0.9949
+    },
+    {
+      "qubits": [
+        114,
+        124
+      ],
+      "CZ_fidelity": 0.993
+    },
+    {
+      "qubits": [
+        106,
+        115
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        115,
+        124
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        115,
+        125
+      ],
+      "CZ_fidelity": 0.9716
+    },
+    {
+      "qubits": [
+        81,
+        90
+      ],
+      "CZ_fidelity": 0.959
+    },
+    {
+      "qubits": [
+        90,
+        100
+      ],
+      "CZ_fidelity": 0.9358
+    },
+    {
+      "qubits": [
+        108,
+        117
+      ],
+      "CZ_fidelity": 0.9973
+    },
+    {
+      "qubits": [
+        117,
+        126
+      ],
+      "CZ_fidelity": 0.9979
+    },
+    {
+      "qubits": [
+        82,
+        91
+      ],
+      "CZ_fidelity": 0.9679
+    },
+    {
+      "qubits": [
+        91,
+        100
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        91,
+        101
+      ],
+      "CZ_fidelity": 0.9974
+    },
+    {
+      "qubits": [
+        108,
+        118
+      ],
+      "CZ_fidelity": 0.9899
+    },
+    {
+      "qubits": [
+        109,
+        118
+      ],
+      "CZ_fidelity": 0.9957
+    },
+    {
+      "qubits": [
+        118,
+        127
+      ],
+      "CZ_fidelity": 0.967
+    },
+    {
+      "qubits": [
+        83,
+        92
+      ],
+      "CZ_fidelity": 0.9513
+    },
+    {
+      "qubits": [
+        92,
+        102
+      ],
+      "CZ_fidelity": 0.9688
+    },
+    {
+      "qubits": [
+        109,
+        119
+      ],
+      "CZ_fidelity": 0.9917
+    },
+    {
+      "qubits": [
+        110,
+        119
+      ],
+      "CZ_fidelity": 0.9916
+    },
+    {
+      "qubits": [
+        119,
+        128
+      ],
+      "CZ_fidelity": 0.9607
+    },
+    {
+      "qubits": [
+        84,
+        93
+      ],
+      "CZ_fidelity": 0.9886
+    },
+    {
+      "qubits": [
+        93,
+        103
+      ],
+      "CZ_fidelity": 0.9684
+    },
+    {
+      "qubits": [
+        85,
+        94
+      ],
+      "CZ_fidelity": 0.9993
+    },
+    {
+      "qubits": [
+        94,
+        103
+      ],
+      "CZ_fidelity": 0.9749
+    },
+    {
+      "qubits": [
+        94,
+        104
+      ],
+      "CZ_fidelity": 0.9923
+    },
+    {
+      "qubits": [
+        86,
+        95
+      ],
+      "CZ_fidelity": 0.978
+    },
+    {
+      "qubits": [
+        95,
+        104
+      ],
+      "CZ_fidelity": 0.9918
+    },
+    {
+      "qubits": [
+        95,
+        105
+      ],
+      "CZ_fidelity": 0.9731
+    },
+    {
+      "qubits": [
+        87,
+        96
+      ],
+      "CZ_fidelity": 0.9966
+    },
+    {
+      "qubits": [
+        96,
+        105
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        96,
+        106
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        88,
+        97
+      ],
+      "CZ_fidelity": 0.977
+    },
+    {
+      "qubits": [
+        97,
+        106
+      ],
+      "CZ_fidelity": 0.9606
+    },
+    {
+      "qubits": [
+        97,
+        107
+      ],
+      "CZ_fidelity": 0.9894
+    },
+    {
+      "qubits": [
+        0,
+        10
+      ],
+      "CZ_fidelity": 0.9784
+    },
+    {
+      "qubits": [
+        1,
+        10
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        10,
+        19
+      ],
+      "CZ_fidelity": 0.9994
+    },
+    {
+      "qubits": [
+        89,
+        98
+      ],
+      "CZ_fidelity": 0.9784
+    },
+    {
+      "qubits": [
+        98,
+        107
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        1,
+        11
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        2,
+        11
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        11,
+        20
+      ],
+      "CZ_fidelity": 0.9857
+    },
+    {
+      "qubits": [
+        2,
+        12
+      ],
+      "CZ_fidelity": 0.9978
+    },
+    {
+      "qubits": [
+        5,
+        14
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        14,
+        23
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        6,
+        15
+      ],
+      "CZ_fidelity": 0.9916
+    },
+    {
+      "qubits": [
+        15,
+        24
+      ],
+      "CZ_fidelity": 0.984
+    },
+    {
+      "qubits": [
+        6,
+        16
+      ],
+      "CZ_fidelity": 0.9979
+    },
+    {
+      "qubits": [
+        7,
+        16
+      ],
+      "CZ_fidelity": 0.9985
+    },
+    {
+      "qubits": [
+        16,
+        25
+      ],
+      "CZ_fidelity": 0.9994
+    },
+    {
+      "qubits": [
+        8,
+        17
+      ],
+      "CZ_fidelity": 0.9679
+    },
+    {
+      "qubits": [
+        9,
+        18
+      ],
+      "CZ_fidelity": 0.9898
+    },
+    {
+      "qubits": [
+        18,
+        27
+      ],
+      "CZ_fidelity": 0.9727
+    },
+    {
+      "qubits": [
+        18,
+        28
+      ],
+      "CZ_fidelity": 0.9479
+    },
+    {
+      "qubits": [
+        10,
+        19
+      ],
+      "CZ_fidelity": 0.9994
+    },
+    {
+      "qubits": [
+        19,
+        28
+      ],
+      "CZ_fidelity": 0.9892
+    },
+    {
+      "qubits": [
+        19,
+        29
+      ],
+      "CZ_fidelity": 0.9981
+    },
+    {
+      "qubits": [
+        110,
+        120
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        111,
+        120
+      ],
+      "CZ_fidelity": 0.9334
+    },
+    {
+      "qubits": [
+        120,
+        129
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        0,
+        10
+      ],
+      "CZ_fidelity": 0.9784
+    },
+    {
+      "qubits": [
+        111,
+        121
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        112,
+        121
+      ],
+      "CZ_fidelity": 0.9951
+    },
+    {
+      "qubits": [
+        121,
+        130
+      ],
+      "CZ_fidelity": 0.9953
+    },
+    {
+      "qubits": [
+        1,
+        10
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        1,
+        11
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        112,
+        122
+      ],
+      "CZ_fidelity": 0.9805
+    },
+    {
+      "qubits": [
+        113,
+        122
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        122,
+        131
+      ],
+      "CZ_fidelity": 0.9795
+    },
+    {
+      "qubits": [
+        2,
+        11
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        2,
+        12
+      ],
+      "CZ_fidelity": 0.9978
+    },
+    {
+      "qubits": [
+        113,
+        123
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        114,
+        123
+      ],
+      "CZ_fidelity": 0.9949
+    },
+    {
+      "qubits": [
+        123,
+        132
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        114,
+        124
+      ],
+      "CZ_fidelity": 0.993
+    },
+    {
+      "qubits": [
+        115,
+        124
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        124,
+        133
+      ],
+      "CZ_fidelity": 0.9848
+    },
+    {
+      "qubits": [
+        115,
+        125
+      ],
+      "CZ_fidelity": 0.9716
+    },
+    {
+      "qubits": [
+        125,
+        134
+      ],
+      "CZ_fidelity": 0.9952
+    },
+    {
+      "qubits": [
+        5,
+        14
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        117,
+        126
+      ],
+      "CZ_fidelity": 0.9979
+    },
+    {
+      "qubits": [
+        126,
+        135
+      ],
+      "CZ_fidelity": 0.9968
+    },
+    {
+      "qubits": [
+        126,
+        136
+      ],
+      "CZ_fidelity": 0.9904
+    },
+    {
+      "qubits": [
+        6,
+        15
+      ],
+      "CZ_fidelity": 0.9916
+    },
+    {
+      "qubits": [
+        6,
+        16
+      ],
+      "CZ_fidelity": 0.9979
+    },
+    {
+      "qubits": [
+        118,
+        127
+      ],
+      "CZ_fidelity": 0.967
+    },
+    {
+      "qubits": [
+        127,
+        137
+      ],
+      "CZ_fidelity": 0.9798
+    },
+    {
+      "qubits": [
+        7,
+        16
+      ],
+      "CZ_fidelity": 0.9985
+    },
+    {
+      "qubits": [
+        119,
+        128
+      ],
+      "CZ_fidelity": 0.9607
+    },
+    {
+      "qubits": [
+        128,
+        137
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        128,
+        138
+      ],
+      "CZ_fidelity": 0.9832
+    },
+    {
+      "qubits": [
+        8,
+        17
+      ],
+      "CZ_fidelity": 0.9679
+    },
+    {
+      "qubits": [
+        120,
+        129
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        129,
+        138
+      ],
+      "CZ_fidelity": 0.9842
+    },
+    {
+      "qubits": [
+        129,
+        139
+      ],
+      "CZ_fidelity": 0.9839
+    },
+    {
+      "qubits": [
+        9,
+        18
+      ],
+      "CZ_fidelity": 0.9898
+    },
+    {
+      "qubits": [
+        11,
+        20
+      ],
+      "CZ_fidelity": 0.9857
+    },
+    {
+      "qubits": [
+        20,
+        29
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        20,
+        30
+      ],
+      "CZ_fidelity": 0.9933
+    },
+    {
+      "qubits": [
+        22,
+        31
+      ],
+      "CZ_fidelity": 0.9893
+    },
+    {
+      "qubits": [
+        22,
+        32
+      ],
+      "CZ_fidelity": 0.9993
+    },
+    {
+      "qubits": [
+        14,
+        23
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        23,
+        32
+      ],
+      "CZ_fidelity": 0.9982
+    },
+    {
+      "qubits": [
+        23,
+        33
+      ],
+      "CZ_fidelity": 0.9789
+    },
+    {
+      "qubits": [
+        15,
+        24
+      ],
+      "CZ_fidelity": 0.984
+    },
+    {
+      "qubits": [
+        24,
+        33
+      ],
+      "CZ_fidelity": 0.9673
+    },
+    {
+      "qubits": [
+        16,
+        25
+      ],
+      "CZ_fidelity": 0.9994
+    },
+    {
+      "qubits": [
+        25,
+        35
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        18,
+        27
+      ],
+      "CZ_fidelity": 0.9727
+    },
+    {
+      "qubits": [
+        27,
+        36
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        18,
+        28
+      ],
+      "CZ_fidelity": 0.9479
+    },
+    {
+      "qubits": [
+        19,
+        28
+      ],
+      "CZ_fidelity": 0.9892
+    },
+    {
+      "qubits": [
+        28,
+        37
+      ],
+      "CZ_fidelity": 0.957
+    },
+    {
+      "qubits": [
+        19,
+        29
+      ],
+      "CZ_fidelity": 0.9981
+    },
+    {
+      "qubits": [
+        20,
+        29
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        29,
+        38
+      ],
+      "CZ_fidelity": 0.962
+    },
+    {
+      "qubits": [
+        121,
+        130
+      ],
+      "CZ_fidelity": 0.9953
+    },
+    {
+      "qubits": [
+        130,
+        139
+      ],
+      "CZ_fidelity": 0.9629
+    },
+    {
+      "qubits": [
+        122,
+        131
+      ],
+      "CZ_fidelity": 0.9795
+    },
+    {
+      "qubits": [
+        131,
+        140
+      ],
+      "CZ_fidelity": 0.9985
+    },
+    {
+      "qubits": [
+        131,
+        141
+      ],
+      "CZ_fidelity": 0.9811
+    },
+    {
+      "qubits": [
+        123,
+        132
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        132,
+        141
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        132,
+        142
+      ],
+      "CZ_fidelity": 0.9944
+    },
+    {
+      "qubits": [
+        124,
+        133
+      ],
+      "CZ_fidelity": 0.9848
+    },
+    {
+      "qubits": [
+        125,
+        134
+      ],
+      "CZ_fidelity": 0.9952
+    },
+    {
+      "qubits": [
+        134,
+        143
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        126,
+        135
+      ],
+      "CZ_fidelity": 0.9968
+    },
+    {
+      "qubits": [
+        135,
+        144
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        126,
+        136
+      ],
+      "CZ_fidelity": 0.9904
+    },
+    {
+      "qubits": [
+        136,
+        145
+      ],
+      "CZ_fidelity": 0.9995
+    },
+    {
+      "qubits": [
+        127,
+        137
+      ],
+      "CZ_fidelity": 0.9798
+    },
+    {
+      "qubits": [
+        128,
+        137
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        137,
+        146
+      ],
+      "CZ_fidelity": 0.9906
+    },
+    {
+      "qubits": [
+        128,
+        138
+      ],
+      "CZ_fidelity": 0.9832
+    },
+    {
+      "qubits": [
+        129,
+        138
+      ],
+      "CZ_fidelity": 0.9842
+    },
+    {
+      "qubits": [
+        129,
+        139
+      ],
+      "CZ_fidelity": 0.9839
+    },
+    {
+      "qubits": [
+        130,
+        139
+      ],
+      "CZ_fidelity": 0.9629
+    },
+    {
+      "qubits": [
+        139,
+        148
+      ],
+      "CZ_fidelity": 0.9859
+    },
+    {
+      "qubits": [
+        20,
+        30
+      ],
+      "CZ_fidelity": 0.9933
+    },
+    {
+      "qubits": [
+        30,
+        39
+      ],
+      "CZ_fidelity": 0.9838
+    },
+    {
+      "qubits": [
+        22,
+        31
+      ],
+      "CZ_fidelity": 0.9893
+    },
+    {
+      "qubits": [
+        31,
+        40
+      ],
+      "CZ_fidelity": 0.9698
+    },
+    {
+      "qubits": [
+        22,
+        32
+      ],
+      "CZ_fidelity": 0.9993
+    },
+    {
+      "qubits": [
+        23,
+        32
+      ],
+      "CZ_fidelity": 0.9982
+    },
+    {
+      "qubits": [
+        32,
+        41
+      ],
+      "CZ_fidelity": 0.9873
+    },
+    {
+      "qubits": [
+        23,
+        33
+      ],
+      "CZ_fidelity": 0.9789
+    },
+    {
+      "qubits": [
+        24,
+        33
+      ],
+      "CZ_fidelity": 0.9673
+    },
+    {
+      "qubits": [
+        33,
+        42
+      ],
+      "CZ_fidelity": 0.9565
+    },
+    {
+      "qubits": [
+        25,
+        35
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        35,
+        44
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        27,
+        36
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        36,
+        45
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        36,
+        46
+      ],
+      "CZ_fidelity": 0.9925
+    },
+    {
+      "qubits": [
+        28,
+        37
+      ],
+      "CZ_fidelity": 0.957
+    },
+    {
+      "qubits": [
+        37,
+        46
+      ],
+      "CZ_fidelity": 0.9624
+    },
+    {
+      "qubits": [
+        37,
+        47
+      ],
+      "CZ_fidelity": 0.9472
+    },
+    {
+      "qubits": [
+        29,
+        38
+      ],
+      "CZ_fidelity": 0.962
+    },
+    {
+      "qubits": [
+        38,
+        47
+      ],
+      "CZ_fidelity": 0.9877
+    },
+    {
+      "qubits": [
+        38,
+        48
+      ],
+      "CZ_fidelity": 0.9846
+    },
+    {
+      "qubits": [
+        30,
+        39
+      ],
+      "CZ_fidelity": 0.9838
+    },
+    {
+      "qubits": [
+        39,
+        49
+      ],
+      "CZ_fidelity": 0.9874
+    },
+    {
+      "qubits": [
+        131,
+        140
+      ],
+      "CZ_fidelity": 0.9985
+    },
+    {
+      "qubits": [
+        140,
+        149
+      ],
+      "CZ_fidelity": 0.9995
+    },
+    {
+      "qubits": [
+        131,
+        141
+      ],
+      "CZ_fidelity": 0.9811
+    },
+    {
+      "qubits": [
+        132,
+        141
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        141,
+        150
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        132,
+        142
+      ],
+      "CZ_fidelity": 0.9944
+    },
+    {
+      "qubits": [
+        142,
+        151
+      ],
+      "CZ_fidelity": 0.9958
+    },
+    {
+      "qubits": [
+        134,
+        143
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        143,
+        152
+      ],
+      "CZ_fidelity": 0.9893
+    },
+    {
+      "qubits": [
+        135,
+        144
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        144,
+        153
+      ],
+      "CZ_fidelity": 0.9994
+    },
+    {
+      "qubits": [
+        144,
+        154
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        136,
+        145
+      ],
+      "CZ_fidelity": 0.9995
+    },
+    {
+      "qubits": [
+        145,
+        154
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        145,
+        155
+      ],
+      "CZ_fidelity": 0.9778
+    },
+    {
+      "qubits": [
+        137,
+        146
+      ],
+      "CZ_fidelity": 0.9906
+    },
+    {
+      "qubits": [
+        146,
+        155
+      ],
+      "CZ_fidelity": 0.9942
+    },
+    {
+      "qubits": [
+        147,
+        156
+      ],
+      "CZ_fidelity": 0.9801
+    },
+    {
+      "qubits": [
+        147,
+        157
+      ],
+      "CZ_fidelity": 0.9781
+    },
+    {
+      "qubits": [
+        139,
+        148
+      ],
+      "CZ_fidelity": 0.9859
+    },
+    {
+      "qubits": [
+        148,
+        157
+      ],
+      "CZ_fidelity": 0.9895
+    },
+    {
+      "qubits": [
+        148,
+        158
+      ],
+      "CZ_fidelity": 0.9931
+    },
+    {
+      "qubits": [
+        140,
+        149
+      ],
+      "CZ_fidelity": 0.9995
+    },
+    {
+      "qubits": [
+        149,
+        158
+      ],
+      "CZ_fidelity": 0.9987
+    },
+    {
+      "qubits": [
+        149,
+        159
+      ],
+      "CZ_fidelity": 0.998
+    },
+    {
+      "qubits": [
+        31,
+        40
+      ],
+      "CZ_fidelity": 0.9698
+    },
+    {
+      "qubits": [
+        40,
+        49
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        40,
+        50
+      ],
+      "CZ_fidelity": 0.9564
+    },
+    {
+      "qubits": [
+        32,
+        41
+      ],
+      "CZ_fidelity": 0.9873
+    },
+    {
+      "qubits": [
+        41,
+        50
+      ],
+      "CZ_fidelity": 0.9814
+    },
+    {
+      "qubits": [
+        41,
+        51
+      ],
+      "CZ_fidelity": 0.983
+    },
+    {
+      "qubits": [
+        33,
+        42
+      ],
+      "CZ_fidelity": 0.9565
+    },
+    {
+      "qubits": [
+        42,
+        51
+      ],
+      "CZ_fidelity": 0.9955
+    },
+    {
+      "qubits": [
+        42,
+        52
+      ],
+      "CZ_fidelity": 0.947
+    },
+    {
+      "qubits": [
+        35,
+        44
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        36,
+        45
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        45,
+        54
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        36,
+        46
+      ],
+      "CZ_fidelity": 0.9925
+    },
+    {
+      "qubits": [
+        37,
+        46
+      ],
+      "CZ_fidelity": 0.9624
+    },
+    {
+      "qubits": [
+        46,
+        55
+      ],
+      "CZ_fidelity": 0.9965
+    },
+    {
+      "qubits": [
+        37,
+        47
+      ],
+      "CZ_fidelity": 0.9472
+    },
+    {
+      "qubits": [
+        38,
+        47
+      ],
+      "CZ_fidelity": 0.9877
+    },
+    {
+      "qubits": [
+        47,
+        56
+      ],
+      "CZ_fidelity": 0.9707
+    },
+    {
+      "qubits": [
+        38,
+        48
+      ],
+      "CZ_fidelity": 0.9846
+    },
+    {
+      "qubits": [
+        48,
+        57
+      ],
+      "CZ_fidelity": 0.9934
+    },
+    {
+      "qubits": [
+        39,
+        49
+      ],
+      "CZ_fidelity": 0.9874
+    },
+    {
+      "qubits": [
+        40,
+        49
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        49,
+        58
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        141,
+        150
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        150,
+        159
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        150,
+        160
+      ],
+      "CZ_fidelity": 0.9958
+    },
+    {
+      "qubits": [
+        142,
+        151
+      ],
+      "CZ_fidelity": 0.9958
+    },
+    {
+      "qubits": [
+        151,
+        161
+      ],
+      "CZ_fidelity": 0.9814
+    },
+    {
+      "qubits": [
+        143,
+        152
+      ],
+      "CZ_fidelity": 0.9893
+    },
+    {
+      "qubits": [
+        152,
+        161
+      ],
+      "CZ_fidelity": 0.9922
+    },
+    {
+      "qubits": [
+        144,
+        153
+      ],
+      "CZ_fidelity": 0.9994
+    },
+    {
+      "qubits": [
+        153,
+        162
+      ],
+      "CZ_fidelity": 0.9963
+    },
+    {
+      "qubits": [
+        144,
+        154
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        145,
+        154
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        154,
+        163
+      ],
+      "CZ_fidelity": 0.993
+    },
+    {
+      "qubits": [
+        145,
+        155
+      ],
+      "CZ_fidelity": 0.9778
+    },
+    {
+      "qubits": [
+        146,
+        155
+      ],
+      "CZ_fidelity": 0.9942
+    },
+    {
+      "qubits": [
+        155,
+        164
+      ],
+      "CZ_fidelity": 0.9992
+    },
+    {
+      "qubits": [
+        147,
+        156
+      ],
+      "CZ_fidelity": 0.9801
+    },
+    {
+      "qubits": [
+        156,
+        165
+      ],
+      "CZ_fidelity": 0.987
+    },
+    {
+      "qubits": [
+        147,
+        157
+      ],
+      "CZ_fidelity": 0.9781
+    },
+    {
+      "qubits": [
+        148,
+        157
+      ],
+      "CZ_fidelity": 0.9895
+    },
+    {
+      "qubits": [
+        157,
+        166
+      ],
+      "CZ_fidelity": 0.9954
+    },
+    {
+      "qubits": [
+        148,
+        158
+      ],
+      "CZ_fidelity": 0.9931
+    },
+    {
+      "qubits": [
+        149,
+        158
+      ],
+      "CZ_fidelity": 0.9987
+    },
+    {
+      "qubits": [
+        158,
+        167
+      ],
+      "CZ_fidelity": 0.9974
+    },
+    {
+      "qubits": [
+        149,
+        159
+      ],
+      "CZ_fidelity": 0.998
+    },
+    {
+      "qubits": [
+        150,
+        159
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        159,
+        168
+      ],
+      "CZ_fidelity": 0.9865
+    },
+    {
+      "qubits": [
+        40,
+        50
+      ],
+      "CZ_fidelity": 0.9564
+    },
+    {
+      "qubits": [
+        41,
+        50
+      ],
+      "CZ_fidelity": 0.9814
+    },
+    {
+      "qubits": [
+        50,
+        59
+      ],
+      "CZ_fidelity": 0.9933
+    },
+    {
+      "qubits": [
+        41,
+        51
+      ],
+      "CZ_fidelity": 0.983
+    },
+    {
+      "qubits": [
+        42,
+        51
+      ],
+      "CZ_fidelity": 0.9955
+    },
+    {
+      "qubits": [
+        51,
+        60
+      ],
+      "CZ_fidelity": 0.9706
+    },
+    {
+      "qubits": [
+        42,
+        52
+      ],
+      "CZ_fidelity": 0.947
+    },
+    {
+      "qubits": [
+        52,
+        61
+      ],
+      "CZ_fidelity": 0.976
+    },
+    {
+      "qubits": [
+        45,
+        54
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        54,
+        63
+      ],
+      "CZ_fidelity": 0.9777
+    },
+    {
+      "qubits": [
+        54,
+        64
+      ],
+      "CZ_fidelity": 0.9988
+    },
+    {
+      "qubits": [
+        46,
+        55
+      ],
+      "CZ_fidelity": 0.9965
+    },
+    {
+      "qubits": [
+        55,
+        64
+      ],
+      "CZ_fidelity": 0.9917
+    },
+    {
+      "qubits": [
+        55,
+        65
+      ],
+      "CZ_fidelity": 0.9728
+    },
+    {
+      "qubits": [
+        47,
+        56
+      ],
+      "CZ_fidelity": 0.9707
+    },
+    {
+      "qubits": [
+        56,
+        66
+      ],
+      "CZ_fidelity": 0.9939
+    },
+    {
+      "qubits": [
+        48,
+        57
+      ],
+      "CZ_fidelity": 0.9934
+    },
+    {
+      "qubits": [
+        57,
+        66
+      ],
+      "CZ_fidelity": 0.9971
+    },
+    {
+      "qubits": [
+        49,
+        58
+      ],
+      "CZ_fidelity": 0.9998
+    },
+    {
+      "qubits": [
+        58,
+        68
+      ],
+      "CZ_fidelity": 0.9806
+    },
+    {
+      "qubits": [
+        50,
+        59
+      ],
+      "CZ_fidelity": 0.9933
+    },
+    {
+      "qubits": [
+        59,
+        68
+      ],
+      "CZ_fidelity": 0.9888
+    },
+    {
+      "qubits": [
+        59,
+        69
+      ],
+      "CZ_fidelity": 0.9924
+    },
+    {
+      "qubits": [
+        150,
+        160
+      ],
+      "CZ_fidelity": 0.9958
+    },
+    {
+      "qubits": [
+        160,
+        169
+      ],
+      "CZ_fidelity": 0.9875
+    },
+    {
+      "qubits": [
+        151,
+        161
+      ],
+      "CZ_fidelity": 0.9814
+    },
+    {
+      "qubits": [
+        152,
+        161
+      ],
+      "CZ_fidelity": 0.9922
+    },
+    {
+      "qubits": [
+        161,
+        170
+      ],
+      "CZ_fidelity": 0.9905
+    },
+    {
+      "qubits": [
+        153,
+        162
+      ],
+      "CZ_fidelity": 0.9963
+    },
+    {
+      "qubits": [
+        154,
+        163
+      ],
+      "CZ_fidelity": 0.993
+    },
+    {
+      "qubits": [
+        163,
+        173
+      ],
+      "CZ_fidelity": 0.9515
+    },
+    {
+      "qubits": [
+        155,
+        164
+      ],
+      "CZ_fidelity": 0.9992
+    },
+    {
+      "qubits": [
+        164,
+        174
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        156,
+        165
+      ],
+      "CZ_fidelity": 0.987
+    },
+    {
+      "qubits": [
+        165,
+        174
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        157,
+        166
+      ],
+      "CZ_fidelity": 0.9954
+    },
+    {
+      "qubits": [
+        166,
+        176
+      ],
+      "CZ_fidelity": 0.982
+    },
+    {
+      "qubits": [
+        158,
+        167
+      ],
+      "CZ_fidelity": 0.9974
+    },
+    {
+      "qubits": [
+        167,
+        176
+      ],
+      "CZ_fidelity": 0.9936
+    },
+    {
+      "qubits": [
+        167,
+        177
+      ],
+      "CZ_fidelity": 0.9498
+    },
+    {
+      "qubits": [
+        159,
+        168
+      ],
+      "CZ_fidelity": 0.9865
+    },
+    {
+      "qubits": [
+        168,
+        177
+      ],
+      "CZ_fidelity": 0.9745
+    },
+    {
+      "qubits": [
+        168,
+        178
+      ],
+      "CZ_fidelity": 0.9801
+    },
+    {
+      "qubits": [
+        160,
+        169
+      ],
+      "CZ_fidelity": 0.9875
+    },
+    {
+      "qubits": [
+        169,
+        178
+      ],
+      "CZ_fidelity": 0.9724
+    },
+    {
+      "qubits": [
+        169,
+        179
+      ],
+      "CZ_fidelity": 0.9803
+    },
+    {
+      "qubits": [
+        51,
+        60
+      ],
+      "CZ_fidelity": 0.9706
+    },
+    {
+      "qubits": [
+        60,
+        69
+      ],
+      "CZ_fidelity": 0.9902
+    },
+    {
+      "qubits": [
+        60,
+        70
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        52,
+        61
+      ],
+      "CZ_fidelity": 0.976
+    },
+    {
+      "qubits": [
+        61,
+        70
+      ],
+      "CZ_fidelity": 0.999
+    },
+    {
+      "qubits": [
+        61,
+        71
+      ],
+      "CZ_fidelity": 0.9696
+    },
+    {
+      "qubits": [
+        62,
+        71
+      ],
+      "CZ_fidelity": 0.9991
+    },
+    {
+      "qubits": [
+        54,
+        63
+      ],
+      "CZ_fidelity": 0.9777
+    },
+    {
+      "qubits": [
+        63,
+        72
+      ],
+      "CZ_fidelity": 0.9836
+    },
+    {
+      "qubits": [
+        54,
+        64
+      ],
+      "CZ_fidelity": 0.9988
+    },
+    {
+      "qubits": [
+        55,
+        64
+      ],
+      "CZ_fidelity": 0.9917
+    },
+    {
+      "qubits": [
+        64,
+        73
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        55,
+        65
+      ],
+      "CZ_fidelity": 0.9728
+    },
+    {
+      "qubits": [
+        56,
+        66
+      ],
+      "CZ_fidelity": 0.9939
+    },
+    {
+      "qubits": [
+        57,
+        66
+      ],
+      "CZ_fidelity": 0.9971
+    },
+    {
+      "qubits": [
+        66,
+        75
+      ],
+      "CZ_fidelity": 0.967
+    },
+    {
+      "qubits": [
+        58,
+        68
+      ],
+      "CZ_fidelity": 0.9806
+    },
+    {
+      "qubits": [
+        59,
+        68
+      ],
+      "CZ_fidelity": 0.9888
+    },
+    {
+      "qubits": [
+        68,
+        77
+      ],
+      "CZ_fidelity": 0.9874
+    },
+    {
+      "qubits": [
+        59,
+        69
+      ],
+      "CZ_fidelity": 0.9924
+    },
+    {
+      "qubits": [
+        60,
+        69
+      ],
+      "CZ_fidelity": 0.9902
+    },
+    {
+      "qubits": [
+        161,
+        170
+      ],
+      "CZ_fidelity": 0.9905
+    },
+    {
+      "qubits": [
+        170,
+        179
+      ],
+      "CZ_fidelity": 0.996
+    },
+    {
+      "qubits": [
+        163,
+        173
+      ],
+      "CZ_fidelity": 0.9515
+    },
+    {
+      "qubits": [
+        164,
+        174
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        165,
+        174
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        166,
+        176
+      ],
+      "CZ_fidelity": 0.982
+    },
+    {
+      "qubits": [
+        167,
+        176
+      ],
+      "CZ_fidelity": 0.9936
+    },
+    {
+      "qubits": [
+        167,
+        177
+      ],
+      "CZ_fidelity": 0.9498
+    },
+    {
+      "qubits": [
+        168,
+        177
+      ],
+      "CZ_fidelity": 0.9745
+    },
+    {
+      "qubits": [
+        168,
+        178
+      ],
+      "CZ_fidelity": 0.9801
+    },
+    {
+      "qubits": [
+        169,
+        178
+      ],
+      "CZ_fidelity": 0.9724
+    },
+    {
+      "qubits": [
+        169,
+        179
+      ],
+      "CZ_fidelity": 0.9803
+    },
+    {
+      "qubits": [
+        170,
+        179
+      ],
+      "CZ_fidelity": 0.996
+    },
+    {
+      "qubits": [
+        60,
+        70
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        61,
+        70
+      ],
+      "CZ_fidelity": 0.999
+    },
+    {
+      "qubits": [
+        70,
+        79
+      ],
+      "CZ_fidelity": 0.942
+    },
+    {
+      "qubits": [
+        61,
+        71
+      ],
+      "CZ_fidelity": 0.9696
+    },
+    {
+      "qubits": [
+        62,
+        71
+      ],
+      "CZ_fidelity": 0.9991
+    },
+    {
+      "qubits": [
+        71,
+        80
+      ],
+      "CZ_fidelity": 0.9733
+    },
+    {
+      "qubits": [
+        63,
+        72
+      ],
+      "CZ_fidelity": 0.9836
+    },
+    {
+      "qubits": [
+        64,
+        73
+      ],
+      "CZ_fidelity": 0.9996
+    },
+    {
+      "qubits": [
+        73,
+        83
+      ],
+      "CZ_fidelity": 0.9798
+    },
+    {
+      "qubits": [
+        74,
+        83
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        74,
+        84
+      ],
+      "CZ_fidelity": 0.9794
+    },
+    {
+      "qubits": [
+        66,
+        75
+      ],
+      "CZ_fidelity": 0.967
+    },
+    {
+      "qubits": [
+        75,
+        84
+      ],
+      "CZ_fidelity": 0.9699
+    },
+    {
+      "qubits": [
+        75,
+        85
+      ],
+      "CZ_fidelity": 0.9991
+    },
+    {
+      "qubits": [
+        68,
+        77
+      ],
+      "CZ_fidelity": 0.9874
+    },
+    {
+      "qubits": [
+        77,
+        86
+      ],
+      "CZ_fidelity": 0.9958
+    },
+    {
+      "qubits": [
+        77,
+        87
+      ],
+      "CZ_fidelity": 0.9807
+    },
+    {
+      "qubits": [
+        78,
+        88
+      ],
+      "CZ_fidelity": 0.9896
+    },
+    {
+      "qubits": [
+        70,
+        79
+      ],
+      "CZ_fidelity": 0.942
+    },
+    {
+      "qubits": [
+        79,
+        88
+      ],
+      "CZ_fidelity": 0.9982
+    },
+    {
+      "qubits": [
+        79,
+        89
+      ],
+      "CZ_fidelity": 0.9728
+    },
+    {
+      "qubits": [
+        90,
+        100
+      ],
+      "CZ_fidelity": 0.9358
+    },
+    {
+      "qubits": [
+        91,
+        100
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        100,
+        109
+      ],
+      "CZ_fidelity": 0.9891
+    },
+    {
+      "qubits": [
+        91,
+        101
+      ],
+      "CZ_fidelity": 0.9974
+    },
+    {
+      "qubits": [
+        101,
+        110
+      ],
+      "CZ_fidelity": 0.9786
+    },
+    {
+      "qubits": [
+        92,
+        102
+      ],
+      "CZ_fidelity": 0.9688
+    },
+    {
+      "qubits": [
+        102,
+        111
+      ],
+      "CZ_fidelity": 0.9542
+    },
+    {
+      "qubits": [
+        93,
+        103
+      ],
+      "CZ_fidelity": 0.9684
+    },
+    {
+      "qubits": [
+        94,
+        103
+      ],
+      "CZ_fidelity": 0.9749
+    },
+    {
+      "qubits": [
+        103,
+        112
+      ],
+      "CZ_fidelity": 0.9664
+    },
+    {
+      "qubits": [
+        94,
+        104
+      ],
+      "CZ_fidelity": 0.9923
+    },
+    {
+      "qubits": [
+        95,
+        104
+      ],
+      "CZ_fidelity": 0.9918
+    },
+    {
+      "qubits": [
+        95,
+        105
+      ],
+      "CZ_fidelity": 0.9731
+    },
+    {
+      "qubits": [
+        96,
+        105
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        105,
+        114
+      ],
+      "CZ_fidelity": 0.981
+    },
+    {
+      "qubits": [
+        96,
+        106
+      ],
+      "CZ_fidelity": 0.9972
+    },
+    {
+      "qubits": [
+        97,
+        106
+      ],
+      "CZ_fidelity": 0.9606
+    },
+    {
+      "qubits": [
+        106,
+        115
+      ],
+      "CZ_fidelity": 0.9999
+    },
+    {
+      "qubits": [
+        71,
+        80
+      ],
+      "CZ_fidelity": 0.9733
+    },
+    {
+      "qubits": [
+        80,
+        89
+      ],
+      "CZ_fidelity": 0.9382
+    },
+    {
+      "qubits": [
+        97,
+        107
+      ],
+      "CZ_fidelity": 0.9894
+    },
+    {
+      "qubits": [
+        98,
+        107
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        81,
+        90
+      ],
+      "CZ_fidelity": 0.959
+    },
+    {
+      "qubits": [
+        108,
+        117
+      ],
+      "CZ_fidelity": 0.9973
+    },
+    {
+      "qubits": [
+        108,
+        118
+      ],
+      "CZ_fidelity": 0.9899
+    },
+    {
+      "qubits": [
+        82,
+        91
+      ],
+      "CZ_fidelity": 0.9679
+    },
+    {
+      "qubits": [
+        100,
+        109
+      ],
+      "CZ_fidelity": 0.9891
+    },
+    {
+      "qubits": [
+        109,
+        118
+      ],
+      "CZ_fidelity": 0.9957
+    },
+    {
+      "qubits": [
+        109,
+        119
+      ],
+      "CZ_fidelity": 0.9917
+    },
+    {
+      "qubits": [
+        73,
+        83
+      ],
+      "CZ_fidelity": 0.9798
+    },
+    {
+      "qubits": [
+        74,
+        83
+      ],
+      "CZ_fidelity": 0.9997
+    },
+    {
+      "qubits": [
+        83,
+        92
+      ],
+      "CZ_fidelity": 0.9513
+    },
+    {
+      "qubits": [
+        74,
+        84
+      ],
+      "CZ_fidelity": 0.9794
+    },
+    {
+      "qubits": [
+        75,
+        84
+      ],
+      "CZ_fidelity": 0.9699
+    },
+    {
+      "qubits": [
+        84,
+        93
+      ],
+      "CZ_fidelity": 0.9886
+    },
+    {
+      "qubits": [
+        75,
+        85
+      ],
+      "CZ_fidelity": 0.9991
+    },
+    {
+      "qubits": [
+        85,
+        94
+      ],
+      "CZ_fidelity": 0.9993
+    },
+    {
+      "qubits": [
+        77,
+        86
+      ],
+      "CZ_fidelity": 0.9958
+    },
+    {
+      "qubits": [
+        86,
+        95
+      ],
+      "CZ_fidelity": 0.978
+    },
+    {
+      "qubits": [
+        77,
+        87
+      ],
+      "CZ_fidelity": 0.9807
+    },
+    {
+      "qubits": [
+        87,
+        96
+      ],
+      "CZ_fidelity": 0.9966
+    }
+  ]
+}
