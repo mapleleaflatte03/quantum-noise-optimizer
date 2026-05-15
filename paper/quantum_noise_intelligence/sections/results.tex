@@ -5,7 +5,7 @@ We evaluate across 125 circuit-noise configurations: 3 circuit families (GHZ~\ci
 
 \subsection{Overall Performance}
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \caption{Comparison of extrapolation methods across 125 configurations. MAE: mean absolute error of the zero-noise estimate relative to the ideal value. Unphysical rate: fraction of estimates outside $[0, 1]$.}
 \label{tab:overall}
 \begin{ruledtabular}
@@ -22,15 +22,9 @@ Quadratic ZNE & 0.0808 & 0.0629 & 0\% \\
 
 \Cref{tab:overall} summarizes the aggregate results. Our method achieves MAE comparable to linear ZNE (0.058 vs.\ 0.058) while completely eliminating unphysical predictions. Notably, quadratic ZNE---which also produces no unphysical results due to its flexibility---has 40\% higher MAE (0.081), demonstrating that physical validity alone is insufficient without appropriate model selection. The win rate of bounded ZNE over raw results is 61.6\%, and over quadratic ZNE is 66.4\%.
 
-\begin{figure}[t]
-    \includegraphics[width=\columnwidth]{../figures/fig_mae_comparison.pdf}
-    \caption{Mean absolute error comparison across all 125 configurations. Bounded ZNE + AICc (green) matches linear ZNE accuracy while guaranteeing physical validity---a combination no other method achieves. Error bars indicate standard error of the mean.}
-    \label{fig:mae}
-\end{figure}
-
 \subsection{Noise-Level Dependence: Where Bounds Matter}
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \caption{Performance stratified by noise level. Bounded ZNE shows strongest advantage at low noise ($\epsilon_\text{CZ} \leq 3\%$) where linear ZNE produces unphysical results. At high noise, both methods converge---the bounds are inactive.}
 \label{tab:noise}
 \begin{ruledtabular}
@@ -50,7 +44,7 @@ $\epsilon_\text{CZ}$ & MAE (Lin.) & MAE (Bnd.) & Win\% & Unphys. (Lin.) \\
 
 At high noise ($\epsilon_\text{CZ} \geq 5\%$), the measured values are far from physical boundaries, extrapolation naturally stays within bounds, and both methods converge to identical performance. This is the expected behavior: \emph{our method adds no overhead when bounds are not needed}.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
     \includegraphics[width=\columnwidth]{../figures/fig_noise_scaling.pdf}
     \caption{MAE as a function of CZ error rate. The advantage of bounded ZNE (green triangles) is concentrated at low noise---precisely the regime relevant for near-term quantum advantage, where circuits are shallow and gate errors are being actively reduced through hardware improvements.}
     \label{fig:noise}
@@ -58,7 +52,7 @@ At high noise ($\epsilon_\text{CZ} \geq 5\%$), the measured values are far from 
 
 \subsection{Circuit-Type Analysis: Why GHZ Benefits Most}
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \caption{Performance by circuit type. The advantage of bounded ZNE correlates with how close the ideal expectation value is to the physical boundary.}
 \label{tab:circuit}
 \begin{ruledtabular}
@@ -72,7 +66,7 @@ QFT & $\sim$0.99 & 0.0158 & 0.0158 & 0\% \\
 \end{ruledtabular}
 \end{table}
 
-\Cref{tab:circuit} and \cref{fig:circuit} reveal that the advantage of bounded ZNE is \emph{not} uniform across circuit types, and the pattern is physically interpretable:
+\Cref{tab:circuit} reveals that the advantage of bounded ZNE is \emph{not} uniform across circuit types, and the pattern is physically interpretable:
 
 \textbf{GHZ circuits} ($\langle O \rangle_\text{ideal} = 1.0$): The ideal value sits exactly at the upper physical boundary. Any upward extrapolation error produces an unphysical result. Bounded ZNE wins in 16.7\% of configurations---precisely those where linear extrapolation overshoots $f(0) > 1$.
 
@@ -82,15 +76,9 @@ QFT & $\sim$0.99 & 0.0158 & 0.0158 & 0\% \\
 
 \textbf{Key insight:} Bounded ZNE provides maximum value when (i) the ideal value is near a physical boundary AND (ii) the noise is sufficient to cause extrapolation overshoot. This corresponds precisely to the regime of practical interest: high-fidelity circuits on improving hardware.
 
-\begin{figure}[t]
-    \includegraphics[width=\columnwidth]{../figures/fig_circuit_comparison.pdf}
-    \caption{MAE by circuit type. GHZ circuits (ideal value at boundary) benefit most from physical bounds. Random circuits (ideal value at midpoint) show no benefit, as expected.}
-    \label{fig:circuit}
-\end{figure}
-
 \subsection{Unphysical Prediction Elimination}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
     \includegraphics[width=\columnwidth]{../figures/fig_unphysical_rate.pdf}
     \caption{Unphysical prediction rate by noise level. Linear ZNE produces up to 12\% unphysical estimates at low noise---the regime most relevant for near-term quantum advantage. Bounded ZNE maintains 0\% across all conditions by construction.}
     \label{fig:unphysical}
@@ -100,7 +88,7 @@ QFT & $\sim$0.99 & 0.0158 & 0.0158 & 0\% \\
 
 \subsection{AICc vs.\ RSS Model Selection}
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \caption{Impact of model selection criterion on bounded ZNE performance. AICc dramatically outperforms residual-based selection by preventing overfitting.}
 \label{tab:aicc_vs_rss}
 \begin{ruledtabular}
@@ -117,13 +105,13 @@ BIC & 55\% & 0.060 \\
 
 \Cref{tab:aicc_vs_rss} demonstrates that model selection is the critical component. RSS-based selection (choosing the model with lowest residual) achieves only 29\% win rate because the 3-parameter polynomial \emph{always} fits 5 data points better than the 2-parameter linear model, regardless of the true underlying function. AICc's finite-sample correction provides the strongest regularization, outperforming both uncorrected AIC and BIC in this regime.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
     \includegraphics[width=\columnwidth]{../figures/fig_aicc_heatmap.pdf}
     \caption{Error reduction of bounded ZNE relative to linear ZNE across all 125 configurations (blue = bounded wins, red = linear wins, white = tied). The advantage concentrates at low noise on GHZ circuits---precisely where ideal values approach the physical boundary and linear extrapolation overshoots.}
     \label{fig:aicc_heatmap}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
     \includegraphics[width=\columnwidth]{../figures/fig_convergence.pdf}
     \caption{Convergence of zero-noise estimates as the number of noise scale factors $n$ increases (GHZ-4, $\epsilon_\text{CZ}=3\%$, 50 trials per point). Error bars show one standard deviation. Bounded ZNE (green) maintains tighter variance and stays within physical bounds, while linear ZNE (blue) exhibits higher variance at small $n$. Both converge as data increases.}
     \label{fig:convergence}
@@ -131,11 +119,11 @@ BIC & 55\% & 0.060 \\
 
 \subsection{Comparison with Alternative Mitigation Approaches}
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \caption{Qualitative comparison with state-of-the-art QEM methods. Our method uniquely combines physical guarantees with automatic model selection at zero training cost.}
 \label{tab:sota}
 \begin{ruledtabular}
-\begin{tabular}{lccccc}
+\begin{tabular}{lcccc}
 Method & Phys. & Auto & Train & Overhead \\
 \hline
 Linear ZNE~\cite{GiurgicaTiron2020} & \texttimes & \texttimes & None & $O(k)$ \\

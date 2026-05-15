@@ -221,6 +221,33 @@
   International Conference on Quantum Computing and Engineering}},\ }\href@noop
   {} {\  (\bibinfo {year} {2020})},\ \Eprint {https://arxiv.org/abs/2005.10921}
   {arXiv:2005.10921 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Czarnik}\ \emph {et~al.}(2021)\citenamefont
+  {Czarnik}, \citenamefont {Arrasmith}, \citenamefont {Coles},\ and\
+  \citenamefont {Cincio}}]{Czarnik2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Czarnik}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Arrasmith}},
+  \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Coles}},\ and\
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Cincio}},\ }\bibfield
+  {title} {\bibinfo {title} {Error mitigation with {C}lifford quantum-circuit
+  data},\ }\href {https://doi.org/10.22331/q-2021-11-26-592} {\bibfield
+  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {5}},\
+  \bibinfo {pages} {592} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lowe}\ \emph {et~al.}(2021)\citenamefont {Lowe},
+  \citenamefont {Gordon}, \citenamefont {Czarnik}, \citenamefont {Arrasmith},
+  \citenamefont {Coles},\ and\ \citenamefont {Cincio}}]{Lowe2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Lowe}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Gordon}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Czarnik}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Arrasmith}}, \bibinfo {author}
+  {\bibfnamefont {P.~J.}\ \bibnamefont {Coles}},\ and\ \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Cincio}},\ }\bibfield  {title} {\bibinfo
+  {title} {Unified approach to data-driven quantum error mitigation},\ }\href
+  {https://doi.org/10.1103/PhysRevResearch.3.033098} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Research}\ }\textbf {\bibinfo {volume}
+  {3}},\ \bibinfo {pages} {033098} (\bibinfo {year} {2021})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {D{\'\i}ez-Valle}\ \emph {et~al.}(2025)\citenamefont
   {D{\'\i}ez-Valle} \emph {et~al.}}]{DiezValle2025}%
   \BibitemOpen
@@ -270,33 +297,6 @@
   Theorem, Quantum Theory and Conceptions of the Universe}},\ }\href
   {https://doi.org/10.1007/978-94-017-0849-4_10} {\ ,\ \bibinfo {pages} {69}
   (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Czarnik}\ \emph {et~al.}(2021)\citenamefont
-  {Czarnik}, \citenamefont {Arrasmith}, \citenamefont {Coles},\ and\
-  \citenamefont {Cincio}}]{Czarnik2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Czarnik}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Arrasmith}},
-  \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Coles}},\ and\
-  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Cincio}},\ }\bibfield
-  {title} {\bibinfo {title} {Error mitigation with {C}lifford quantum-circuit
-  data},\ }\href {https://doi.org/10.22331/q-2021-11-26-592} {\bibfield
-  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {5}},\
-  \bibinfo {pages} {592} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Lowe}\ \emph {et~al.}(2021)\citenamefont {Lowe},
-  \citenamefont {Gordon}, \citenamefont {Czarnik}, \citenamefont {Arrasmith},
-  \citenamefont {Coles},\ and\ \citenamefont {Cincio}}]{Lowe2021}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Lowe}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Gordon}},
-  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Czarnik}}, \bibinfo
-  {author} {\bibfnamefont {A.}~\bibnamefont {Arrasmith}}, \bibinfo {author}
-  {\bibfnamefont {P.~J.}\ \bibnamefont {Coles}},\ and\ \bibinfo {author}
-  {\bibfnamefont {L.}~\bibnamefont {Cincio}},\ }\bibfield  {title} {\bibinfo
-  {title} {Unified approach to data-driven quantum error mitigation},\ }\href
-  {https://doi.org/10.1103/PhysRevResearch.3.033098} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev. Research}\ }\textbf {\bibinfo {volume}
-  {3}},\ \bibinfo {pages} {033098} (\bibinfo {year} {2021})}\BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Endo}\ \emph {et~al.}(2021)\citenamefont {Endo},
   \citenamefont {Cai}, \citenamefont {Benjamin},\ and\ \citenamefont
   {Yuan}}]{Endo2021}%

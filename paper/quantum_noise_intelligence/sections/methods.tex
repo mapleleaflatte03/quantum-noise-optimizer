@@ -43,7 +43,7 @@ Given $n$ data points and a model with $k$ parameters and residual sum of square
 
 The model with minimum AICc is selected. The correction term $2k(k+1)/(n-k-1)$ is critical for ZNE:
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \caption{AICc penalty for different model complexities at typical ZNE sample sizes. The correction strongly penalizes the 4-parameter model when $n \leq 7$.}
 \label{tab:aicc_penalty}
 \begin{ruledtabular}
@@ -100,7 +100,7 @@ This is demonstrated empirically: bounded optimization with RSS selection achiev
 
 Not all circuits benefit equally from ZNE. We implement \textsc{AutoMitigator}, a rule-based strategy selector that analyzes circuit properties and noise characteristics:
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \hrule\vspace{0.5em}
 \textbf{Algorithm 1:} AutoMitigator Strategy Selection\\[0.3em]
 \textbf{Input:} Circuit $C$ (depth $d$, 2Q gates $g_{2q}$, qubits $q$); Noise ($\epsilon_g$, $\epsilon_r$)\\
@@ -120,7 +120,7 @@ The selector outputs a recommended strategy with confidence score and human-read
 \subsection{MCP Server Architecture}
 \label{sec:mcp}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
     \includegraphics[width=\columnwidth]{../figures/fig_architecture.pdf}
     \caption{System architecture. AI agents interact via the Model Context Protocol (top), which routes requests to the physics-informed mitigation engine (middle), executing on quantum backends (bottom). Physical bounds and AICc selection are embedded in the tools, providing guardrails regardless of how agents invoke them.}
     \label{fig:architecture}

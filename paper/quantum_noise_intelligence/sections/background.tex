@@ -5,41 +5,24 @@
 
 Zero-noise extrapolation estimates the ideal expectation value $\langle O \rangle_0$ of an observable $O$ by measuring at multiple noise levels $\lambda_1 < \lambda_2 < \cdots < \lambda_k$ and fitting an extrapolation model $f(\lambda)$ such that $\hat{\langle O \rangle}_0 = f(0)$~\cite{Temme2017, Li2017}.
 
-Noise amplification is achieved through unitary folding~\cite{GiurgicaTiron2020}: given a circuit $U$, the folded circuit $U(U^\dagger U)^n$ implements the same logical operation at noise scale factor $\lambda = 2n + 1$. Common extrapolation models include:
-\begin{align}
-    f_\text{lin}(\lambda) &= a + b\lambda, \label{eq:linear} \\
-    f_\text{poly}(\lambda) &= \sum_{i=0}^{d} a_i \lambda^i, \label{eq:poly} \\
-    f_\text{exp}(\lambda) &= a + b e^{-c\lambda}. \label{eq:exp}
-\end{align}
-
-The choice among these models significantly impacts accuracy: linear models underfit at high noise, while higher-order polynomials overfit with limited data points~\cite{Cai2023}.
+Noise amplification is achieved through unitary folding~\cite{GiurgicaTiron2020}: given a circuit $U$, the folded circuit $U(U^\dagger U)^n$ implements the same logical operation at noise scale factor $\lambda = 2n + 1$. Common extrapolation models include linear ($f = a + b\lambda$), polynomial ($f = \sum_i a_i \lambda^i$), and exponential ($f = a + be^{-c\lambda}$). The choice among these significantly impacts accuracy: linear models underfit at high noise, while higher-order polynomials overfit with limited data~\cite{Cai2023}.
 
 \subsection{Physically-Bounded Extrapolation}
 
 Miranskyy et al.~\cite{Miranskyy2026} observed that unconstrained extrapolation frequently produces unphysical estimates---values outside the domain $[l_b, u_b]$ dictated by the observable's spectrum. For probability estimation, $l_b = 0$ and $u_b = 1$; for Pauli observables, $l_b = -1$ and $u_b = 1$.
 
-Their approach constrains the optimization:
-\begin{equation}
-    \hat{\theta} = \arg\min_\theta \sum_{i=1}^{k} \left[ f(\lambda_i; \theta) - y_i \right]^2 \quad \text{s.t.} \quad l_b \leq f(0; \theta) \leq u_b,
-    \label{eq:bounded_opt}
-\end{equation}
-where $y_i = \langle O \rangle_{\lambda_i}$ are the measured values. This is solved via constrained optimization (e.g., L-BFGS-B with box constraints on the zero-noise estimate).
+Their approach constrains the optimization to enforce $l_b \leq f(0;\theta) \leq u_b$, solving via L-BFGS-B with box constraints. Across 180,000 circuits, this eliminated unphysical predictions while maintaining competitive accuracy.
 
 \subsection{Information-Theoretic Model Selection}
 
-The Akaike Information Criterion (AIC)~\cite{Akaike1974} balances goodness-of-fit against model complexity:
+The Akaike Information Criterion (AIC)~\cite{Akaike1974} balances goodness-of-fit against model complexity. For small samples ($n/k < 40$), the corrected version AICc~\cite{Hurvich1989} adds a bias-correction term:
 \begin{equation}
-    \text{AIC} = 2k - 2\ln(\hat{L}),
+    \text{AICc} = n\ln(\text{RSS}/n) + 2k + \frac{2k(k+1)}{n - k - 1},
 \end{equation}
-where $k$ is the number of parameters and $\hat{L}$ is the maximized likelihood. For small samples ($n/k < 40$), the corrected version AICc~\cite{Hurvich1989} adds a bias-correction term:
-\begin{equation}
-    \text{AICc} = \text{AIC} + \frac{2k(k+1)}{n - k - 1},
-    \label{eq:aicc}
-\end{equation}
-where $n$ is the number of data points. This correction is critical for ZNE, where typically $n \in \{3, 5, 7\}$ and models have $k \in \{2, 3, 4\}$ parameters---precisely the regime where AICc provides the strongest regularization against overfitting.
+where $n$ is the sample size, $k$ the number of parameters, and RSS the residual sum of squares. This correction is critical for ZNE, where typically $n \in \{3, 5, 7\}$ and $k \in \{2, 3, 4\}$---precisely the regime where AICc provides the strongest regularization~\cite{Burnham2002}.
 
 \subsection{Related Work}
 
-Several approaches address ZNE limitations. Machine learning methods~\cite{Liao2024, Wang2026} train models on circuit-noise pairs but require extensive training data and lack physical guarantees. Probabilistic error cancellation (PEC)~\cite{Temme2017} provides unbiased estimates but incurs exponential sampling overhead. Physics-inspired extrapolation (PIE)~\cite{DiezValle2025} achieves constant overhead but targets a different noise regime. Proprietary solutions such as Q-CTRL Fire Opal~\cite{Mundada2023} combine multiple techniques but are closed-source and hardware-specific.
+Several approaches address ZNE limitations. Machine learning methods~\cite{Liao2024, Wang2026, Strikis2021} train models on circuit-noise pairs but require extensive training data and lack physical guarantees. Probabilistic error cancellation (PEC)~\cite{Temme2017, vandenBerg2023} provides unbiased estimates but incurs exponential sampling overhead. Clifford Data Regression~\cite{Czarnik2021, Lowe2021} learns corrections from near-Clifford circuits but requires classical simulation. Physics-inspired extrapolation (PIE)~\cite{DiezValle2025} achieves constant overhead but targets a different noise regime. Proprietary solutions such as Q-CTRL Fire Opal~\cite{Mundada2023} combine multiple techniques but are closed-source.
 
-Our work is complementary: we provide physics-informed bounds with principled model selection, applicable to any ZNE implementation including Mitiq~\cite{LaRose2022}, while remaining fully open-source.
+Our work provides physics-informed bounds with principled model selection, applicable to any ZNE implementation including Mitiq~\cite{LaRose2022}, at zero training cost.
