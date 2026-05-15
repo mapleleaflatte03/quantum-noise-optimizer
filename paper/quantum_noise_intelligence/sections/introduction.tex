@@ -1,3 +1,19 @@
 \section{Introduction}
 \label{sec:introduction}
-% TODO: Write introduction
+
+Quantum error mitigation (QEM) has emerged as an essential bridge between current noisy intermediate-scale quantum (NISQ) processors and the fault-tolerant era~\cite{Cai2023, Temme2017, Li2017}. Among QEM techniques, zero-noise extrapolation (ZNE) stands out for its simplicity and broad applicability: by executing circuits at artificially amplified noise levels and extrapolating to the zero-noise limit, one can estimate ideal expectation values without additional quantum resources~\cite{GiurgicaTiron2020}.
+
+However, standard ZNE implementations suffer from two critical limitations. First, polynomial or exponential extrapolation models can produce estimates outside the physical domain---for instance, probabilities exceeding unity or negative expectation values---undermining the reliability of mitigated results~\cite{Miranskyy2026}. Second, the choice of extrapolation model (linear, quadratic, exponential) is typically made \emph{a priori} without principled justification, leading to either underfitting at high noise or overfitting with limited data points.
+
+Recent work by Miranskyy et al.~\cite{Miranskyy2026} introduced physically-bounded ZNE, constraining extrapolation models to respect known physical limits. Their study, spanning 180,000 circuits and 3.6 million experiments, demonstrated that bounded extrapolation eliminates unphysical predictions while maintaining competitive accuracy. However, their approach still requires manual model selection---a significant barrier to automated deployment.
+
+In this work, we make three contributions:
+\begin{enumerate}
+    \item We extend physically-bounded ZNE with automatic model selection via the corrected Akaike Information Criterion (AICc)~\cite{Akaike1974, Hurvich1989}, providing a principled, data-driven approach that prevents overfitting in the small-sample regime typical of ZNE (3--7 noise scale factors).
+    \item We introduce \textsc{AutoMitigator}, an intelligent strategy selection system that analyzes circuit structure and noise characteristics to recommend optimal mitigation approaches without expert intervention.
+    \item We implement the first noise-focused Model Context Protocol (MCP) server~\cite{Anthropic2024}, enabling AI coding agents to autonomously perform quantum error mitigation through natural language interaction.
+\end{enumerate}
+
+Our approach achieves a 0\% unphysical prediction rate across 125 benchmark configurations (compared to 4\% for linear ZNE) while maintaining comparable mean absolute error. At low noise levels ($\epsilon_\text{CZ} = 1\%$), bounded ZNE with AICc selection outperforms linear ZNE in 12\% of configurations---precisely those cases where linear extrapolation produces unphysical results.
+
+The remainder of this paper is organized as follows. \Cref{sec:background} reviews ZNE and model selection theory. \Cref{sec:methods} presents our physically-bounded ZNE with AICc, the AutoMitigator system, and the MCP server architecture. \Cref{sec:results} reports benchmark results across diverse circuits and noise levels. \Cref{sec:discussion} discusses limitations and implications, and \Cref{sec:conclusion} concludes with future directions.

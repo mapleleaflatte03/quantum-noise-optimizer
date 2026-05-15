@@ -1,3 +1,62 @@
 \section{Methods}
 \label{sec:methods}
-% TODO: Write methods
+
+\subsection{Physically-Bounded ZNE with AICc Selection}
+
+Our implementation fits three candidate models to noise-amplified measurements, each subject to physical bounds:
+
+\begin{enumerate}
+    \item \textbf{Polynomial} ($k=3$): $f(\lambda) = a_0 + a_1\lambda + a_2\lambda^2$
+    \item \textbf{Exponential} ($k=3$): $f(\lambda) = a + b\,e^{-c\lambda}$, with $c > 0$
+    \item \textbf{Poly-exponential} ($k=4$): $f(\lambda) = (a_0 + a_1\lambda)\,e^{-c\lambda}$
+\end{enumerate}
+
+For each model, we solve the constrained least-squares problem in \cref{eq:bounded_opt} using L-BFGS-B with bounds $l_b \leq f(0;\theta) \leq u_b$. Initial parameters are estimated from the data: $a_0 \approx y_1$ (first measurement), decay rate $c \approx -\ln(y_k/y_1)/(\lambda_k - \lambda_1)$.
+
+Model selection proceeds by computing AICc (\cref{eq:aicc}) for each fitted model assuming Gaussian residuals:
+\begin{equation}
+    \text{AIC} = n\ln\!\left(\frac{\text{RSS}}{n}\right) + 2k,
+\end{equation}
+where $\text{RSS} = \sum_i [f(\lambda_i;\hat\theta) - y_i]^2$. The model with minimum AICc is selected, and its zero-noise estimate $f(0;\hat\theta)$ is returned.
+
+This approach has two key properties: (i) the physical bound constraint guarantees $l_b \leq \hat{\langle O \rangle}_0 \leq u_b$ regardless of which model is selected, and (ii) AICc penalizes the 4-parameter poly-exponential model more heavily than the 3-parameter alternatives when data is limited, preventing overfitting.
+
+\subsection{AutoMitigator: Strategy Selection}
+
+Not all circuits benefit equally from ZNE. We implement \textsc{AutoMitigator}, a rule-based strategy selector that analyzes:
+\begin{itemize}
+    \item \textbf{Circuit depth}: shallow circuits ($d < 10$) may not benefit from ZNE overhead
+    \item \textbf{Two-qubit gate count}: high CX/CZ density suggests ZNE or dynamical decoupling
+    \item \textbf{Noise profile}: readout-dominated noise favors measurement error mitigation; gate-dominated noise favors ZNE
+    \item \textbf{Qubit count}: large circuits with moderate noise benefit from dynamical decoupling
+\end{itemize}
+
+The selector outputs a recommended strategy from: \{bounded\_zne, dynamical\_decoupling, readout\_mitigation, combined, none\}, along with a confidence score and human-readable justification.
+
+\subsection{MCP Server for AI-Accessible Mitigation}
+
+We implement a Model Context Protocol (MCP)~\cite{Anthropic2024} server exposing eight tools for quantum error mitigation:
+
+\begin{enumerate}
+    \item \texttt{noise\_profile}: characterize backend noise
+    \item \texttt{recommend\_mitigation}: strategy selection via AutoMitigator
+    \item \texttt{run\_bounded\_zne}: execute physically-bounded ZNE
+    \item \texttt{compare\_strategies}: benchmark multiple approaches
+    \item \texttt{optimize\_circuit}: noise-aware gate optimization
+    \item \texttt{get\_calibration\_data}: retrieve hardware calibration
+    \item \texttt{wukong\_status}: check hardware availability
+    \item \texttt{run\_experiment}: end-to-end mitigation pipeline
+\end{enumerate}
+
+The server uses FastMCP 3.3 with stdio transport, enabling integration with AI coding agents (verified with OpenAI Codex CLI and GitHub Copilot CLI). This represents, to our knowledge, the first MCP server specifically designed for quantum error mitigation, enabling non-expert users to access sophisticated mitigation through natural language.
+
+\subsection{Noise Model and Simulation}
+
+All benchmarks use Qiskit Aer with noise models calibrated from real Origin Wukong 180 hardware data (169 qubits, 396 CZ gates):
+\begin{itemize}
+    \item Depolarizing noise: $\epsilon_\text{1Q} = 0.5\%$, $\epsilon_\text{CZ} \in \{1\%, 3\%, 5\%, 8\%, 12\%\}$
+    \item Readout error: 2\% symmetric bit-flip
+    \item Shot count: 4096 per circuit execution
+\end{itemize}
+
+Hardware validation on Origin Wukong 180 is pending resolution of an API compatibility issue (May 2026). The noise parameters above are derived from real calibration data extracted via the OriginQ Cloud API.

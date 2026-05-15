@@ -179,6 +179,10 @@ All benchmark results use simulator with Wukong-calibrated noise (3% CZ, 0.5% 1Q
 
 ## Built With
 
+- **arXiv preprint (v1):** `paper/quantum_noise_intelligence/` — 8-page paper, 25 references, 4 figures. Compile with `make` in that directory.
+
+### Dependencies
+
 - [Qiskit](https://qiskit.org/) 2.4.1 — IBM quantum SDK
 - [pyqpanda3](https://pypi.org/project/pyqpanda3/) 0.3.5 — OriginQ quantum SDK
 - [FastMCP](https://github.com/jlowin/fastmcp) 3.3.0 — MCP server framework

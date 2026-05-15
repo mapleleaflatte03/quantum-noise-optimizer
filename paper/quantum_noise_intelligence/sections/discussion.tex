@@ -1,3 +1,30 @@
 \section{Discussion}
 \label{sec:discussion}
-% TODO: Write discussion
+
+\subsection{When Does Bounded ZNE Help?}
+
+Our results reveal that physically-bounded ZNE provides the greatest advantage in a specific regime: low-to-moderate noise ($\epsilon_\text{CZ} \leq 3\%$) on circuits with high entanglement (GHZ-type). In this regime, the ideal expectation value is close to the physical boundary (e.g., $\langle O \rangle_\text{ideal} \approx 1$ for GHZ fidelity), and linear extrapolation frequently overshoots. The bounded constraint acts as a ``safety net'' that clips these overshoots without degrading performance when bounds are inactive.
+
+At high noise ($\epsilon_\text{CZ} \geq 5\%$), the measured values are far from physical boundaries, and all methods converge. This is expected: the bounds provide value precisely when extrapolation is aggressive relative to the physical domain.
+
+\subsection{Role of AICc in Small-Sample ZNE}
+
+The failure of raw residual minimization (29\% win rate) versus AICc selection (61.6\% win rate vs.\ raw) highlights a fundamental challenge in ZNE: with only 3--7 data points, complex models can perfectly fit noise fluctuations. AICc's correction term $2k(k+1)/(n-k-1)$ diverges as $k \to n-1$, providing strong regularization in exactly this regime. This suggests that any ZNE implementation using multiple candidate models should employ information-theoretic selection rather than goodness-of-fit alone.
+
+\subsection{Limitations}
+
+Several limitations should be noted:
+\begin{enumerate}
+    \item \textbf{Simulator-only validation}: All results use noise models calibrated from real hardware data, but direct hardware validation is pending. Simulator noise models may not capture all correlations present in real devices.
+    \item \textbf{Depolarizing noise assumption}: Our benchmark uses depolarizing noise, which is symmetric. Real hardware exhibits coherent errors, crosstalk, and non-Markovian effects that may alter the extrapolation landscape.
+    \item \textbf{Limited circuit diversity}: Three circuit families (GHZ, Random, QFT) at 2--6 qubits do not fully represent the diversity of NISQ applications (e.g., VQE, QAOA, quantum chemistry).
+    \item \textbf{Fixed noise scale factors}: We use $\lambda \in \{1, 1.5, 2, 2.5, 3\}$. Adaptive selection of scale factors~\cite{GiurgicaTiron2020} could improve performance.
+\end{enumerate}
+
+\subsection{Comparison with Existing Tools}
+
+Unlike proprietary solutions such as Q-CTRL Fire Opal~\cite{Mundada2023}, our implementation is fully open-source and hardware-agnostic. Compared to Mitiq~\cite{LaRose2022}, which provides ZNE infrastructure without model selection, our contribution adds the AICc selection layer and physical bounds as a composable extension. The MCP server interface is unique among QEM tools, enabling a new interaction paradigm where AI agents---rather than human experts---drive mitigation decisions.
+
+\subsection{Implications for AI-Assisted Quantum Computing}
+
+The MCP server demonstrates that quantum error mitigation can be made accessible to AI agents without quantum computing expertise. As large language models increasingly assist in scientific computing~\cite{Kim2023}, providing them with physics-informed tools (rather than raw APIs) ensures that mitigation decisions respect physical constraints even when made by non-expert systems.

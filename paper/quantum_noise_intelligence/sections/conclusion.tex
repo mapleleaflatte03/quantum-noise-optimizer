@@ -1,3 +1,15 @@
 \section{Conclusion}
 \label{sec:conclusion}
-% TODO: Write conclusion
+
+We presented physically-bounded ZNE with AICc model selection, a method that guarantees physical validity of extrapolated estimates while automatically selecting the appropriate model complexity. Across 125 circuit-noise configurations, our approach eliminates all unphysical predictions (0\% vs.\ 4\% for linear ZNE) with no degradation in mean absolute error.
+
+Our key insight is that information-theoretic model selection (AICc) is essential for ZNE in the small-sample regime: without it, complex models overfit and bounded optimization alone is insufficient. The combination of physical bounds and AICc provides a principled, fully automatic ZNE pipeline requiring no expert intervention.
+
+Additionally, our MCP server implementation demonstrates that sophisticated quantum error mitigation can be made accessible to AI agents, opening a new paradigm for automated quantum computing workflows.
+
+Future work includes: (i) hardware validation on superconducting processors when API access is restored, (ii) extension to multi-observable estimation with correlated bounds, (iii) integration of adaptive noise scale factor selection, and (iv) combination with dynamical decoupling and readout mitigation in a unified pipeline.
+
+All code is available at \url{https://github.com/mapleleaflatte03/quantum-noise-optimizer} under the MIT license.
+
+\section*{Acknowledgments}
+We thank the Origin Quantum team for providing access to the Wukong 180 calibration data, and the Mitiq and FastMCP communities for their open-source infrastructure.

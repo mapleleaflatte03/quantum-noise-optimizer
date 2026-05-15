@@ -1,0 +1,101 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cai et~al.(2023)Cai, Babbush, Benjamin, Endo, Huggins, Li, McClean,
+  and O'Brien]{Cai2023}
+Zhenyu Cai, Ryan Babbush, Simon~C. Benjamin, Suguru Endo, William~J. Huggins,
+  Ying Li, Jarrod~R. McClean, and Thomas~E. O'Brien.
+\newblock Quantum error mitigation.
+\newblock \emph{Rev. Mod. Phys.}, 95:\penalty0 045005, 2023.
+\newblock \doi{10.1103/RevModPhys.95.045005}.
+
+\bibitem[Temme et~al.(2017)Temme, Bravyi, and Gambetta]{Temme2017}
+Kristan Temme, Sergey Bravyi, and Jay~M. Gambetta.
+\newblock Error mitigation for short-depth quantum circuits.
+\newblock \emph{Phys. Rev. Lett.}, 119:\penalty0 180509, 2017.
+\newblock \doi{10.1103/PhysRevLett.119.180509}.
+
+\bibitem[Li and Benjamin(2017)]{Li2017}
+Ying Li and Simon~C. Benjamin.
+\newblock Efficient variational quantum simulator incorporating active error
+  minimization.
+\newblock \emph{Phys. Rev. X}, 7:\penalty0 021050, 2017.
+\newblock \doi{10.1103/PhysRevX.7.021050}.
+
+\bibitem[Giurgica-Tiron et~al.(2020)Giurgica-Tiron, Hindy, LaRose, Mari, and
+  Zeng]{GiurgicaTiron2020}
+Tudor Giurgica-Tiron, Yousef Hindy, Ryan LaRose, Andrea Mari, and William~J.
+  Zeng.
+\newblock Digital zero noise extrapolation for quantum error mitigation.
+\newblock 2020.
+
+\bibitem[Miranskyy et~al.(2026)Miranskyy, Sadeghian, and Zhang]{Miranskyy2026}
+Andriy Miranskyy, Bahman Sadeghian, and Musheng Zhang.
+\newblock Physically bounded zero-noise extrapolation.
+\newblock 2026.
+
+\bibitem[Akaike(1974)]{Akaike1974}
+Hirotugu Akaike.
+\newblock A new look at the statistical model identification.
+\newblock \emph{IEEE Trans. Automatic Control}, 19\penalty0 (6):\penalty0
+  716--723, 1974.
+\newblock \doi{10.1109/TAC.1974.1100705}.
+
+\bibitem[Hurvich and Tsai(1989)]{Hurvich1989}
+Clifford~M. Hurvich and Chih-Ling Tsai.
+\newblock Regression and time series model selection in small samples.
+\newblock \emph{Biometrika}, 76\penalty0 (2):\penalty0 297--307, 1989.
+\newblock \doi{10.1093/biomet/76.2.297}.
+
+\bibitem[{Anthropic}(2024)]{Anthropic2024}
+{Anthropic}.
+\newblock Model context protocol specification, 2024.
+\newblock URL \url{https://modelcontextprotocol.io}.
+\newblock Open standard for AI-tool integration.
+
+\bibitem[Liao et~al.(2024)Liao, Convy, Huggins, and Mohseni]{Liao2024}
+Haoran Liao, Ian Convy, William~J. Huggins, and Masoud Mohseni.
+\newblock Machine learning for practical quantum error mitigation.
+\newblock \emph{Nature Machine Intelligence}, 6:\penalty0 1478--1486, 2024.
+\newblock \doi{10.1038/s42256-024-00927-2}.
+
+\bibitem[Wang et~al.(2026)]{Wang2026}
+Yihui Wang et~al.
+\newblock Scalable quantum error mitigation via graph neural networks.
+\newblock 2026.
+
+\bibitem[D{\'\i}ez-Valle et~al.(2025)]{DiezValle2025}
+Pablo D{\'\i}ez-Valle et~al.
+\newblock Physics-inspired extrapolation for quantum error mitigation.
+\newblock 2025.
+
+\bibitem[Mundada et~al.(2023)Mundada, Carvalho, Hush, Shammah, Ball, and
+  Biercuk]{Mundada2023}
+Pranav Mundada, Andre R.~R. Carvalho, Michael~R. Hush, Nathan Shammah, Harrison
+  Ball, and Michael~J. Biercuk.
+\newblock Experimental benchmarking of an automated deterministic
+  error-suppression workflow for quantum algorithms.
+\newblock \emph{Phys. Rev. Applied}, 20:\penalty0 024034, 2023.
+\newblock \doi{10.1103/PhysRevApplied.20.024034}.
+
+\bibitem[LaRose et~al.(2022)LaRose, Mari, Shammah, and Zeng]{LaRose2022}
+Ryan LaRose, Andrea Mari, Nathan Shammah, and William~J. Zeng.
+\newblock Mitiq: A software package for error mitigation on noisy quantum
+  computers.
+\newblock \emph{Quantum}, 6:\penalty0 774, 2022.
+\newblock \doi{10.22331/q-2022-08-11-774}.
+
+\bibitem[Kim et~al.(2023)Kim, Eddins, Anand, Wei, van~den Berg, Rosenblatt,
+  Nayfeh, Wu, Zaletel, Temme, and Kandala]{Kim2023}
+Youngseok Kim, Andrew Eddins, Sajant Anand, Ken~X. Wei, Ewout van~den Berg,
+  Sami Rosenblatt, Hasan Nayfeh, Yantao Wu, Michael Zaletel, Kristan Temme, and
+  Abhinav Kandala.
+\newblock Evidence for the utility of quantum computing before fault tolerance.
+\newblock \emph{Nature}, 618:\penalty0 500--505, 2023.
+\newblock \doi{10.1038/s41586-023-06096-3}.
+
+\end{thebibliography}
