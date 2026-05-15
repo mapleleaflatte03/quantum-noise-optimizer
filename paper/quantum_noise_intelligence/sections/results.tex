@@ -119,13 +119,13 @@ BIC & 55\% & 0.060 \\
 
 \begin{figure}[t]
     \includegraphics[width=\columnwidth]{../figures/fig_aicc_heatmap.pdf}
-    \caption{AICc model selection across circuit-noise configurations. At low noise ($\leq$3\%), AICc predominantly selects the linear model (blue), preventing overfitting. At high noise, exponential models (green) are preferred, capturing nonlinear decay. The transition is smooth and data-driven, requiring no manual intervention.}
+    \caption{Error reduction of bounded ZNE relative to linear ZNE across all 125 configurations (blue = bounded wins, red = linear wins, white = tied). The advantage concentrates at low noise on GHZ circuits---precisely where ideal values approach the physical boundary and linear extrapolation overshoots.}
     \label{fig:aicc_heatmap}
 \end{figure}
 
 \begin{figure}[t]
     \includegraphics[width=\columnwidth]{../figures/fig_convergence.pdf}
-    \caption{Convergence of zero-noise estimates as the number of noise scale factors $n$ increases (GHZ-4, $\epsilon_\text{CZ}=3\%$). Linear ZNE (blue) overshoots into the unphysical region (shaded red) at small $n$, while bounded ZNE (green) remains within physical bounds throughout. Both converge as $n$ increases, but bounded ZNE provides reliable estimates even with minimal data.}
+    \caption{Convergence of zero-noise estimates as the number of noise scale factors $n$ increases (GHZ-4, $\epsilon_\text{CZ}=3\%$, 50 trials per point). Error bars show one standard deviation. Bounded ZNE (green) maintains tighter variance and stays within physical bounds, while linear ZNE (blue) exhibits higher variance at small $n$. Both converge as data increases.}
     \label{fig:convergence}
 \end{figure}
 
