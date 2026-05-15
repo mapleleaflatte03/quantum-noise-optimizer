@@ -1,0 +1,46 @@
+================================================================================
+NOISE-AWARE OPTIMIZER BENCHMARK RESULTS
+================================================================================
+
+--- DEPOLARIZING ---
+Bell (2q, depolarizing@0.010): baseline=0.9902, optimized=0.9904, improvement=+0.02%
+Bell (2q, depolarizing@0.010): baseline=0.9694, optimized=0.9833, improvement=+1.43%
+Bell (2q, depolarizing@0.010): baseline=0.9506, optimized=0.9861, improvement=+3.73%
+Bell (2q, depolarizing@0.010): baseline=0.9069, optimized=0.9845, improvement=+8.56%
+Bell (2q, depolarizing@0.020): baseline=0.9387, optimized=0.9686, improvement=+3.18%
+Bell (2q, depolarizing@0.020): baseline=0.9016, optimized=0.9684, improvement=+7.41%
+Bell (2q, depolarizing@0.020): baseline=0.8211, optimized=0.9736, improvement=+18.57%
+Bell (2q, depolarizing@0.030): baseline=0.9707, optimized=0.9716, improvement=+0.09%
+Bell (2q, depolarizing@0.030): baseline=0.9134, optimized=0.9581, improvement=+4.89%
+Bell (2q, depolarizing@0.030): baseline=0.8584, optimized=0.9531, improvement=+11.03%
+Bell (2q, depolarizing@0.030): baseline=0.7417, optimized=0.9527, improvement=+28.45%
+Bell (2q, depolarizing@0.050): baseline=0.9459, optimized=0.9536, improvement=+0.81%
+GHZ (3q, depolarizing@0.010): baseline=0.9823, optimized=0.9805, improvement=-0.19%
+GHZ (3q, depolarizing@0.010): baseline=0.9422, optimized=0.9707, improvement=+3.02%
+GHZ (3q, depolarizing@0.010): baseline=0.9052, optimized=0.9690, improvement=+7.04%
+GHZ (3q, depolarizing@0.010): baseline=0.8118, optimized=0.9691, improvement=+19.38%
+GHZ (3q, depolarizing@0.020): baseline=0.8859, optimized=0.9382, improvement=+5.90%
+GHZ (3q, depolarizing@0.020): baseline=0.8176, optimized=0.9401, improvement=+14.98%
+GHZ (3q, depolarizing@0.020): baseline=0.6562, optimized=0.9450, improvement=+44.01%
+GHZ (3q, depolarizing@0.030): baseline=0.9397, optimized=0.9439, improvement=+0.45%
+GHZ (3q, depolarizing@0.030): baseline=0.8320, optimized=0.9154, improvement=+10.02%
+GHZ (3q, depolarizing@0.030): baseline=0.7360, optimized=0.9169, improvement=+24.58%
+GHZ (3q, depolarizing@0.030): baseline=0.5403, optimized=0.9155, improvement=+69.44%
+GHZ (3q, depolarizing@0.050): baseline=0.9023, optimized=0.9062, improvement=+0.43%
+GHZ (5q, depolarizing@0.010): baseline=0.9608, optimized=0.9601, improvement=-0.07%
+GHZ (5q, depolarizing@0.010): baseline=0.8904, optimized=0.9380, improvement=+5.35%
+GHZ (5q, depolarizing@0.010): baseline=0.8186, optimized=0.9442, improvement=+15.34%
+GHZ (5q, depolarizing@0.010): baseline=0.6713, optimized=0.9389, improvement=+39.86%
+GHZ (5q, depolarizing@0.020): baseline=0.7882, optimized=0.8878, improvement=+12.63%
+GHZ (5q, depolarizing@0.020): baseline=0.6673, optimized=0.8865, improvement=+32.85%
+GHZ (5q, depolarizing@0.020): baseline=0.4396, optimized=0.8897, improvement=+102.39%
+GHZ (5q, depolarizing@0.030): baseline=0.8845, optimized=0.8846, improvement=+0.01%
+GHZ (5q, depolarizing@0.030): baseline=0.6969, optimized=0.8362, improvement=+19.99%
+GHZ (5q, depolarizing@0.030): baseline=0.5373, optimized=0.8353, improvement=+55.47%
+GHZ (5q, depolarizing@0.030): baseline=0.2869, optimized=0.8347, improvement=+190.98%
+GHZ (5q, depolarizing@0.050): baseline=0.8153, optimized=0.8185, improvement=+0.39%
+
+Total benchmarks: 36
+Improved: 34/36
+Avg improvement: +21.18%
+Max improvement: +190.98%
