@@ -11,10 +11,12 @@ from .circuit_passes import (
     circuit_stats,
 )
 from .readout_mitigator import ReadoutMitigator
+from .zne import ZeroNoiseExtrapolator
 
 __version__ = "0.2.0"
 __all__ = [
     "NoiseProfiler", "NoiseAwareOptimizer", "Benchmark",
     "optimize_circuit", "merge_rotations", "cancel_inverse_pairs",
     "commute_and_cancel", "circuit_stats", "ReadoutMitigator",
+    "ZeroNoiseExtrapolator",
 ]
