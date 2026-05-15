@@ -50,7 +50,7 @@ Run the interactive demo: `python examples/demo_gif.py`
 ```
 ┌─────────────────────────────────────────────────┐
 │  MCP Server (Track A)                           │  AI agents call these tools
-│  noise_profile | recommend | run_zne | compare  │
+│  8 tools: profile, recommend, zne, compare...   │
 ├─────────────────────────────────────────────────┤
 │  Mitigation Engine (Track B)                    │  Novel algorithms
 │  PhysicallyBoundedZNE | AutoMitigator | DD      │
@@ -70,7 +70,7 @@ python mcp_server/server.py
 uvicorn mcp_server.server:mcp --host 0.0.0.0 --port 8000
 ```
 
-### Tools Available
+### Tools Available (8)
 
 | Tool | Description |
 |------|-------------|
@@ -78,6 +78,20 @@ uvicorn mcp_server.server:mcp --host 0.0.0.0 --port 8000
 | `recommend_mitigation` | AI-powered strategy selection with reasoning |
 | `run_bounded_zne` | Physically-bounded ZNE extrapolation |
 | `compare_strategies` | Benchmark all methods on a test circuit |
+| `wukong_status` | Check Origin Wukong 180 quantum computer status |
+| `optimize_circuit` | Optimize a QASM circuit and recommend mitigation |
+| `get_calibration_data` | Real Wukong 180 calibration: top-5 qubits, gate stats, connectivity |
+| `run_experiment` | Full pipeline: circuit → noise → mitigation → fidelity result |
+
+### AI Agent CLI Examples
+
+```bash
+# Codex CLI
+codex exec --dangerously-bypass-approvals-and-sandbox "Use quantum-noise MCP to run a 4-qubit GHZ experiment with bounded_zne and report fidelity"
+
+# Copilot CLI
+copilot -p "Get Wukong 180 calibration data and find the best qubits" --allow-tool='quantum-noise' --yolo
+```
 
 ### Claude Desktop / Cursor Config
 

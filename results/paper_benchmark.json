@@ -1,0 +1,1355 @@
+{
+  "results": [
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 3,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": 0.015625,
+      "linear_zne": -0.008789062499999976,
+      "quadratic_zne": 0.10546874999999999,
+      "bounded_zne": -0.008789062499999976
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 3,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": -0.01171875,
+      "linear_zne": 0.014355468749999978,
+      "quadratic_zne": -0.11894531249999986,
+      "bounded_zne": 0.014355468749999978
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 3,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": 0.013671875,
+      "linear_zne": 0.00595703125000001,
+      "quadratic_zne": 0.06308593749999987,
+      "bounded_zne": 0.00595703125000001
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 3,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": 0.009765625,
+      "linear_zne": -0.0017578124999999944,
+      "quadratic_zne": 0.04023437499999993,
+      "bounded_zne": -0.0017578124999999944
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 3,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": 0.0078125,
+      "linear_zne": 0.01845703124999999,
+      "quadratic_zne": 0.023828124999999867,
+      "bounded_zne": 0.01845703124999999
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 4,
+      "p_cx": 0.01,
+      "ideal": 0.9999999999999998,
+      "raw": 0.9755859375,
+      "linear_zne": 1.0049804687500001,
+      "quadratic_zne": 0.9908203124999982,
+      "bounded_zne": 1.0
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 4,
+      "p_cx": 0.03,
+      "ideal": 0.9999999999999998,
+      "raw": 0.90966796875,
+      "linear_zne": 1.0075195312499998,
+      "quadratic_zne": 0.9318359374999978,
+      "bounded_zne": 1.0
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 4,
+      "p_cx": 0.05,
+      "ideal": 0.9999999999999998,
+      "raw": 0.84033203125,
+      "linear_zne": 0.9907226562500002,
+      "quadratic_zne": 0.8237304687499997,
+      "bounded_zne": 0.9907226562500002
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 4,
+      "p_cx": 0.08,
+      "ideal": 0.9999999999999998,
+      "raw": 0.7841796875,
+      "linear_zne": 0.9839843749999997,
+      "quadratic_zne": 0.8702148437499978,
+      "bounded_zne": 0.9839843749999997
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 4,
+      "p_cx": 0.12,
+      "ideal": 0.9999999999999998,
+      "raw": 0.68408203125,
+      "linear_zne": 0.9173828125,
+      "quadratic_zne": 0.7782226562499986,
+      "bounded_zne": 0.9173828125
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 5,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": -0.01904296875,
+      "linear_zne": -0.020703125000000006,
+      "quadratic_zne": -0.03876953124999993,
+      "bounded_zne": -0.020703125000000006
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 5,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": -0.00341796875,
+      "linear_zne": -0.004882812499999992,
+      "quadratic_zne": 0.03271484375,
+      "bounded_zne": -0.004882812499999992
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 5,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": -0.00439453125,
+      "linear_zne": 0.014453124999999982,
+      "quadratic_zne": -0.11249999999999989,
+      "bounded_zne": 0.014453124999999982
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 5,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": 0.021484375,
+      "linear_zne": 0.009863281250000015,
+      "quadratic_zne": 0.06796874999999998,
+      "bounded_zne": 0.009863281250000015
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 5,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": -0.01806640625,
+      "linear_zne": -0.018652343749999994,
+      "quadratic_zne": -0.019628906249999994,
+      "bounded_zne": -0.018652343749999994
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 6,
+      "p_cx": 0.01,
+      "ideal": 0.9999999999999998,
+      "raw": 0.9453125,
+      "linear_zne": 1.0069335937500001,
+      "quadratic_zne": 0.9312499999999979,
+      "bounded_zne": 1.0
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 6,
+      "p_cx": 0.03,
+      "ideal": 0.9999999999999998,
+      "raw": 0.85986328125,
+      "linear_zne": 1.0016601562499998,
+      "quadratic_zne": 0.8864257812499978,
+      "bounded_zne": 1.0
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 6,
+      "p_cx": 0.05,
+      "ideal": 0.9999999999999998,
+      "raw": 0.7724609375,
+      "linear_zne": 0.9677734374999997,
+      "quadratic_zne": 0.8286132812499989,
+      "bounded_zne": 0.9677734374999997
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 6,
+      "p_cx": 0.08,
+      "ideal": 0.9999999999999998,
+      "raw": 0.66162109375,
+      "linear_zne": 0.8862304687499998,
+      "quadratic_zne": 0.8652343749999983,
+      "bounded_zne": 0.8862304687499998
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 6,
+      "p_cx": 0.12,
+      "ideal": 0.9999999999999998,
+      "raw": 0.525390625,
+      "linear_zne": 0.78447265625,
+      "quadratic_zne": 0.694140624999998,
+      "bounded_zne": 0.78447265625
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 7,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": 0.01611328125,
+      "linear_zne": 0.03095703125,
+      "quadratic_zne": 0.037792968749999975,
+      "bounded_zne": 0.03095703125
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 7,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": 0.00830078125,
+      "linear_zne": -0.003710937499999988,
+      "quadratic_zne": 0.04462890624999997,
+      "bounded_zne": -0.003710937499999988
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 7,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": -0.029296875,
+      "linear_zne": -0.041796875,
+      "quadratic_zne": -0.08623046874999986,
+      "bounded_zne": -0.041796875
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 7,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": -0.01025390625,
+      "linear_zne": -0.014648437500000005,
+      "quadratic_zne": -0.05908203124999995,
+      "bounded_zne": -0.014648437500000005
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 7,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": -0.00341796875,
+      "linear_zne": 0.021777343749999987,
+      "quadratic_zne": -0.10712890624999975,
+      "bounded_zne": 0.021777343749999987
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 8,
+      "p_cx": 0.01,
+      "ideal": 0.9999999999999998,
+      "raw": 0.93359375,
+      "linear_zne": 1.0014648437499998,
+      "quadratic_zne": 0.9653320312499994,
+      "bounded_zne": 1.0
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 8,
+      "p_cx": 0.03,
+      "ideal": 0.9999999999999998,
+      "raw": 0.8056640625,
+      "linear_zne": 0.9739257812500001,
+      "quadratic_zne": 0.9001953124999988,
+      "bounded_zne": 0.9739257812500001
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 8,
+      "p_cx": 0.05,
+      "ideal": 0.9999999999999998,
+      "raw": 0.68994140625,
+      "linear_zne": 0.8773437500000001,
+      "quadratic_zne": 0.8661132812499988,
+      "bounded_zne": 0.8773437500000001
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 8,
+      "p_cx": 0.08,
+      "ideal": 0.9999999999999998,
+      "raw": 0.5634765625,
+      "linear_zne": 0.7571289062499997,
+      "quadratic_zne": 0.8621093749999985,
+      "bounded_zne": 0.7571289062499997
+    },
+    {
+      "circuit_type": "GHZ",
+      "n_qubits": 8,
+      "p_cx": 0.12,
+      "ideal": 0.9999999999999998,
+      "raw": 0.42724609375,
+      "linear_zne": 0.5924804687499998,
+      "quadratic_zne": 0.7374999999999986,
+      "bounded_zne": 0.5924804687499998
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 3,
+      "p_cx": 0.01,
+      "ideal": -0.24603594649315463,
+      "raw": -0.19873046875,
+      "linear_zne": -0.22978515624999996,
+      "quadratic_zne": -0.10332031249999987,
+      "bounded_zne": -0.22978515624999996
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 3,
+      "p_cx": 0.03,
+      "ideal": -0.24603594649315463,
+      "raw": -0.1513671875,
+      "linear_zne": -0.20722656249999993,
+      "quadratic_zne": -0.03535156249999973,
+      "bounded_zne": -0.20722656249999993
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 3,
+      "p_cx": 0.05,
+      "ideal": -0.24603594649315463,
+      "raw": -0.15869140625,
+      "linear_zne": -0.21728515624999997,
+      "quadratic_zne": -0.2441406249999996,
+      "bounded_zne": -0.21728515624999997
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 3,
+      "p_cx": 0.08,
+      "ideal": -0.24603594649315463,
+      "raw": -0.09814453125,
+      "linear_zne": -0.13779296874999997,
+      "quadratic_zne": -0.13193359374999972,
+      "bounded_zne": -0.13779296874999997
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 3,
+      "p_cx": 0.12,
+      "ideal": -0.24603594649315463,
+      "raw": -0.091796875,
+      "linear_zne": -0.07949218750000006,
+      "quadratic_zne": -0.24160156249999967,
+      "bounded_zne": -0.07949218750000006
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 3,
+      "p_cx": 0.01,
+      "ideal": 0.07571774156701283,
+      "raw": 0.04248046875,
+      "linear_zne": 0.03525390625000001,
+      "quadratic_zne": 0.044042968749999974,
+      "bounded_zne": 0.03525390625000001
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 3,
+      "p_cx": 0.03,
+      "ideal": 0.07571774156701283,
+      "raw": 0.01953125,
+      "linear_zne": 0.04833984374999998,
+      "quadratic_zne": 0.004882812499999874,
+      "bounded_zne": 0.04833984374999998
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 3,
+      "p_cx": 0.05,
+      "ideal": 0.07571774156701283,
+      "raw": 0.015625,
+      "linear_zne": 0.033105468750000006,
+      "quadratic_zne": 0.052148437499999784,
+      "bounded_zne": 0.033105468750000006
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 3,
+      "p_cx": 0.08,
+      "ideal": 0.07571774156701283,
+      "raw": 0.0068359375,
+      "linear_zne": 0.04453124999999999,
+      "quadratic_zne": -0.007226562500000047,
+      "bounded_zne": 0.04453124999999999
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 3,
+      "p_cx": 0.12,
+      "ideal": 0.07571774156701283,
+      "raw": 0.017578125,
+      "linear_zne": 0.028613281249999994,
+      "quadratic_zne": 0.040820312499999914,
+      "bounded_zne": 0.028613281249999994
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 3,
+      "p_cx": 0.01,
+      "ideal": 0.29516017695152086,
+      "raw": 0.20947265625,
+      "linear_zne": 0.2378906249999999,
+      "quadratic_zne": 0.3394531249999993,
+      "bounded_zne": 0.2378906249999999
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 3,
+      "p_cx": 0.03,
+      "ideal": 0.29516017695152086,
+      "raw": 0.11181640625,
+      "linear_zne": 0.14589843749999998,
+      "quadratic_zne": 0.2308593749999996,
+      "bounded_zne": 0.14589843749999998
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 3,
+      "p_cx": 0.05,
+      "ideal": 0.29516017695152086,
+      "raw": 0.0791015625,
+      "linear_zne": 0.12890625,
+      "quadratic_zne": 0.13232421874999975,
+      "bounded_zne": 0.12890625
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 3,
+      "p_cx": 0.08,
+      "ideal": 0.29516017695152086,
+      "raw": 0.01708984375,
+      "linear_zne": -0.012109374999999978,
+      "quadratic_zne": 0.06503906249999993,
+      "bounded_zne": -0.012109374999999978
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 3,
+      "p_cx": 0.12,
+      "ideal": 0.29516017695152086,
+      "raw": -0.0009765625,
+      "linear_zne": 0.004394531249999999,
+      "quadratic_zne": 0.03662109374999997,
+      "bounded_zne": 0.004394531249999999
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 3,
+      "p_cx": 0.01,
+      "ideal": -0.1381288679093356,
+      "raw": -0.0888671875,
+      "linear_zne": -0.12402343749999996,
+      "quadratic_zne": -0.09033203124999982,
+      "bounded_zne": -0.12402343749999996
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 3,
+      "p_cx": 0.03,
+      "ideal": -0.1381288679093356,
+      "raw": -0.05078125,
+      "linear_zne": -0.06640625,
+      "quadratic_zne": -0.11376953124999985,
+      "bounded_zne": -0.06640625
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 3,
+      "p_cx": 0.05,
+      "ideal": -0.1381288679093356,
+      "raw": 0.0146484375,
+      "linear_zne": 0.013671875000000014,
+      "quadratic_zne": 0.0981445312499999,
+      "bounded_zne": 0.013671875000000014
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 3,
+      "p_cx": 0.08,
+      "ideal": -0.1381288679093356,
+      "raw": 0.00927734375,
+      "linear_zne": 0.012695312499999993,
+      "quadratic_zne": 0.02099609374999991,
+      "bounded_zne": 0.012695312499999993
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 3,
+      "p_cx": 0.12,
+      "ideal": -0.1381288679093356,
+      "raw": 0.00390625,
+      "linear_zne": 0.002148437500000005,
+      "quadratic_zne": 0.038769531249999954,
+      "bounded_zne": 0.002148437500000005
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 4,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": -0.01416015625,
+      "linear_zne": -0.016894531249999994,
+      "quadratic_zne": 0.0016601562499999614,
+      "bounded_zne": -0.016894531249999994
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 4,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": -0.00537109375,
+      "linear_zne": 0.02675781249999998,
+      "quadratic_zne": -0.03574218750000002,
+      "bounded_zne": 0.02675781249999998
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 4,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": -0.015625,
+      "linear_zne": -0.02382812499999999,
+      "quadratic_zne": -0.05214843749999986,
+      "bounded_zne": -0.02382812499999999
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 4,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": -0.00341796875,
+      "linear_zne": -0.029980468749999992,
+      "quadratic_zne": 0.03300781249999991,
+      "bounded_zne": -0.029980468749999992
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 4,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": 0.0302734375,
+      "linear_zne": 0.0056640625000000215,
+      "quadratic_zne": 0.14628906249999982,
+      "bounded_zne": 0.0056640625000000215
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 4,
+      "p_cx": 0.01,
+      "ideal": -0.0870710958675483,
+      "raw": -0.0595703125,
+      "linear_zne": -0.06298828125000003,
+      "quadratic_zne": -0.02978515625,
+      "bounded_zne": -0.06298828125000003
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 4,
+      "p_cx": 0.03,
+      "ideal": -0.0870710958675483,
+      "raw": -0.05419921875,
+      "linear_zne": -0.10439453124999996,
+      "quadratic_zne": -0.07216796874999988,
+      "bounded_zne": -0.10439453124999996
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 4,
+      "p_cx": 0.05,
+      "ideal": -0.0870710958675483,
+      "raw": 0.0048828125,
+      "linear_zne": -0.017871093749999983,
+      "quadratic_zne": 0.08906249999999988,
+      "bounded_zne": -0.017871093749999983
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 4,
+      "p_cx": 0.08,
+      "ideal": -0.0870710958675483,
+      "raw": -0.01708984375,
+      "linear_zne": -0.03369140625000001,
+      "quadratic_zne": -0.062499999999999924,
+      "bounded_zne": -0.03369140625000001
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 4,
+      "p_cx": 0.12,
+      "ideal": -0.0870710958675483,
+      "raw": 0.00439453125,
+      "linear_zne": 0.012499999999999995,
+      "quadratic_zne": -0.034374999999999906,
+      "bounded_zne": 0.012499999999999995
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 4,
+      "p_cx": 0.01,
+      "ideal": 0.031135827675002933,
+      "raw": 0.01806640625,
+      "linear_zne": 0.030761718749999997,
+      "quadratic_zne": -0.0375976562499999,
+      "bounded_zne": 0.030761718749999997
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 4,
+      "p_cx": 0.03,
+      "ideal": 0.031135827675002933,
+      "raw": -0.0068359375,
+      "linear_zne": -0.0028320312500000077,
+      "quadratic_zne": -0.05263671874999991,
+      "bounded_zne": -0.0028320312500000077
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 4,
+      "p_cx": 0.05,
+      "ideal": 0.031135827675002933,
+      "raw": 0.02197265625,
+      "linear_zne": 0.019335937500000015,
+      "quadratic_zne": 0.11210937499999984,
+      "bounded_zne": 0.11210937499999984
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 4,
+      "p_cx": 0.08,
+      "ideal": 0.031135827675002933,
+      "raw": 0.01025390625,
+      "linear_zne": -0.008496093749999982,
+      "quadratic_zne": 0.09501953124999994,
+      "bounded_zne": -0.008496093749999982
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 4,
+      "p_cx": 0.12,
+      "ideal": 0.031135827675002933,
+      "raw": 0.017578125,
+      "linear_zne": 0.0067382812500000125,
+      "quadratic_zne": 0.10732421874999978,
+      "bounded_zne": 0.0067382812500000125
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 4,
+      "p_cx": 0.01,
+      "ideal": -0.14046707037869244,
+      "raw": -0.0830078125,
+      "linear_zne": -0.11865234374999996,
+      "quadratic_zne": -0.0825195312499998,
+      "bounded_zne": -0.11865234374999996
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 4,
+      "p_cx": 0.03,
+      "ideal": -0.14046707037869244,
+      "raw": -0.03076171875,
+      "linear_zne": -0.04169921875,
+      "quadratic_zne": -0.0924804687499998,
+      "bounded_zne": -0.229847936409607
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 4,
+      "p_cx": 0.05,
+      "ideal": -0.14046707037869244,
+      "raw": -0.01416015625,
+      "linear_zne": -0.004199218750000012,
+      "quadratic_zne": -0.06669921874999997,
+      "bounded_zne": -0.004199218750000012
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 4,
+      "p_cx": 0.08,
+      "ideal": -0.14046707037869244,
+      "raw": 0.01904296875,
+      "linear_zne": 0.01621093750000001,
+      "quadratic_zne": 0.08652343749999984,
+      "bounded_zne": 0.01621093750000001
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 4,
+      "p_cx": 0.12,
+      "ideal": -0.14046707037869244,
+      "raw": -0.0087890625,
+      "linear_zne": -0.0212890625,
+      "quadratic_zne": -0.06962890624999987,
+      "bounded_zne": -0.0212890625
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 5,
+      "p_cx": 0.01,
+      "ideal": 4.163336342344337e-17,
+      "raw": -0.015625,
+      "linear_zne": -0.00751953125,
+      "quadratic_zne": -0.03681640624999995,
+      "bounded_zne": -0.00751953125
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 5,
+      "p_cx": 0.03,
+      "ideal": 4.163336342344337e-17,
+      "raw": -0.0107421875,
+      "linear_zne": -0.03291015624999999,
+      "quadratic_zne": -0.005566406249999921,
+      "bounded_zne": -0.03291015624999999
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 5,
+      "p_cx": 0.05,
+      "ideal": 4.163336342344337e-17,
+      "raw": 0.0087890625,
+      "linear_zne": 0.025683593749999994,
+      "quadratic_zne": 0.006640624999999985,
+      "bounded_zne": 0.025683593749999994
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 5,
+      "p_cx": 0.08,
+      "ideal": 4.163336342344337e-17,
+      "raw": 0.01611328125,
+      "linear_zne": 0.013085937500000012,
+      "quadratic_zne": 0.09755859374999984,
+      "bounded_zne": 0.013085937500000012
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 5,
+      "p_cx": 0.12,
+      "ideal": 4.163336342344337e-17,
+      "raw": 0.0205078125,
+      "linear_zne": 0.022753906250000008,
+      "quadratic_zne": 0.058886718749999865,
+      "bounded_zne": 0.022753906250000008
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 5,
+      "p_cx": 0.01,
+      "ideal": 0.02414470260864652,
+      "raw": 0.03466796875,
+      "linear_zne": 0.043945312500000014,
+      "quadratic_zne": 0.05273437499999995,
+      "bounded_zne": 0.043945312500000014
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 5,
+      "p_cx": 0.03,
+      "ideal": 0.02414470260864652,
+      "raw": 0.009765625,
+      "linear_zne": 0.023828124999999995,
+      "quadratic_zne": -0.001562500000000026,
+      "bounded_zne": 0.023828124999999995
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 5,
+      "p_cx": 0.05,
+      "ideal": 0.02414470260864652,
+      "raw": 0.0048828125,
+      "linear_zne": 0.01494140624999999,
+      "quadratic_zne": -0.03876953124999994,
+      "bounded_zne": 0.01494140624999999
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 5,
+      "p_cx": 0.08,
+      "ideal": 0.02414470260864652,
+      "raw": -0.00634765625,
+      "linear_zne": -0.014550781249999992,
+      "quadratic_zne": -0.03603515624999987,
+      "bounded_zne": -0.014550781249999992
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 5,
+      "p_cx": 0.12,
+      "ideal": 0.02414470260864652,
+      "raw": 0.00927734375,
+      "linear_zne": 0.011035156249999997,
+      "quadratic_zne": -0.011425781249999968,
+      "bounded_zne": 0.011035156249999997
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 5,
+      "p_cx": 0.01,
+      "ideal": -0.02622061539437706,
+      "raw": -0.01416015625,
+      "linear_zne": -0.016015625,
+      "quadratic_zne": -0.0008789062500000414,
+      "bounded_zne": -0.016015625
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 5,
+      "p_cx": 0.03,
+      "ideal": -0.02622061539437706,
+      "raw": 0.0029296875,
+      "linear_zne": 0.014160156249999993,
+      "quadratic_zne": -0.016113281250000014,
+      "bounded_zne": 0.014160156249999993
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 5,
+      "p_cx": 0.05,
+      "ideal": -0.02622061539437706,
+      "raw": 0.01904296875,
+      "linear_zne": 0.01689453125,
+      "quadratic_zne": -0.013867187499999954,
+      "bounded_zne": 0.01689453125
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 5,
+      "p_cx": 0.08,
+      "ideal": -0.02622061539437706,
+      "raw": 0.02294921875,
+      "linear_zne": 0.012890625000000015,
+      "quadratic_zne": 0.0773437499999999,
+      "bounded_zne": 0.012890625000000015
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 5,
+      "p_cx": 0.12,
+      "ideal": -0.02622061539437706,
+      "raw": 0.021484375,
+      "linear_zne": 0.015722656250000012,
+      "quadratic_zne": 0.10263671874999984,
+      "bounded_zne": 0.015722656250000012
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 5,
+      "p_cx": 0.01,
+      "ideal": 0.22010054946379418,
+      "raw": 0.0703125,
+      "linear_zne": 0.08144531249999998,
+      "quadratic_zne": 0.07851562499999981,
+      "bounded_zne": 0.08144531249999998
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 5,
+      "p_cx": 0.03,
+      "ideal": 0.22010054946379418,
+      "raw": 0.00390625,
+      "linear_zne": 0.010839843749999994,
+      "quadratic_zne": 0.024511718749999897,
+      "bounded_zne": 0.010839843749999994
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 5,
+      "p_cx": 0.05,
+      "ideal": 0.22010054946379418,
+      "raw": 0.02099609375,
+      "linear_zne": 0.020312500000000015,
+      "quadratic_zne": 0.09453124999999993,
+      "bounded_zne": 0.020312500000000015
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 5,
+      "p_cx": 0.08,
+      "ideal": 0.22010054946379418,
+      "raw": -0.00927734375,
+      "linear_zne": -0.014648437499999993,
+      "quadratic_zne": 0.007324218750000041,
+      "bounded_zne": -0.014648437499999993
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 5,
+      "p_cx": 0.12,
+      "ideal": 0.22010054946379418,
+      "raw": -0.00830078125,
+      "linear_zne": -0.004980468750000002,
+      "quadratic_zne": 0.005273437499999969,
+      "bounded_zne": -0.004980468750000002
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 6,
+      "p_cx": 0.01,
+      "ideal": 0.0016084134054438533,
+      "raw": 0.03125,
+      "linear_zne": 0.03896484375,
+      "quadratic_zne": 0.12246093749999976,
+      "bounded_zne": 0.03896484375
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 6,
+      "p_cx": 0.03,
+      "ideal": 0.0016084134054438533,
+      "raw": -0.00537109375,
+      "linear_zne": -0.024902343749999983,
+      "quadratic_zne": 0.025878906250000007,
+      "bounded_zne": -0.024902343749999983
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 6,
+      "p_cx": 0.05,
+      "ideal": 0.0016084134054438533,
+      "raw": 0.02197265625,
+      "linear_zne": 0.019238281249999992,
+      "quadratic_zne": 0.03583984374999989,
+      "bounded_zne": 0.019238281249999992
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 6,
+      "p_cx": 0.08,
+      "ideal": 0.0016084134054438533,
+      "raw": 0.0087890625,
+      "linear_zne": 0.009082031249999997,
+      "quadratic_zne": -0.017773437499999923,
+      "bounded_zne": 0.009082031249999997
+    },
+    {
+      "circuit_type": "Random_d5",
+      "n_qubits": 6,
+      "p_cx": 0.12,
+      "ideal": 0.0016084134054438533,
+      "raw": 0.0087890625,
+      "linear_zne": 0.0017578125000000022,
+      "quadratic_zne": -0.020703124999999937,
+      "bounded_zne": 0.0017578125000000022
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 6,
+      "p_cx": 0.01,
+      "ideal": -0.11512174764347965,
+      "raw": -0.0654296875,
+      "linear_zne": -0.09345703124999999,
+      "quadratic_zne": -0.08466796874999985,
+      "bounded_zne": -0.09345703124999999
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 6,
+      "p_cx": 0.03,
+      "ideal": -0.11512174764347965,
+      "raw": -0.0185546875,
+      "linear_zne": -0.014257812500000007,
+      "quadratic_zne": -0.06210937499999991,
+      "bounded_zne": -0.014257812500000007
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 6,
+      "p_cx": 0.05,
+      "ideal": -0.11512174764347965,
+      "raw": -0.01904296875,
+      "linear_zne": -0.0294921875,
+      "quadratic_zne": -0.04658203124999988,
+      "bounded_zne": -0.0294921875
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 6,
+      "p_cx": 0.08,
+      "ideal": -0.11512174764347965,
+      "raw": -0.0048828125,
+      "linear_zne": -0.0038085937500000025,
+      "quadratic_zne": -0.012109375000000045,
+      "bounded_zne": -0.0038085937500000025
+    },
+    {
+      "circuit_type": "Random_d10",
+      "n_qubits": 6,
+      "p_cx": 0.12,
+      "ideal": -0.11512174764347965,
+      "raw": -0.0087890625,
+      "linear_zne": -0.014746093749999996,
+      "quadratic_zne": 0.0072265625000000186,
+      "bounded_zne": -0.014746093749999996
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 6,
+      "p_cx": 0.01,
+      "ideal": 0.03937832675286047,
+      "raw": 0.02685546875,
+      "linear_zne": 0.04208984375,
+      "quadratic_zne": 0.04892578124999997,
+      "bounded_zne": 0.04208984375
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 6,
+      "p_cx": 0.03,
+      "ideal": 0.03937832675286047,
+      "raw": 0.02197265625,
+      "linear_zne": 0.0205078125,
+      "quadratic_zne": 0.037109374999999944,
+      "bounded_zne": 0.0205078125
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 6,
+      "p_cx": 0.05,
+      "ideal": 0.03937832675286047,
+      "raw": 0.005859375,
+      "linear_zne": 0.011425781249999982,
+      "quadratic_zne": -0.05498046875000003,
+      "bounded_zne": 0.011425781249999982
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 6,
+      "p_cx": 0.08,
+      "ideal": 0.03937832675286047,
+      "raw": 0.005859375,
+      "linear_zne": 0.01484375,
+      "quadratic_zne": 0.024121093749999975,
+      "bounded_zne": 0.01484375
+    },
+    {
+      "circuit_type": "Random_d15",
+      "n_qubits": 6,
+      "p_cx": 0.12,
+      "ideal": 0.03937832675286047,
+      "raw": -0.01416015625,
+      "linear_zne": 0.00566406249999999,
+      "quadratic_zne": -0.03779296874999993,
+      "bounded_zne": 0.00566406249999999
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 6,
+      "p_cx": 0.01,
+      "ideal": -0.08220556171840772,
+      "raw": -0.01806640625,
+      "linear_zne": -0.0380859375,
+      "quadratic_zne": -0.0624999999999999,
+      "bounded_zne": -0.0380859375
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 6,
+      "p_cx": 0.03,
+      "ideal": -0.08220556171840772,
+      "raw": 0.0107421875,
+      "linear_zne": 0.0008789062499999953,
+      "quadratic_zne": -0.012304687499999934,
+      "bounded_zne": 0.0008789062499999953
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 6,
+      "p_cx": 0.05,
+      "ideal": -0.08220556171840772,
+      "raw": -0.00537109375,
+      "linear_zne": 0.009960937499999994,
+      "quadratic_zne": -0.03447265624999995,
+      "bounded_zne": 0.009960937499999994
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 6,
+      "p_cx": 0.08,
+      "ideal": -0.08220556171840772,
+      "raw": 0.015625,
+      "linear_zne": 0.005175781250000019,
+      "quadratic_zne": 0.09306640624999987,
+      "bounded_zne": 0.005175781250000019
+    },
+    {
+      "circuit_type": "Random_d20",
+      "n_qubits": 6,
+      "p_cx": 0.12,
+      "ideal": -0.08220556171840772,
+      "raw": -0.013671875,
+      "linear_zne": 0.003222656249999982,
+      "quadratic_zne": -0.09687499999999989,
+      "bounded_zne": 0.003222656249999982
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 3,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": -0.0087890625,
+      "linear_zne": -0.010742187500000002,
+      "quadratic_zne": -0.009765624999999997,
+      "bounded_zne": -0.010742187500000002
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 3,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": 0.00830078125,
+      "linear_zne": 0.018847656249999997,
+      "quadratic_zne": 0.007617187500000015,
+      "bounded_zne": 0.018847656249999997
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 3,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": -0.01220703125,
+      "linear_zne": -0.026562499999999985,
+      "quadratic_zne": 0.06181640624999991,
+      "bounded_zne": -0.026562499999999985
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 3,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": 0.0048828125,
+      "linear_zne": 0.0006835937500000025,
+      "quadratic_zne": 0.012890624999999937,
+      "bounded_zne": 0.0006835937500000025
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 3,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": 0.005859375,
+      "linear_zne": 0.02714843749999999,
+      "quadratic_zne": -0.005566406250000089,
+      "bounded_zne": 0.02714843749999999
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 4,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": 0.03759765625,
+      "linear_zne": 0.040624999999999994,
+      "quadratic_zne": 0.10556640624999977,
+      "bounded_zne": 0.040624999999999994
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 4,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": -0.01513671875,
+      "linear_zne": -0.009667968750000002,
+      "quadratic_zne": -0.037011718749999936,
+      "bounded_zne": -0.009667968750000002
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 4,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": -0.0087890625,
+      "linear_zne": -0.012402343750000006,
+      "quadratic_zne": -0.04999999999999994,
+      "bounded_zne": -0.012402343750000006
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 4,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": 0.021484375,
+      "linear_zne": 0.01777343750000002,
+      "quadratic_zne": 0.13935546874999982,
+      "bounded_zne": 0.01777343750000002
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 4,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": -0.001953125,
+      "linear_zne": -0.003124999999999998,
+      "quadratic_zne": 0.01933593749999994,
+      "bounded_zne": -0.003124999999999998
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 5,
+      "p_cx": 0.01,
+      "ideal": 0.0,
+      "raw": -0.029296875,
+      "linear_zne": -0.02626953125000001,
+      "quadratic_zne": -0.1390624999999998,
+      "bounded_zne": -0.02626953125000001
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 5,
+      "p_cx": 0.03,
+      "ideal": 0.0,
+      "raw": 0.005859375,
+      "linear_zne": -0.012011718749999983,
+      "quadratic_zne": 0.1339843749999998,
+      "bounded_zne": -0.012011718749999983
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 5,
+      "p_cx": 0.05,
+      "ideal": 0.0,
+      "raw": -0.0048828125,
+      "linear_zne": 0.016308593749999992,
+      "quadratic_zne": -0.02812499999999996,
+      "bounded_zne": 0.016308593749999992
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 5,
+      "p_cx": 0.08,
+      "ideal": 0.0,
+      "raw": 0.01025390625,
+      "linear_zne": 0.009667968749999995,
+      "quadratic_zne": -0.022070312499999974,
+      "bounded_zne": 0.009667968749999995
+    },
+    {
+      "circuit_type": "QFT",
+      "n_qubits": 5,
+      "p_cx": 0.12,
+      "ideal": 0.0,
+      "raw": 0.00634765625,
+      "linear_zne": -0.005859374999999992,
+      "quadratic_zne": 0.017089843749999892,
+      "bounded_zne": -0.005859374999999992
+    }
+  ],
+  "metrics": {
+    "raw": {
+      "mae": 0.0796176433034843,
+      "median_ae": 0.03351895175286047,
+      "unphysical_rate": 0.0
+    },
+    "linear_zne": {
+      "mae": 0.05752257754155778,
+      "median_ae": 0.02675781249999998,
+      "unphysical_rate": 0.04
+    },
+    "quadratic_zne": {
+      "mae": 0.0807731406428068,
+      "median_ae": 0.06291423385864646,
+      "unphysical_rate": 0.0
+    },
+    "bounded_zne": {
+      "mae": 0.05782040216397551,
+      "median_ae": 0.02714843749999999,
+      "unphysical_rate": 0.0,
+      "win_vs_raw": 0.616,
+      "win_vs_linear": 0.048,
+      "win_vs_quadratic": 0.664,
+      "best_overall": 0.448
+    },
+    "per_noise": {
+      "0.01": {
+        "mae_raw": 0.03774586647204383,
+        "mae_linear": 0.02499013158181505,
+        "mae_quadratic": 0.05656091117569347,
+        "mae_bounded": 0.02445497533181505,
+        "win_vs_linear": 0.12,
+        "unphysical_linear": 0.12,
+        "unphysical_quad": 0.0,
+        "unphysical_bounded": 0.0
+      },
+      "0.03": {
+        "mae_raw": 0.06277486575317105,
+        "mae_linear": 0.042996678083767205,
+        "mae_quadratic": 0.06381806768073581,
+        "mae_bounded": 0.04225401115985611,
+        "win_vs_linear": 0.12,
+        "unphysical_linear": 0.08,
+        "unphysical_quad": 0.0,
+        "unphysical_bounded": 0.0
+      },
+      "0.05": {
+        "mae_raw": 0.08116181768073555,
+        "mae_linear": 0.05653291143073555,
+        "mae_quadratic": 0.08572954521673541,
+        "mae_bounded": 0.05929985771673531,
+        "win_vs_linear": 0.0,
+        "unphysical_linear": 0.0,
+        "unphysical_quad": 0.0,
+        "unphysical_bounded": 0.0
+      },
+      "0.08": {
+        "mae_raw": 0.10155244268073554,
+        "mae_linear": 0.07442353643073557,
+        "mae_quadratic": 0.09863165578917099,
+        "mae_bounded": 0.07442353643073557,
+        "win_vs_linear": 0.0,
+        "unphysical_linear": 0.0,
+        "unphysical_quad": 0.0,
+        "unphysical_bounded": 0.0
+      },
+      "0.12": {
+        "mae_raw": 0.11485322393073552,
+        "mae_linear": 0.08866963018073555,
+        "mae_quadratic": 0.09912552335169837,
+        "mae_bounded": 0.08866963018073555,
+        "win_vs_linear": 0.0,
+        "unphysical_linear": 0.0,
+        "unphysical_quad": 0.0,
+        "unphysical_bounded": 0.0
+      }
+    },
+    "per_circuit": {
+      "GHZ": {
+        "mae_raw": 0.12713216145833325,
+        "mae_linear": 0.050729166666666645,
+        "mae_quadratic": 0.10087565104166729,
+        "mae_bounded": 0.04997721354166666,
+        "win_vs_linear": 0.16666666666666666
+      },
+      "Random": {
+        "mae_raw": 0.07445749930231926,
+        "mae_linear": 0.06788439850243405,
+        "mae_quadratic": 0.07851394045751042,
+        "mae_bounded": 0.06863173189683676,
+        "win_vs_linear": 0.0125
+      },
+      "QFT": {
+        "mae_raw": 0.012109375,
+        "mae_linear": 0.015846354166666667,
+        "mae_quadratic": 0.052617187499999926,
+        "mae_bounded": 0.015846354166666667,
+        "win_vs_linear": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-05-15 16:46:03 UTC",
+  "mode": "simulator",
+  "noise_model": {
+    "cz_error": 0.03,
+    "single_qubit_error": 0.005,
+    "readout_error": 0.02
+  },
+  "scale_factors": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "results": [
+    {
+      "circuit": "Bell",
+      "n_qubits": 2,
+      "ideal": 1.0,
+      "raw": 0.9414,
+      "linear_zne": 0.9924,
+      "bounded_zne": 0.9924,
+      "model": "polynomial_d1",
+      "error_raw": 0.0586,
+      "error_linear": 0.0076,
+      "error_bounded": 0.0076,
+      "measurements": [
+        0.9414,
+        0.9062,
+        0.8853,
+        0.8574,
+        0.8306
+      ]
+    },
+    {
+      "circuit": "GHZ-3",
+      "n_qubits": 3,
+      "ideal": -0.0483,
+      "raw": 0.0186,
+      "linear_zne": 0.0068,
+      "bounded_zne": 0.0068,
+      "model": "polynomial_d1",
+      "error_raw": 0.0669,
+      "error_linear": 0.0552,
+      "error_bounded": 0.0552,
+      "measurements": [
+        0.0186,
+        -0.0117,
+        -0.0024,
+        -0.0039,
+        0.0083
+      ]
+    },
+    {
+      "circuit": "GHZ-4",
+      "n_qubits": 4,
+      "ideal": 1.0,
+      "raw": 0.8691,
+      "linear_zne": 0.9882,
+      "bounded_zne": 0.9882,
+      "model": "polynomial_d1",
+      "error_raw": 0.1309,
+      "error_linear": 0.0118,
+      "error_bounded": 0.0118,
+      "measurements": [
+        0.8691,
+        0.791,
+        0.7432,
+        0.6812,
+        0.6133
+      ]
+    },
+    {
+      "circuit": "GHZ-5",
+      "n_qubits": 5,
+      "ideal": -0.0298,
+      "raw": 0.0425,
+      "linear_zne": 0.0596,
+      "bounded_zne": 0.0596,
+      "model": "polynomial_d1",
+      "error_raw": 0.0723,
+      "error_linear": 0.0894,
+      "error_bounded": 0.0894,
+      "measurements": [
+        0.0425,
+        0.0107,
+        0.0186,
+        -0.0039,
+        -0.0103
+      ]
+    }
+  ]
+}
