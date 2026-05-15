@@ -1,26 +1,18 @@
 \pdfoutput=1
-\documentclass[twocolumn,10pt]{article}
+\documentclass[aps,prxquantum,twocolumn,superscriptaddress,longbibliography]{revtex4-2}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb}
+\usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{braket}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-\usepackage{natbib}
-\usepackage[margin=1in]{geometry}
-
-% Replace braket
-\newcommand{\bra}[1]{\langle #1|}
-\newcommand{\ket}[1]{|#1\rangle}
-\newcommand{\braket}[2]{\langle #1|#2\rangle}
-
-% Replace cleveref
-\newcommand{\cref}[1]{Ref.~\ref{#1}}
-\newcommand{\Cref}[1]{Ref.~\ref{#1}}
 
 \begin{document}
 
@@ -35,7 +27,6 @@
 \input{sections/discussion}
 \input{sections/conclusion}
 
-\bibliographystyle{unsrtnat}
 \bibliography{refs}
 
 \end{document}

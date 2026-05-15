@@ -1,101 +1,220 @@
-\begin{thebibliography}{14}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Cai et~al.(2023)Cai, Babbush, Benjamin, Endo, Huggins, Li, McClean,
-  and O'Brien]{Cai2023}
-Zhenyu Cai, Ryan Babbush, Simon~C. Benjamin, Suguru Endo, William~J. Huggins,
-  Ying Li, Jarrod~R. McClean, and Thomas~E. O'Brien.
-\newblock Quantum error mitigation.
-\newblock \emph{Rev. Mod. Phys.}, 95:\penalty0 045005, 2023.
-\newblock \doi{10.1103/RevModPhys.95.045005}.
-
-\bibitem[Temme et~al.(2017)Temme, Bravyi, and Gambetta]{Temme2017}
-Kristan Temme, Sergey Bravyi, and Jay~M. Gambetta.
-\newblock Error mitigation for short-depth quantum circuits.
-\newblock \emph{Phys. Rev. Lett.}, 119:\penalty0 180509, 2017.
-\newblock \doi{10.1103/PhysRevLett.119.180509}.
-
-\bibitem[Li and Benjamin(2017)]{Li2017}
-Ying Li and Simon~C. Benjamin.
-\newblock Efficient variational quantum simulator incorporating active error
-  minimization.
-\newblock \emph{Phys. Rev. X}, 7:\penalty0 021050, 2017.
-\newblock \doi{10.1103/PhysRevX.7.021050}.
-
-\bibitem[Giurgica-Tiron et~al.(2020)Giurgica-Tiron, Hindy, LaRose, Mari, and
-  Zeng]{GiurgicaTiron2020}
-Tudor Giurgica-Tiron, Yousef Hindy, Ryan LaRose, Andrea Mari, and William~J.
-  Zeng.
-\newblock Digital zero noise extrapolation for quantum error mitigation.
-\newblock 2020.
-
-\bibitem[Miranskyy et~al.(2026)Miranskyy, Sadeghian, and Zhang]{Miranskyy2026}
-Andriy Miranskyy, Bahman Sadeghian, and Musheng Zhang.
-\newblock Physically bounded zero-noise extrapolation.
-\newblock 2026.
-
-\bibitem[Akaike(1974)]{Akaike1974}
-Hirotugu Akaike.
-\newblock A new look at the statistical model identification.
-\newblock \emph{IEEE Trans. Automatic Control}, 19\penalty0 (6):\penalty0
-  716--723, 1974.
-\newblock \doi{10.1109/TAC.1974.1100705}.
-
-\bibitem[Hurvich and Tsai(1989)]{Hurvich1989}
-Clifford~M. Hurvich and Chih-Ling Tsai.
-\newblock Regression and time series model selection in small samples.
-\newblock \emph{Biometrika}, 76\penalty0 (2):\penalty0 297--307, 1989.
-\newblock \doi{10.1093/biomet/76.2.297}.
-
-\bibitem[{Anthropic}(2024)]{Anthropic2024}
-{Anthropic}.
-\newblock Model context protocol specification, 2024.
-\newblock URL \url{https://modelcontextprotocol.io}.
-\newblock Open standard for AI-tool integration.
-
-\bibitem[Liao et~al.(2024)Liao, Convy, Huggins, and Mohseni]{Liao2024}
-Haoran Liao, Ian Convy, William~J. Huggins, and Masoud Mohseni.
-\newblock Machine learning for practical quantum error mitigation.
-\newblock \emph{Nature Machine Intelligence}, 6:\penalty0 1478--1486, 2024.
-\newblock \doi{10.1038/s42256-024-00927-2}.
-
-\bibitem[Wang et~al.(2026)]{Wang2026}
-Yihui Wang et~al.
-\newblock Scalable quantum error mitigation via graph neural networks.
-\newblock 2026.
-
-\bibitem[D{\'\i}ez-Valle et~al.(2025)]{DiezValle2025}
-Pablo D{\'\i}ez-Valle et~al.
-\newblock Physics-inspired extrapolation for quantum error mitigation.
-\newblock 2025.
-
-\bibitem[Mundada et~al.(2023)Mundada, Carvalho, Hush, Shammah, Ball, and
-  Biercuk]{Mundada2023}
-Pranav Mundada, Andre R.~R. Carvalho, Michael~R. Hush, Nathan Shammah, Harrison
-  Ball, and Michael~J. Biercuk.
-\newblock Experimental benchmarking of an automated deterministic
-  error-suppression workflow for quantum algorithms.
-\newblock \emph{Phys. Rev. Applied}, 20:\penalty0 024034, 2023.
-\newblock \doi{10.1103/PhysRevApplied.20.024034}.
-
-\bibitem[LaRose et~al.(2022)LaRose, Mari, Shammah, and Zeng]{LaRose2022}
-Ryan LaRose, Andrea Mari, Nathan Shammah, and William~J. Zeng.
-\newblock Mitiq: A software package for error mitigation on noisy quantum
-  computers.
-\newblock \emph{Quantum}, 6:\penalty0 774, 2022.
-\newblock \doi{10.22331/q-2022-08-11-774}.
-
-\bibitem[Kim et~al.(2023)Kim, Eddins, Anand, Wei, van~den Berg, Rosenblatt,
-  Nayfeh, Wu, Zaletel, Temme, and Kandala]{Kim2023}
-Youngseok Kim, Andrew Eddins, Sajant Anand, Ken~X. Wei, Ewout van~den Berg,
-  Sami Rosenblatt, Hasan Nayfeh, Yantao Wu, Michael Zaletel, Kristan Temme, and
-  Abhinav Kandala.
-\newblock Evidence for the utility of quantum computing before fault tolerance.
-\newblock \emph{Nature}, 618:\penalty0 500--505, 2023.
-\newblock \doi{10.1038/s41586-023-06096-3}.
-
-\end{thebibliography}
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{14}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Cai}\ \emph {et~al.}(2023)\citenamefont {Cai},
+  \citenamefont {Babbush}, \citenamefont {Benjamin}, \citenamefont {Endo},
+  \citenamefont {Huggins}, \citenamefont {Li}, \citenamefont {McClean},\ and\
+  \citenamefont {O'Brien}}]{Cai2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Cai}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Babbush}},
+  \bibinfo {author} {\bibfnamefont {S.~C.}\ \bibnamefont {Benjamin}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Endo}}, \bibinfo {author}
+  {\bibfnamefont {W.~J.}\ \bibnamefont {Huggins}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont
+  {J.~R.}\ \bibnamefont {McClean}},\ and\ \bibinfo {author} {\bibfnamefont
+  {T.~E.}\ \bibnamefont {O'Brien}},\ }\bibfield  {title} {\bibinfo {title}
+  {Quantum error mitigation},\ }\href
+  {https://doi.org/10.1103/RevModPhys.95.045005} {\bibfield  {journal}
+  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {95}},\
+  \bibinfo {pages} {045005} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Temme}\ \emph {et~al.}(2017)\citenamefont {Temme},
+  \citenamefont {Bravyi},\ and\ \citenamefont {Gambetta}}]{Temme2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Temme}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Bravyi}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Gambetta}},\
+  }\bibfield  {title} {\bibinfo {title} {Error mitigation for short-depth
+  quantum circuits},\ }\href {https://doi.org/10.1103/PhysRevLett.119.180509}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {119}},\ \bibinfo {pages} {180509} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Li}\ and\ \citenamefont {Benjamin}(2017)}]{Li2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Li}}\ and\ \bibinfo {author} {\bibfnamefont {S.~C.}\ \bibnamefont
+  {Benjamin}},\ }\bibfield  {title} {\bibinfo {title} {Efficient variational
+  quantum simulator incorporating active error minimization},\ }\href
+  {https://doi.org/10.1103/PhysRevX.7.021050} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages}
+  {021050} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giurgica-Tiron}\ \emph {et~al.}(2020)\citenamefont
+  {Giurgica-Tiron}, \citenamefont {Hindy}, \citenamefont {LaRose},
+  \citenamefont {Mari},\ and\ \citenamefont {Zeng}}]{GiurgicaTiron2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Giurgica-Tiron}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Hindy}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {LaRose}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mari}},\ and\ \bibinfo
+  {author} {\bibfnamefont {W.~J.}\ \bibnamefont {Zeng}},\ }\bibfield  {title}
+  {\bibinfo {title} {Digital zero noise extrapolation for quantum error
+  mitigation},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {IEEE
+  International Conference on Quantum Computing and Engineering}},\ }\href@noop
+  {} {\  (\bibinfo {year} {2020})},\ \Eprint {https://arxiv.org/abs/2005.10921}
+  {arXiv:2005.10921 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Miranskyy}\ \emph {et~al.}(2026)\citenamefont
+  {Miranskyy}, \citenamefont {Sadeghian},\ and\ \citenamefont
+  {Zhang}}]{Miranskyy2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Miranskyy}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Sadeghian}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zhang}},\ }\bibfield  {title} {\bibinfo {title} {Physically bounded
+  zero-noise extrapolation},\ }\href@noop {} {\  (\bibinfo {year} {2026})},\
+  \Eprint {https://arxiv.org/abs/2604.24475} {arXiv:2604.24475 [quant-ph]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Akaike}(1974)}]{Akaike1974}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Akaike}},\ }\bibfield  {title} {\bibinfo {title} {A new look at the
+  statistical model identification},\ }\href
+  {https://doi.org/10.1109/TAC.1974.1100705} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Trans. Automatic Control}\ }\textbf {\bibinfo {volume}
+  {19}},\ \bibinfo {pages} {716} (\bibinfo {year} {1974})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Hurvich}\ and\ \citenamefont
+  {Tsai}(1989)}]{Hurvich1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
+  {Hurvich}}\ and\ \bibinfo {author} {\bibfnamefont {C.-L.}\ \bibnamefont
+  {Tsai}},\ }\bibfield  {title} {\bibinfo {title} {Regression and time series
+  model selection in small samples},\ }\href
+  {https://doi.org/10.1093/biomet/76.2.297} {\bibfield  {journal} {\bibinfo
+  {journal} {Biometrika}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo {pages}
+  {297} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Anthropic}}(2024)}]{Anthropic2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Anthropic}}},\ }\href
+  {https://modelcontextprotocol.io} {\bibinfo {title} {Model context protocol
+  specification}} (\bibinfo {year} {2024}),\ \bibinfo {note} {open standard for
+  AI-tool integration}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liao}\ \emph {et~al.}(2024)\citenamefont {Liao},
+  \citenamefont {Convy}, \citenamefont {Huggins},\ and\ \citenamefont
+  {Mohseni}}]{Liao2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Liao}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Convy}},
+  \bibinfo {author} {\bibfnamefont {W.~J.}\ \bibnamefont {Huggins}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mohseni}},\ }\bibfield
+  {title} {\bibinfo {title} {Machine learning for practical quantum error
+  mitigation},\ }\href {https://doi.org/10.1038/s42256-024-00927-2} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature Machine Intelligence}\ }\textbf
+  {\bibinfo {volume} {6}},\ \bibinfo {pages} {1478} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2026)\citenamefont {Wang} \emph
+  {et~al.}}]{Wang2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Wang}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Scalable
+  quantum error mitigation via graph neural networks},\ }\href@noop {} {\
+  (\bibinfo {year} {2026})},\ \Eprint {https://arxiv.org/abs/2604.16815}
+  {arXiv:2604.16815 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D{\'\i}ez-Valle}\ \emph {et~al.}(2025)\citenamefont
+  {D{\'\i}ez-Valle} \emph {et~al.}}]{DiezValle2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {D{\'\i}ez-Valle}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {Physics-inspired extrapolation for quantum error mitigation},\ }\href@noop
+  {} {\  (\bibinfo {year} {2025})},\ \Eprint {https://arxiv.org/abs/2505.07977}
+  {arXiv:2505.07977 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mundada}\ \emph {et~al.}(2023)\citenamefont
+  {Mundada}, \citenamefont {Carvalho}, \citenamefont {Hush}, \citenamefont
+  {Shammah}, \citenamefont {Ball},\ and\ \citenamefont
+  {Biercuk}}]{Mundada2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Mundada}}, \bibinfo {author} {\bibfnamefont {A.~R.~R.}\ \bibnamefont
+  {Carvalho}}, \bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont {Hush}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Shammah}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Ball}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.~J.}\ \bibnamefont {Biercuk}},\ }\bibfield  {title}
+  {\bibinfo {title} {Experimental benchmarking of an automated deterministic
+  error-suppression workflow for quantum algorithms},\ }\href
+  {https://doi.org/10.1103/PhysRevApplied.20.024034} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Applied}\ }\textbf {\bibinfo {volume}
+  {20}},\ \bibinfo {pages} {024034} (\bibinfo {year} {2023})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {LaRose}\ \emph {et~al.}(2022)\citenamefont {LaRose},
+  \citenamefont {Mari}, \citenamefont {Shammah},\ and\ \citenamefont
+  {Zeng}}]{LaRose2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {LaRose}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mari}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Shammah}},\ and\ \bibinfo
+  {author} {\bibfnamefont {W.~J.}\ \bibnamefont {Zeng}},\ }\bibfield  {title}
+  {\bibinfo {title} {Mitiq: A software package for error mitigation on noisy
+  quantum computers},\ }\href {https://doi.org/10.22331/q-2022-08-11-774}
+  {\bibfield  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo
+  {volume} {6}},\ \bibinfo {pages} {774} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(2023)\citenamefont {Kim},
+  \citenamefont {Eddins}, \citenamefont {Anand}, \citenamefont {Wei},
+  \citenamefont {van~den Berg}, \citenamefont {Rosenblatt}, \citenamefont
+  {Nayfeh}, \citenamefont {Wu}, \citenamefont {Zaletel}, \citenamefont
+  {Temme},\ and\ \citenamefont {Kandala}}]{Kim2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Kim}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Eddins}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Anand}}, \bibinfo
+  {author} {\bibfnamefont {K.~X.}\ \bibnamefont {Wei}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {van~den Berg}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Rosenblatt}}, \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Nayfeh}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Wu}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zaletel}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Temme}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kandala}},\
+  }\bibfield  {title} {\bibinfo {title} {Evidence for the utility of quantum
+  computing before fault tolerance},\ }\href
+  {https://doi.org/10.1038/s41586-023-06096-3} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature}\ }\textbf {\bibinfo {volume} {618}},\ \bibinfo {pages}
+  {500} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\end{thebibliography}%

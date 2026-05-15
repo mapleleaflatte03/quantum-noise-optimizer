@@ -9,14 +9,13 @@ We evaluate our approach across 125 circuit-noise configurations: 3 circuit type
 \caption{Comparison of extrapolation methods across 125 configurations. MAE: mean absolute error of the zero-noise estimate. Unphysical rate: fraction of estimates outside $[0, 1]$.}
 \label{tab:overall}
 
-\begin{tabular}{lccc}
+\begin{ruledtabular}\begin{tabular}{lccc}
 Method & MAE & Median AE & Unphysical \\
-\midrule
 Raw (no mitigation) & 0.0796 & 0.0335 & 0\% \\
 Linear ZNE & 0.0575 & 0.0268 & 4\% \\
 Quadratic ZNE & 0.0808 & 0.0629 & 0\% \\
 \textbf{Bounded ZNE (ours)} & \textbf{0.0578} & \textbf{0.0271} & \textbf{0\%} \\
-\end{tabular}
+\end{tabular}\end{ruledtabular}
 
 \end{table}
 
@@ -34,15 +33,14 @@ Quadratic ZNE & 0.0808 & 0.0629 & 0\% \\
 \caption{Performance by noise level. Bounded ZNE shows strongest advantage at low noise where linear ZNE produces unphysical results.}
 \label{tab:noise}
 
-\begin{tabular}{lcccc}
+\begin{ruledtabular}\begin{tabular}{lcccc}
 $\epsilon_\text{CZ}$ & MAE (Lin.) & MAE (Bnd.) & Win\% & Unphys. (Lin.) \\
-\midrule
 1\% & 0.0250 & 0.0245 & 12\% & 12\% \\
 3\% & 0.0430 & 0.0423 & 12\% & 8\% \\
 5\% & 0.0565 & 0.0593 & 0\% & 0\% \\
 8\% & 0.0744 & 0.0744 & 0\% & 0\% \\
 12\% & 0.0887 & 0.0887 & 0\% & 0\% \\
-\end{tabular}
+\end{tabular}\end{ruledtabular}
 
 \end{table}
 
@@ -62,13 +60,12 @@ At higher noise ($\epsilon_\text{CZ} \geq 5\%$), both methods converge to identi
 \caption{Performance by circuit type. GHZ circuits show the largest improvement from bounded ZNE due to their sensitivity to entangling gate errors.}
 \label{tab:circuit}
 
-\begin{tabular}{lcccc}
+\begin{ruledtabular}\begin{tabular}{lcccc}
 Circuit & MAE (Raw) & MAE (Lin.) & MAE (Bnd.) & Win\% \\
-\midrule
 GHZ & 0.1271 & 0.0507 & 0.0500 & 16.7\% \\
 Random & 0.0745 & 0.0679 & 0.0686 & 1.3\% \\
 QFT & 0.0121 & 0.0158 & 0.0158 & 0\% \\
-\end{tabular}
+\end{tabular}\end{ruledtabular}
 
 \end{table}
 
