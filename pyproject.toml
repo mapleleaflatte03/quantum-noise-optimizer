@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quantum-noise-optimizer"
-version = "0.2.0"
+version = "0.3.0"
 description = "Noise-Aware Quantum Circuit Optimizer built on pyqpanda3"
 readme = "README.md"
 license = "MIT"
