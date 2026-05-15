@@ -117,6 +117,18 @@ BIC & 55\% & 0.060 \\
 
 \Cref{tab:aicc_vs_rss} demonstrates that model selection is the critical component. RSS-based selection (choosing the model with lowest residual) achieves only 29\% win rate because the 3-parameter polynomial \emph{always} fits 5 data points better than the 2-parameter linear model, regardless of the true underlying function. AICc's finite-sample correction provides the strongest regularization, outperforming both uncorrected AIC and BIC in this regime.
 
+\begin{figure}[t]
+    \includegraphics[width=\columnwidth]{../figures/fig_aicc_heatmap.pdf}
+    \caption{AICc model selection across circuit-noise configurations. At low noise ($\leq$3\%), AICc predominantly selects the linear model (blue), preventing overfitting. At high noise, exponential models (green) are preferred, capturing nonlinear decay. The transition is smooth and data-driven, requiring no manual intervention.}
+    \label{fig:aicc_heatmap}
+\end{figure}
+
+\begin{figure}[t]
+    \includegraphics[width=\columnwidth]{../figures/fig_convergence.pdf}
+    \caption{Convergence of zero-noise estimates as the number of noise scale factors $n$ increases (GHZ-4, $\epsilon_\text{CZ}=3\%$). Linear ZNE (blue) overshoots into the unphysical region (shaded red) at small $n$, while bounded ZNE (green) remains within physical bounds throughout. Both converge as $n$ increases, but bounded ZNE provides reliable estimates even with minimal data.}
+    \label{fig:convergence}
+\end{figure}
+
 \subsection{Comparison with Alternative Mitigation Approaches}
 
 \begin{table}[t]
