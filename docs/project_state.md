@@ -1,8 +1,8 @@
-# Quantum Noise Optimizer - Project State (2026-05-15)
+# Quantum Noise Optimizer - Project State (2026-05-15, session 2)
 
 ## GitHub
 - Repo: https://github.com/mapleleaflatte03/quantum-noise-optimizer
-- Status: Public, initial release pushed
+- Status: v0.2.0 pushed (5 commits on main)
 - User: mapleleaflatte03
 
 ## Environment
@@ -11,30 +11,36 @@
 - Venv: ~/qpanda3-env (pyqpanda3 v0.3.5 installed)
 - Extra dep needed: libgomp1
 
-## pyqpanda3 API (verified correct)
-- from pyqpanda3 import core, quantum_info
-- prog = core.QProg()
-- prog << core.H(0) << core.CNOT(0, 1)
-- prog << core.measure([0, 1], [0, 1])
-- machine = core.CPUQVM()
-- machine.run(prog, shots=10000, model=noise_model)
-- counts = machine.result().get_counts()
-- Statevector: machine.run(prog, shots=0) then machine.result().get_state_vector()
-- Fidelity: quantum_info.hellinger_fidelity(dict1, dict2)
+## Current Modules (v0.2.0)
 
-## Noise API
-- core.NoiseModel().add_quantum_error(error, GateType, [qubits])
-- core.NoiseModel().add_all_qubit_quantum_error(error, GateType)
-- Error functions: depolarizing_error(p), amplitude_damping_error(p), phase_damping_error(p), decoherence_error(t1,t2,gate_time), pauli_x/y/z_error(p)
-- GateTypes: H, X, Y, Z, S, T, RX, RY, RZ, CNOT, CZ, SWAP, TOFFOLI
+### src/noise_optimizer/
+- **noise_profiler.py** — Profiles per-gate error rates via test circuits
+- **optimizer.py** — Gate substitution (CNOT↔CZ) based on noise profile
+- **benchmark.py** — Comparative fidelity benchmarks (asymmetric noise)
+- **circuit_passes.py** — NEW: rotation merging, gate cancellation, commutation
+- **readout_mitigator.py** — NEW: confusion matrix calibration + inversion
+- **zne.py** — NEW: Zero-Noise Extrapolation via unitary folding
 
-## Benchmark Results
-- 36 scenarios tested (symmetric + asymmetric noise)
-- 34/36 improved, avg +21.18%, max +190.98%
+### Key Results
+- Gate substitution: +21% avg, +191% max (asymmetric noise)
+- Circuit passes: 30% gate reduction on VQE circuits, +2.2% fidelity
+- Readout mitigation: +25% fidelity improvement
+- ZNE: +3.8% fidelity improvement (compounds with other techniques)
 
-## Next Steps
-- Add rotation merging, gate cancellation
-- Add readout error mitigation
-- Connect to OriginQ cloud for real hardware validation
-- Write blog post / arXiv paper
-- Add GitHub Actions CI
+## pyqpanda3 API Notes
+- QProg introspection: prog.operations() returns list of QGate objects
+- QGate: .name(), .gate_type(), .qubits(), .parameters(), .dagger()
+- Can rebuild QProg by appending QGate objects directly: new_prog << op
+- Readout error: noise.add_read_out_error(matrix_2x2, qubit_index)
+- circuit_stats: prog.depth(), prog.qubits_num()
+
+## Next Steps (v0.2.0 remaining)
+- [ ] QASM import/export (pyqpanda3.intermediate_compiler has this)
+- [ ] GitHub Actions CI
+- [ ] Update README with new features
+- [ ] Combined example: passes + gate substitution + readout + ZNE together
+
+## Next Phase (v0.3.0)
+- Dynamical Decoupling (DD) sequences
+- Physics visualization (noise heatmap, T1/T2 decay plots)
+- OriginQ Cloud connection (pyqpanda3.qcloud)
