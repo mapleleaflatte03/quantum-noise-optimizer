@@ -163,7 +163,19 @@ This project combines three tracks:
 
 - **Track A (Reach):** First noise-focused MCP server — makes quantum error mitigation accessible to AI agents
 - **Track B (Novelty):** Physically-bounded ZNE with AICc model selection — extends arXiv:2604.24475
-- **Track C (Proof):** Dual-hardware validation on IBM Quantum + Origin Wukong 180
+- **Track C (Proof):** Simulator validation with Wukong-calibrated noise models (hardware pending API fix)
+
+## Known Issue: OriginQ Cloud API Breaking Change (May 2026)
+
+⚠️ **Hardware submission to WK_C180 and PQPUMESH8 is currently non-functional.**
+
+- **Error:** `"Insts is NOT a Array!"` (errCode 33) on all job submissions
+- **Cause:** OriginQ Cloud server-side breaking change — instruction format rejected despite pyqpanda3 0.3.5 sending valid JSON arrays
+- **Scope:** All QPU backends affected (WK_C180, PQPUMESH8). Cloud simulator (`full_amplitude`) also affected.
+- **Workaround:** Use Qiskit Aer or pyqpanda3 CPUQVM (local simulators) with realistic noise models calibrated from real Wukong 180 data.
+- **Status:** Waiting for OriginQ SDK update (pyqpanda3 0.3.6+)
+
+All benchmark results use simulator with Wukong-calibrated noise (3% CZ, 0.5% 1Q, 2% readout).
 
 ## Built With
 

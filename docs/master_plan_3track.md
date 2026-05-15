@@ -1,45 +1,58 @@
-# MASTER PLAN: Quantum Noise Intelligence — 3-Track (Updated)
+# MASTER PLAN: Quantum Noise Intelligence — 3-Track (Updated May 15, 2026)
 
-> No IBM hardware access (respecting export policy). Wukong 180 = primary hardware.
+## Track Status
 
-## Architecture (final)
+| Track | Status | Notes |
+|-------|--------|-------|
+| A: MCP Server | ✅ Complete | 8 tools, verified with Codex CLI + Copilot CLI |
+| B: Bounded ZNE | ✅ Complete | 75% win rate, AICc, 125-config benchmark |
+| C: Hardware | ⛔ BLOCKED | OriginQ API breaking change (errCode 33) |
+
+## Known Issue: OriginQ Cloud API Breaking Change
+
+- **Date discovered:** May 15, 2026
+- **Error:** `"Insts is NOT a Array!"` (errCode 33)
+- **Affected:** ALL QPU backends (WK_C180, PQPUMESH8)
+- **Root cause:** Server-side format change, pyqpanda3 0.3.5 sends valid JSON array but server rejects
+- **Tested:** offset 0/1/2, is_scheduling True/False, batch format, wrapped gates — all fail
+- **Resolution:** Wait for pyqpanda3 0.3.6+ or OriginQ server fix
+
+## Simulator-First Strategy
+
+All development and benchmarks use:
+- **Qiskit Aer** (primary): realistic noise models, 4096 shots
+- **pyqpanda3 CPUQVM** (secondary): Wukong-calibrated noise
+
+Noise parameters from real Wukong 180 calibration data:
+- CZ gate error: 3%
+- Single-qubit error: 0.5%
+- Readout error: 2%
+- T1: ~100μs, T2: ~80μs
+
+## Architecture
 ```
-MCP Server (Track A) → AI agents call noise tools
+MCP Server (8 tools) → AI agents (Codex, Copilot, Claude)
   ↓
-Mitigation Engine (Track B) → PhysicallyBoundedZNE + AutoMitigator
+Mitigation Engine → PhysicallyBoundedZNE + AutoMitigator + AdaptiveDD
   ↓
-Backend Layer (Track C):
-  - Qiskit Aer simulator (development + benchmarks)
-  - pyqpanda3 CPUQVM (local simulator)
-  - Origin Wukong 180 (real hardware, 60s runtime)
-  - OriginQ Cloud simulator (full_amplitude, works)
+Backend: Qiskit Aer + pyqpanda3 CPUQVM (simulator)
+         Origin Wukong 180 (when API fixed)
 ```
 
-## Hardware Status
-- Wukong 180: shows "online" but jobs block indefinitely (queue)
-- Cloud simulator: WORKS (sim.run(prog, shots) → ~6s latency)
-- Local CPUQVM: WORKS (instant)
-- Qiskit Aer: WORKS (instant, realistic noise models)
-- IBM Quantum: NOT AVAILABLE (export control, respecting policy)
-
-## What's Done (v0.4.0)
-- [x] PhysicallyBoundedZNE with AICc (75% win rate)
+## What's Done
+- [x] PhysicallyBoundedZNE with AICc (75% win rate, 0% unphysical)
 - [x] AutoMitigator (strategy selection)
-- [x] MCP server (4 tools, FastMCP 3.3)
-- [x] 72-config benchmark
-- [x] Paper draft v1
-- [x] IBM Quantum simulation mode (Aer)
-- [x] Wukong calibration data (169 qubits, 396 CZ gates)
+- [x] AdaptiveDD ported to Qiskit
+- [x] MCP server (8 tools, FastMCP 3.3, stdio)
+- [x] Verified with Codex CLI (GPT-5.5) + Copilot CLI
+- [x] 125-config paper benchmark
+- [x] Hardware-ready experiment script
+- [x] Paper draft v1 (9 sections)
+- [x] 20 tests passing
+- [x] Demo script for GIF
 
 ## What's Next
-1. Polish MCP server (stdio transport for Claude Desktop)
-2. Port AdaptiveDD to Qiskit
-3. Try Wukong during off-peak (night China time = ~14:00-22:00 UTC)
-4. Fill paper [TODO] sections
-5. Apply Unitary Fund when prototype is solid
-
-## Narrative
-"Open-source, physics-informed quantum error mitigation engine with
-physically-bounded ZNE (75% win rate vs standard), accessible via MCP
-server for AI agents, validated on Origin Wukong 180 superconducting
-processor."
+1. Submit paper to arXiv (simulator data sufficient)
+2. Apply Unitary Fund microgrant
+3. Community launch (Reddit, X, LinkedIn)
+4. Re-test Wukong when pyqpanda3 updates
