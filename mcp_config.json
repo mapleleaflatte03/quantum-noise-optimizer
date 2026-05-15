@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "quantum-noise": {
+      "command": "/home/ubuntu/qpanda3-env/bin/python3",
+      "args": ["/home/ubuntu/quantum-noise-optimizer/mcp_server/server.py"],
+      "env": {
+        "PYTHONPATH": "/home/ubuntu/quantum-noise-optimizer/src"
+      }
+    }
+  }
+}

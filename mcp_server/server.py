@@ -247,7 +247,7 @@ def compare_strategies(
 
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="stdio")
 
 
 @mcp.tool()
