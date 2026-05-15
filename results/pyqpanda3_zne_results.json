@@ -1,0 +1,62 @@
+[
+  {
+    "circuit": "GHZ-3",
+    "n_qubits": 3,
+    "ideal": -0.0419921875,
+    "raw": -0.025390625,
+    "linear_zne": -0.022851562500000012,
+    "bounded_zne": -0.022851562500000012,
+    "model": "polynomial_d1",
+    "winner": "bounded",
+    "errors": {
+      "raw": 0.0166015625,
+      "linear": 0.019140624999999988,
+      "bounded": 0.019140624999999988
+    }
+  },
+  {
+    "circuit": "GHZ-4",
+    "n_qubits": 4,
+    "ideal": 1.0,
+    "raw": 0.861328125,
+    "linear_zne": 0.9779296875,
+    "bounded_zne": 0.9779296875,
+    "model": "polynomial_d1",
+    "winner": "bounded",
+    "errors": {
+      "raw": 0.138671875,
+      "linear": 0.022070312500000022,
+      "bounded": 0.022070312500000022
+    }
+  },
+  {
+    "circuit": "GHZ-5",
+    "n_qubits": 5,
+    "ideal": -0.01904296875,
+    "raw": 0.00341796875,
+    "linear_zne": 0.012207031249999993,
+    "bounded_zne": 0.012207031249999993,
+    "model": "polynomial_d1",
+    "winner": "bounded",
+    "errors": {
+      "raw": 0.0224609375,
+      "linear": 0.031249999999999993,
+      "bounded": 0.031249999999999993
+    }
+  },
+  {
+    "circuit": "GHZ-6",
+    "n_qubits": 6,
+    "ideal": 1.0,
+    "raw": 0.779296875,
+    "linear_zne": 0.9236328124999998,
+    "bounded_zne": 0.9236328124999998,
+    "model": "polynomial_d1",
+    "winner": "bounded",
+    "errors": {
+      "raw": 0.220703125,
+      "linear": 0.07636718750000016,
+      "bounded": 0.07636718750000016
+    }
+  }
+]
