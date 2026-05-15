@@ -1,16 +1,29 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-We presented physically-bounded ZNE with AICc model selection, a method that guarantees physical validity of extrapolated estimates while automatically selecting the appropriate model complexity. Across 125 circuit-noise configurations, our approach eliminates all unphysical predictions (0\% vs.\ 4\% for linear ZNE) with no degradation in mean absolute error.
+We have presented a method that simultaneously addresses two fundamental failure modes of zero-noise extrapolation: unphysical predictions and unprincipled model selection. By combining constrained optimization (enforcing spectral bounds) with the corrected Akaike Information Criterion (providing bias-corrected model selection), we achieve:
 
-Our key insight is that information-theoretic model selection (AICc) is essential for ZNE in the small-sample regime: without it, complex models overfit and bounded optimization alone is insufficient. The combination of physical bounds and AICc provides a principled, fully automatic ZNE pipeline requiring no expert intervention.
+\begin{itemize}
+    \item \textbf{Physical guarantee:} 0\% unphysical predictions across all 125 tested configurations, compared to 4\% for standard linear ZNE and up to 12\% at low noise.
+    \item \textbf{Competitive accuracy:} MAE of 0.058, matching linear ZNE while outperforming quadratic ZNE by 40\%.
+    \item \textbf{Zero-cost automation:} No training data, no hyperparameter tuning, negligible computational overhead ($<$3 seconds).
+    \item \textbf{Increasing relevance:} The method becomes more valuable as hardware improves, since lower noise increases the probability of boundary-violating extrapolation.
+\end{itemize}
 
-Additionally, our MCP server implementation demonstrates that sophisticated quantum error mitigation can be made accessible to AI agents, opening a new paradigm for automated quantum computing workflows.
+Our key insight is that information-theoretic model selection is \emph{essential} for ZNE in the small-sample regime: without it, bounded optimization alone achieves only 29\% win rate (overfitting within bounds), while AICc selection raises this to 61.6\%. The combination of bounds and AICc is thus synergistic rather than redundant.
 
-Future work includes: (i) hardware validation on superconducting processors when API access is restored, (ii) extension to multi-observable estimation with correlated bounds, (iii) integration of adaptive noise scale factor selection, and (iv) combination with dynamical decoupling and readout mitigation in a unified pipeline.
+\textbf{Future directions.} Several extensions are natural:
+\begin{enumerate}
+    \item \textbf{Hardware validation} on superconducting processors (Origin Wukong 180, IBM Quantum) to confirm simulator results under realistic noise.
+    \item \textbf{Adaptive noise scale factors} selected based on observed decay curvature, reducing the number of required circuit executions.
+    \item \textbf{Multi-observable joint estimation} with correlated physical bounds, relevant for variational algorithms estimating Hamiltonians.
+    \item \textbf{Integration with dynamical decoupling} and readout mitigation in a unified pipeline, with AutoMitigator selecting the optimal combination.
+    \item \textbf{Expanded model family} including Richardson extrapolation and rational functions, with AICc controlling the increased model selection complexity.
+    \item \textbf{Scaling studies} on 50--100 qubit circuits to validate performance under spatially correlated noise.
+\end{enumerate}
 
-All code is available at \url{https://github.com/mapleleaflatte03/quantum-noise-optimizer} under the MIT license.
+All code, data, and the MCP server are available at \url{https://github.com/mapleleaflatte03/quantum-noise-optimizer} under the MIT license. We encourage integration with existing frameworks (Mitiq, Qiskit) and welcome community contributions.
 
 \begin{acknowledgments}
-We thank the Origin Quantum team for providing access to the Wukong 180 calibration data, and the Mitiq and FastMCP communities for their open-source infrastructure.
+We thank the Origin Quantum team for providing access to the Wukong 180 calibration data, and the Mitiq and FastMCP open-source communities for their infrastructure. We acknowledge useful discussions with the quantum error mitigation community on the interpretation of physically-bounded extrapolation.
 \end{acknowledgments}

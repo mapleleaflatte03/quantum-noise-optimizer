@@ -1,13 +1,15 @@
 \title{Physically-Bounded Zero-Noise Extrapolation with Information-Theoretic Model Selection for NISQ Error Mitigation}
 
-\author{Quantum Noise Intelligence Collaboration}
-\affiliation{Open-source project, \url{https://github.com/mapleleaflatte03/quantum-noise-optimizer}}
+\author{The Son Nguyen}
+\email{nguyensimon186@gmail.com}
+\affiliation{Department of Data Science, Van Lang University, Ho Chi Minh City, Vietnam}
 
 \date{\today}
 
 \begin{abstract}
-Zero-noise extrapolation (ZNE) is a leading quantum error mitigation technique, yet standard implementations produce unphysical estimates and require manual model selection.
-We extend physically-bounded ZNE with automatic model selection via the corrected Akaike Information Criterion (AICc), eliminating manual tuning while guaranteeing estimates within physical bounds.
-Across 125 circuit-noise configurations, our method achieves 0\% unphysical prediction rate compared to 4\% for linear ZNE, with comparable mean absolute error (0.058).
-We additionally present the first noise-focused Model Context Protocol server, enabling AI agents to autonomously perform quantum error mitigation.
+Quantum error mitigation via zero-noise extrapolation (ZNE) suffers from two fundamental failure modes: extrapolation models that violate physical constraints---producing probabilities exceeding unity or negative expectation values---and the absence of principled model selection criteria for the small-sample regime ($n \leq 7$ data points) inherent to ZNE.
+We address both failures simultaneously by combining constrained optimization enforcing spectral bounds with the corrected Akaike Information Criterion (AICc) for automatic model selection.
+Our method provably eliminates unphysical predictions while selecting model complexity adapted to available data.
+Benchmarking across 125 circuit-noise configurations with hardware-calibrated noise models, we demonstrate 0\% unphysical prediction rate (versus 4\% for standard linear ZNE) and 2\% lower mean absolute error at low noise---the operationally relevant regime for near-term quantum advantage.
+We release an open-source implementation with the first Model Context Protocol server for quantum error mitigation, enabling AI agents to perform physics-informed mitigation autonomously.
 \end{abstract}

@@ -1,30 +1,71 @@
 \section{Discussion}
 \label{sec:discussion}
 
-\subsection{When Does Bounded ZNE Help?}
+\subsection{When Does Bounded ZNE + AICc Provide Value?}
 
-Our results reveal that physically-bounded ZNE provides the greatest advantage in a specific regime: low-to-moderate noise ($\epsilon_\text{CZ} \leq 3\%$) on circuits with high entanglement (GHZ-type). In this regime, the ideal expectation value is close to the physical boundary (e.g., $\langle O \rangle_\text{ideal} \approx 1$ for GHZ fidelity), and linear extrapolation frequently overshoots. The bounded constraint acts as a ``safety net'' that clips these overshoots without degrading performance when bounds are inactive.
+Our results identify a precise regime where the method provides maximum benefit: circuits whose ideal expectation value lies within $\sim$5\% of a physical boundary, executed at noise levels where standard extrapolation overshoots. This regime is not a corner case---it corresponds to the practical scenario of high-fidelity circuits on improving hardware, which is precisely the trajectory of NISQ development.
 
-At high noise ($\epsilon_\text{CZ} \geq 5\%$), the measured values are far from physical boundaries, and all methods converge. This is expected: the bounds provide value precisely when extrapolation is aggressive relative to the physical domain.
+As quantum hardware improves (lower $\epsilon_g$), two trends emerge: (i) ideal values become more accessible (closer to boundaries), and (ii) the relative extrapolation distance $|f(0) - y_1|/|y_1|$ increases because measurements are closer to ideal. Both trends \emph{increase} the probability of unphysical extrapolation, making our method increasingly relevant as hardware matures toward quantum advantage.
 
-\subsection{Role of AICc in Small-Sample ZNE}
+Conversely, for circuits with ideal values far from boundaries (e.g., random circuits with $\langle O \rangle \approx 0.5$) or at very high noise where all methods fail, bounded ZNE provides no advantage over standard linear ZNE. Users should apply our method selectively based on the observable being estimated.
 
-The failure of raw residual minimization (29\% win rate) versus AICc selection (61.6\% win rate vs.\ raw) highlights a fundamental challenge in ZNE: with only 3--7 data points, complex models can perfectly fit noise fluctuations. AICc's correction term $2k(k+1)/(n-k-1)$ diverges as $k \to n-1$, providing strong regularization in exactly this regime. This suggests that any ZNE implementation using multiple candidate models should employ information-theoretic selection rather than goodness-of-fit alone.
+\subsection{Computational Overhead}
+
+The computational cost of our method is:
+\begin{itemize}
+    \item \textbf{Per-model fitting}: 3 L-BFGS-B optimizations, each converging in $<$50 iterations for $n \leq 7$ data points. Wall time: $<$1 second total.
+    \item \textbf{AICc computation}: $O(1)$ per model (closed-form from RSS).
+    \item \textbf{Total overhead vs.\ standard ZNE}: $<$3 seconds per circuit, dominated by the exponential model's nonlinear optimization. This is negligible compared to the quantum execution time (minutes to hours on real hardware).
+\end{itemize}
+
+The method does \emph{not} increase the number of quantum circuit executions---it uses the same noise-amplified measurements as standard ZNE. The only additional cost is classical post-processing.
+
+\subsection{Scalability Considerations}
+
+Our current benchmark covers 2--6 qubit circuits. Several factors affect scalability to larger systems:
+
+\textbf{Noise amplification.} Unitary folding scales linearly with circuit size---folding a 100-qubit circuit is no harder than folding a 5-qubit circuit. The extrapolation and model selection are performed on scalar expectation values regardless of system size.
+
+\textbf{Observable locality.} For local observables (e.g., single-qubit Pauli operators), the physical bounds $[-1, 1]$ apply regardless of system size. For global observables (e.g., fidelity with a target state), the bounds tighten as system size grows, potentially making our method more effective.
+
+\textbf{Noise model validity.} At larger qubit counts, noise becomes increasingly non-Markovian and spatially correlated~\cite{vandenBerg2023}. The depolarizing noise model used in our benchmarks may not capture these effects. However, the physical bounds remain valid regardless of the noise model---they depend only on the observable's spectrum, not on the noise channel.
+
+\textbf{Comparison with scalable alternatives.} ML-based methods~\cite{Liao2024} have demonstrated scalability to 100 qubits but require retraining for each new circuit family. PEC~\cite{vandenBerg2023} scales to 100+ qubits with sparse Pauli-Lindblad models but requires noise characterization. Our method requires neither training nor characterization, making it immediately applicable at any scale---though its advantage may diminish if noise correlations cause the true decay to deviate significantly from our candidate models.
 
 \subsection{Limitations}
 
-Several limitations should be noted:
+We identify several limitations that should guide future work:
+
 \begin{enumerate}
-    \item \textbf{Simulator-only validation}: All results use noise models calibrated from real hardware data, but direct hardware validation is pending. Simulator noise models may not capture all correlations present in real devices.
-    \item \textbf{Depolarizing noise assumption}: Our benchmark uses depolarizing noise, which is symmetric. Real hardware exhibits coherent errors, crosstalk, and non-Markovian effects that may alter the extrapolation landscape.
-    \item \textbf{Limited circuit diversity}: Three circuit families (GHZ, Random, QFT) at 2--6 qubits do not fully represent the diversity of NISQ applications (e.g., VQE, QAOA, quantum chemistry).
-    \item \textbf{Fixed noise scale factors}: We use $\lambda \in \{1, 1.5, 2, 2.5, 3\}$. Adaptive selection of scale factors~\cite{GiurgicaTiron2020} could improve performance.
+    \item \textbf{Simulator-only validation.} All results use noise models calibrated from real hardware data, but simulator noise (depolarizing) is symmetric and Markovian. Real hardware exhibits coherent errors, crosstalk, leakage, and drift that may alter extrapolation behavior. Hardware validation is essential before deployment claims can be made.
+
+    \item \textbf{Limited model family.} Our three candidate models (polynomial, exponential, poly-exponential) may not capture all physical noise decay patterns. Circuits with non-monotonic fidelity decay (e.g., due to coherent error interference) could defeat all three models. Expanding the model family (e.g., adding Richardson extrapolation, rational functions) is straightforward but increases the risk of overfitting that AICc must control.
+
+    \item \textbf{Fixed noise scale factors.} We use $\lambda \in \{1, 1.5, 2, 2.5, 3\}$ uniformly. Adaptive selection of scale factors based on the observed decay~\cite{GiurgicaTiron2020} could improve both accuracy and efficiency by concentrating measurements where the signal-to-noise ratio is highest.
+
+    \item \textbf{Single-observable estimation.} We estimate one observable at a time. For applications requiring multiple correlated observables (e.g., all Pauli terms in a Hamiltonian), joint estimation with correlated bounds could improve efficiency.
+
+    \item \textbf{MCP server scope.} The current server supports 8 tools focused on ZNE and strategy selection. Integration with PEC, CDR, and dynamical decoupling would provide a more complete mitigation toolkit.
 \end{enumerate}
 
-\subsection{Comparison with Existing Tools}
+\subsection{Comparison with State-of-the-Art}
 
-Unlike proprietary solutions such as Q-CTRL Fire Opal~\cite{Mundada2023}, our implementation is fully open-source and hardware-agnostic. Compared to Mitiq~\cite{LaRose2022}, which provides ZNE infrastructure without model selection, our contribution adds the AICc selection layer and physical bounds as a composable extension. The MCP server interface is unique among QEM tools, enabling a new interaction paradigm where AI agents---rather than human experts---drive mitigation decisions.
+\textbf{vs.\ Mitiq~\cite{LaRose2022}:} Mitiq provides ZNE infrastructure (folding, extrapolation) but delegates model selection to the user. Our AICc selection layer is a composable extension that could be integrated into Mitiq's existing ZNE pipeline with minimal modification.
 
-\subsection{Implications for AI-Assisted Quantum Computing}
+\textbf{vs.\ Q-CTRL Fire Opal~\cite{Mundada2023}:} Fire Opal combines error suppression (optimized pulses) with error mitigation in a proprietary, hardware-specific package. It achieves impressive results ($>$1000$\times$ improvement in some benchmarks) but is closed-source, requires specific hardware access, and does not expose its methodology for scientific scrutiny. Our approach is complementary (applicable to any hardware) and fully reproducible.
 
-The MCP server demonstrates that quantum error mitigation can be made accessible to AI agents without quantum computing expertise. As large language models increasingly assist in scientific computing~\cite{Kim2023}, providing them with physics-informed tools (rather than raw APIs) ensures that mitigation decisions respect physical constraints even when made by non-expert systems.
+\textbf{vs.\ PEC~\cite{vandenBerg2023}:} PEC provides unbiased estimates at exponential sampling cost. For applications where bias is acceptable (most NISQ algorithms), our method provides a better accuracy-cost tradeoff: comparable accuracy at polynomial (rather than exponential) overhead.
+
+\textbf{vs.\ ML-QEM~\cite{Liao2024}:} Machine learning approaches achieve state-of-the-art accuracy on 100-qubit circuits but require $O(10^4)$ training circuits per noise regime. Our method requires zero training, making it immediately applicable to new hardware or noise conditions without data collection.
+
+\subsection{Broader Impact: AI-Accessible Quantum Computing}
+
+The MCP server component addresses a growing need: as large language models increasingly assist in scientific computing, they require access to domain-specific tools that encode expert knowledge. By exposing quantum error mitigation through a standardized protocol, we enable a workflow where AI agents can:
+\begin{enumerate}
+    \item Characterize the noise environment (\texttt{noise\_profile})
+    \item Select an appropriate mitigation strategy (\texttt{recommend\_mitigation})
+    \item Execute physics-informed mitigation (\texttt{run\_bounded\_zne})
+    \item Validate results against physical constraints
+\end{enumerate}
+
+This ``AI-in-the-loop'' paradigm differs from both fully manual mitigation (requiring expert knowledge) and fully automated ML approaches (requiring training data). It provides guardrails (physical bounds) while leveraging AI agents' ability to orchestrate complex workflows.

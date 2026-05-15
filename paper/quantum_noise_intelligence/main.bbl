@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{14}%
+\begin{thebibliography}{21}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,23 +50,14 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Cai}\ \emph {et~al.}(2023)\citenamefont {Cai},
-  \citenamefont {Babbush}, \citenamefont {Benjamin}, \citenamefont {Endo},
-  \citenamefont {Huggins}, \citenamefont {Li}, \citenamefont {McClean},\ and\
-  \citenamefont {O'Brien}}]{Cai2023}%
+\bibitem [{\citenamefont {Preskill}(2018)}]{Preskill2018}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
-  {Cai}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Babbush}},
-  \bibinfo {author} {\bibfnamefont {S.~C.}\ \bibnamefont {Benjamin}}, \bibinfo
-  {author} {\bibfnamefont {S.}~\bibnamefont {Endo}}, \bibinfo {author}
-  {\bibfnamefont {W.~J.}\ \bibnamefont {Huggins}}, \bibinfo {author}
-  {\bibfnamefont {Y.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont
-  {J.~R.}\ \bibnamefont {McClean}},\ and\ \bibinfo {author} {\bibfnamefont
-  {T.~E.}\ \bibnamefont {O'Brien}},\ }\bibfield  {title} {\bibinfo {title}
-  {Quantum error mitigation},\ }\href
-  {https://doi.org/10.1103/RevModPhys.95.045005} {\bibfield  {journal}
-  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {95}},\
-  \bibinfo {pages} {045005} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Preskill}},\ }\bibfield  {title} {\bibinfo {title} {Quantum computing in the
+  {NISQ} era and beyond},\ }\href {https://doi.org/10.22331/q-2018-08-06-79}
+  {\bibfield  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo
+  {volume} {2}},\ \bibinfo {pages} {79} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Temme}\ \emph {et~al.}(2017)\citenamefont {Temme},
   \citenamefont {Bravyi},\ and\ \citenamefont {Gambetta}}]{Temme2017}%
   \BibitemOpen
@@ -87,20 +78,26 @@
   {https://doi.org/10.1103/PhysRevX.7.021050} {\bibfield  {journal} {\bibinfo
   {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages}
   {021050} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Giurgica-Tiron}\ \emph {et~al.}(2020)\citenamefont
-  {Giurgica-Tiron}, \citenamefont {Hindy}, \citenamefont {LaRose},
-  \citenamefont {Mari},\ and\ \citenamefont {Zeng}}]{GiurgicaTiron2020}%
+\bibitem [{\citenamefont {{Qiskit contributors}}(2024)}]{Qiskit2024}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Giurgica-Tiron}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Hindy}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {LaRose}},
-  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mari}},\ and\ \bibinfo
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Qiskit
+  contributors}}},\ }\bibfield  {title} {\bibinfo {title} {Qiskit: An
+  open-source framework for quantum computing}\ }\href
+  {https://doi.org/10.5281/zenodo.2573505} {10.5281/zenodo.2573505} (\bibinfo
+  {year} {2024})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {LaRose}\ \emph {et~al.}(2022)\citenamefont {LaRose},
+  \citenamefont {Mari}, \citenamefont {Shammah},\ and\ \citenamefont
+  {Zeng}}]{LaRose2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {LaRose}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mari}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Shammah}},\ and\ \bibinfo
   {author} {\bibfnamefont {W.~J.}\ \bibnamefont {Zeng}},\ }\bibfield  {title}
-  {\bibinfo {title} {Digital zero noise extrapolation for quantum error
-  mitigation},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {IEEE
-  International Conference on Quantum Computing and Engineering}},\ }\href@noop
-  {} {\  (\bibinfo {year} {2020})},\ \Eprint {https://arxiv.org/abs/2005.10921}
-  {arXiv:2005.10921 [quant-ph]} \BibitemShut {NoStop}%
+  {\bibinfo {title} {Mitiq: A software package for error mitigation on noisy
+  quantum computers},\ }\href {https://doi.org/10.22331/q-2022-08-11-774}
+  {\bibfield  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo
+  {volume} {6}},\ \bibinfo {pages} {774} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Miranskyy}\ \emph {et~al.}(2026)\citenamefont
   {Miranskyy}, \citenamefont {Sadeghian},\ and\ \citenamefont
   {Zhang}}]{Miranskyy2026}%
@@ -112,31 +109,23 @@
   zero-noise extrapolation},\ }\href@noop {} {\  (\bibinfo {year} {2026})},\
   \Eprint {https://arxiv.org/abs/2604.24475} {arXiv:2604.24475 [quant-ph]}
   \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Akaike}(1974)}]{Akaike1974}%
+\bibitem [{\citenamefont {Cai}\ \emph {et~al.}(2023)\citenamefont {Cai},
+  \citenamefont {Babbush}, \citenamefont {Benjamin}, \citenamefont {Endo},
+  \citenamefont {Huggins}, \citenamefont {Li}, \citenamefont {McClean},\ and\
+  \citenamefont {O'Brien}}]{Cai2023}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Akaike}},\ }\bibfield  {title} {\bibinfo {title} {A new look at the
-  statistical model identification},\ }\href
-  {https://doi.org/10.1109/TAC.1974.1100705} {\bibfield  {journal} {\bibinfo
-  {journal} {IEEE Trans. Automatic Control}\ }\textbf {\bibinfo {volume}
-  {19}},\ \bibinfo {pages} {716} (\bibinfo {year} {1974})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Hurvich}\ and\ \citenamefont
-  {Tsai}(1989)}]{Hurvich1989}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
-  {Hurvich}}\ and\ \bibinfo {author} {\bibfnamefont {C.-L.}\ \bibnamefont
-  {Tsai}},\ }\bibfield  {title} {\bibinfo {title} {Regression and time series
-  model selection in small samples},\ }\href
-  {https://doi.org/10.1093/biomet/76.2.297} {\bibfield  {journal} {\bibinfo
-  {journal} {Biometrika}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo {pages}
-  {297} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {{Anthropic}}(2024)}]{Anthropic2024}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Anthropic}}},\ }\href
-  {https://modelcontextprotocol.io} {\bibinfo {title} {Model context protocol
-  specification}} (\bibinfo {year} {2024}),\ \bibinfo {note} {open standard for
-  AI-tool integration}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Cai}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Babbush}},
+  \bibinfo {author} {\bibfnamefont {S.~C.}\ \bibnamefont {Benjamin}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Endo}}, \bibinfo {author}
+  {\bibfnamefont {W.~J.}\ \bibnamefont {Huggins}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont
+  {J.~R.}\ \bibnamefont {McClean}},\ and\ \bibinfo {author} {\bibfnamefont
+  {T.~E.}\ \bibnamefont {O'Brien}},\ }\bibfield  {title} {\bibinfo {title}
+  {Quantum error mitigation},\ }\href
+  {https://doi.org/10.1103/RevModPhys.95.045005} {\bibfield  {journal}
+  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {95}},\
+  \bibinfo {pages} {045005} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Liao}\ \emph {et~al.}(2024)\citenamefont {Liao},
   \citenamefont {Convy}, \citenamefont {Huggins},\ and\ \citenamefont
   {Mohseni}}]{Liao2024}%
@@ -158,6 +147,80 @@
   quantum error mitigation via graph neural networks},\ }\href@noop {} {\
   (\bibinfo {year} {2026})},\ \Eprint {https://arxiv.org/abs/2604.16815}
   {arXiv:2604.16815 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Strikis}\ \emph {et~al.}(2021)\citenamefont
+  {Strikis}, \citenamefont {Qin}, \citenamefont {Chen}, \citenamefont
+  {Benjamin},\ and\ \citenamefont {Li}}]{Strikis2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Strikis}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Qin}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Chen}}, \bibinfo {author}
+  {\bibfnamefont {S.~C.}\ \bibnamefont {Benjamin}},\ and\ \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Li}},\ }\bibfield  {title} {\bibinfo
+  {title} {Learning-based quantum error mitigation},\ }\href
+  {https://doi.org/10.1103/PRXQuantum.2.040330} {\bibfield  {journal} {\bibinfo
+   {journal} {PRX Quantum}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages}
+  {040330} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {van~den Berg}\ \emph {et~al.}(2023)\citenamefont
+  {van~den Berg}, \citenamefont {Minev}, \citenamefont {Kandala},\ and\
+  \citenamefont {Temme}}]{vandenBerg2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {van~den Berg}}, \bibinfo {author} {\bibfnamefont {Z.~K.}\ \bibnamefont
+  {Minev}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kandala}},\
+  and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Temme}},\ }\bibfield
+   {title} {\bibinfo {title} {Probabilistic error cancellation with sparse
+  {P}auli-{L}indblad models on noisy quantum processors},\ }\href
+  {https://doi.org/10.1038/s41567-023-02042-2} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Physics}\ }\textbf {\bibinfo {volume} {19}},\ \bibinfo
+  {pages} {1116} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Akaike}(1974)}]{Akaike1974}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Akaike}},\ }\bibfield  {title} {\bibinfo {title} {A new look at the
+  statistical model identification},\ }\href
+  {https://doi.org/10.1109/TAC.1974.1100705} {\bibfield  {journal} {\bibinfo
+  {journal} {IEEE Trans. Automatic Control}\ }\textbf {\bibinfo {volume}
+  {19}},\ \bibinfo {pages} {716} (\bibinfo {year} {1974})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Hurvich}\ and\ \citenamefont
+  {Tsai}(1989)}]{Hurvich1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
+  {Hurvich}}\ and\ \bibinfo {author} {\bibfnamefont {C.-L.}\ \bibnamefont
+  {Tsai}},\ }\bibfield  {title} {\bibinfo {title} {Regression and time series
+  model selection in small samples},\ }\href
+  {https://doi.org/10.1093/biomet/76.2.297} {\bibfield  {journal} {\bibinfo
+  {journal} {Biometrika}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo {pages}
+  {297} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Burnham}\ and\ \citenamefont
+  {Anderson}(2002)}]{Burnham2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~P.}\ \bibnamefont
+  {Burnham}}\ and\ \bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
+  {Anderson}},\ }\bibfield  {title} {\bibinfo {title} {Model selection and
+  multimodel inference: A practical information-theoretic approach}\ }\href
+  {https://doi.org/10.1007/b97636} {10.1007/b97636} (\bibinfo {year}
+  {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Anthropic}}(2024)}]{Anthropic2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Anthropic}}},\ }\href
+  {https://modelcontextprotocol.io} {\bibinfo {title} {Model context protocol
+  specification}} (\bibinfo {year} {2024}),\ \bibinfo {note} {open standard for
+  AI-tool integration}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giurgica-Tiron}\ \emph {et~al.}(2020)\citenamefont
+  {Giurgica-Tiron}, \citenamefont {Hindy}, \citenamefont {LaRose},
+  \citenamefont {Mari},\ and\ \citenamefont {Zeng}}]{GiurgicaTiron2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Giurgica-Tiron}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Hindy}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {LaRose}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mari}},\ and\ \bibinfo
+  {author} {\bibfnamefont {W.~J.}\ \bibnamefont {Zeng}},\ }\bibfield  {title}
+  {\bibinfo {title} {Digital zero noise extrapolation for quantum error
+  mitigation},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {IEEE
+  International Conference on Quantum Computing and Engineering}},\ }\href@noop
+  {} {\  (\bibinfo {year} {2020})},\ \Eprint {https://arxiv.org/abs/2005.10921}
+  {arXiv:2005.10921 [quant-ph]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {D{\'\i}ez-Valle}\ \emph {et~al.}(2025)\citenamefont
   {D{\'\i}ez-Valle} \emph {et~al.}}]{DiezValle2025}%
   \BibitemOpen
@@ -183,38 +246,40 @@
   {\bibinfo  {journal} {Phys. Rev. Applied}\ }\textbf {\bibinfo {volume}
   {20}},\ \bibinfo {pages} {024034} (\bibinfo {year} {2023})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {LaRose}\ \emph {et~al.}(2022)\citenamefont {LaRose},
-  \citenamefont {Mari}, \citenamefont {Shammah},\ and\ \citenamefont
-  {Zeng}}]{LaRose2022}%
+\bibitem [{\citenamefont {Byrd}\ \emph {et~al.}(1995)\citenamefont {Byrd},
+  \citenamefont {Lu}, \citenamefont {Nocedal},\ and\ \citenamefont
+  {Zhu}}]{Byrd1995}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {LaRose}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Mari}},
-  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Shammah}},\ and\ \bibinfo
-  {author} {\bibfnamefont {W.~J.}\ \bibnamefont {Zeng}},\ }\bibfield  {title}
-  {\bibinfo {title} {Mitiq: A software package for error mitigation on noisy
-  quantum computers},\ }\href {https://doi.org/10.22331/q-2022-08-11-774}
-  {\bibfield  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo
-  {volume} {6}},\ \bibinfo {pages} {774} (\bibinfo {year} {2022})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(2023)\citenamefont {Kim},
-  \citenamefont {Eddins}, \citenamefont {Anand}, \citenamefont {Wei},
-  \citenamefont {van~den Berg}, \citenamefont {Rosenblatt}, \citenamefont
-  {Nayfeh}, \citenamefont {Wu}, \citenamefont {Zaletel}, \citenamefont
-  {Temme},\ and\ \citenamefont {Kandala}}]{Kim2023}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~H.}\ \bibnamefont
+  {Byrd}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Lu}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Nocedal}},\ and\ \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Zhu}},\ }\bibfield  {title} {\bibinfo
+  {title} {A limited memory algorithm for bound constrained optimization},\
+  }\href {https://doi.org/10.1137/0916069} {\bibfield  {journal} {\bibinfo
+  {journal} {SIAM J. Sci. Comput.}\ }\textbf {\bibinfo {volume} {16}},\
+  \bibinfo {pages} {1190} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Greenberger}\ \emph {et~al.}(1989)\citenamefont
+  {Greenberger}, \citenamefont {Horne},\ and\ \citenamefont
+  {Zeilinger}}]{Greenberger1989}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Kim}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Eddins}},
-  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Anand}}, \bibinfo
-  {author} {\bibfnamefont {K.~X.}\ \bibnamefont {Wei}}, \bibinfo {author}
-  {\bibfnamefont {E.}~\bibnamefont {van~den Berg}}, \bibinfo {author}
-  {\bibfnamefont {S.}~\bibnamefont {Rosenblatt}}, \bibinfo {author}
-  {\bibfnamefont {H.}~\bibnamefont {Nayfeh}}, \bibinfo {author} {\bibfnamefont
-  {Y.}~\bibnamefont {Wu}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Zaletel}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Temme}},\
-  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kandala}},\
-  }\bibfield  {title} {\bibinfo {title} {Evidence for the utility of quantum
-  computing before fault tolerance},\ }\href
-  {https://doi.org/10.1038/s41586-023-06096-3} {\bibfield  {journal} {\bibinfo
-  {journal} {Nature}\ }\textbf {\bibinfo {volume} {618}},\ \bibinfo {pages}
-  {500} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~M.}\ \bibnamefont
+  {Greenberger}}, \bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Horne}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Zeilinger}},\ }\bibfield  {title} {\bibinfo {title} {Going beyond {B}ell's
+  theorem},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {Bell's
+  Theorem, Quantum Theory and Conceptions of the Universe}},\ }\href
+  {https://doi.org/10.1007/978-94-017-0849-4_10} {\ ,\ \bibinfo {pages} {69}
+  (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Czarnik}\ \emph {et~al.}(2021)\citenamefont
+  {Czarnik}, \citenamefont {Arrasmith}, \citenamefont {Coles},\ and\
+  \citenamefont {Cincio}}]{Czarnik2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Czarnik}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Arrasmith}},
+  \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Coles}},\ and\
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Cincio}},\ }\bibfield
+  {title} {\bibinfo {title} {Error mitigation with {C}lifford quantum-circuit
+  data},\ }\href {https://doi.org/10.22331/q-2021-11-26-592} {\bibfield
+  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {5}},\
+  \bibinfo {pages} {592} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
 \end{thebibliography}%

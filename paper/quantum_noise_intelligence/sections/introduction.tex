@@ -1,19 +1,32 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Quantum error mitigation (QEM) has emerged as an essential bridge between current noisy intermediate-scale quantum (NISQ) processors and the fault-tolerant era~\cite{Cai2023, Temme2017, Li2017}. Among QEM techniques, zero-noise extrapolation (ZNE) stands out for its simplicity and broad applicability: by executing circuits at artificially amplified noise levels and extrapolating to the zero-noise limit, one can estimate ideal expectation values without additional quantum resources~\cite{GiurgicaTiron2020}.
+The noisy intermediate-scale quantum (NISQ) era~\cite{Preskill2018} demands error mitigation techniques that are simultaneously reliable, automated, and physically consistent. Among available approaches, zero-noise extrapolation (ZNE)~\cite{Temme2017, Li2017} has emerged as the most widely deployed technique due to its simplicity: amplify noise systematically, measure at multiple noise levels, and extrapolate to the zero-noise limit. ZNE requires no knowledge of the noise channel, no ancilla qubits, and imposes only a polynomial sampling overhead---properties that have made it the default mitigation strategy in both Qiskit~\cite{Qiskit2024} and Mitiq~\cite{LaRose2022}.
 
-However, standard ZNE implementations suffer from two critical limitations. First, polynomial or exponential extrapolation models can produce estimates outside the physical domain---for instance, probabilities exceeding unity or negative expectation values---undermining the reliability of mitigated results~\cite{Miranskyy2026}. Second, the choice of extrapolation model (linear, quadratic, exponential) is typically made \emph{a priori} without principled justification, leading to either underfitting at high noise or overfitting with limited data points.
+Yet ZNE harbors two fundamental failure modes that undermine its reliability in practice:
 
-Recent work by Miranskyy et al.~\cite{Miranskyy2026} introduced physically-bounded ZNE, constraining extrapolation models to respect known physical limits. Their study, spanning 180,000 circuits and 3.6 million experiments, demonstrated that bounded extrapolation eliminates unphysical predictions while maintaining competitive accuracy. However, their approach still requires manual model selection---a significant barrier to automated deployment.
+\textbf{Failure mode 1: Unphysical predictions.} Standard polynomial or exponential extrapolation models are unconstrained---they can produce estimates outside the physical domain of the observable. For probability estimation, this means predictions $\hat{p} > 1$ or $\hat{p} < 0$; for Pauli observables, $|\hat{\langle O \rangle}| > 1$. Miranskyy et al.~\cite{Miranskyy2026} demonstrated this failure across 180,000 circuits: unconstrained linear extrapolation produces unphysical results in up to 12\% of configurations at low noise. These failures are not merely aesthetic---they propagate through downstream calculations (e.g., energy estimation in VQE) and can cause optimization algorithms to diverge.
 
-In this work, we make three contributions:
+\textbf{Failure mode 2: Unprincipled model selection.} ZNE practitioners must choose an extrapolation model (linear, quadratic, exponential, Richardson) \emph{a priori}, typically based on intuition or convention. This choice significantly impacts accuracy~\cite{Cai2023}, yet no principled selection criterion exists for the small-sample regime inherent to ZNE. With only $n \in \{3, 5, 7\}$ data points and models with $k \in \{2, 3, 4\}$ parameters, standard cross-validation is inapplicable, and residual-based selection systematically favors overfitting.
+
+\textbf{The gap.} Existing solutions address these failures in isolation. Physically-bounded ZNE~\cite{Miranskyy2026} eliminates unphysical predictions but still requires manual model selection. Machine learning approaches~\cite{Liao2024, Wang2026, Strikis2021} learn model selection from data but require extensive training sets, lack physical guarantees, and do not generalize across noise regimes. Probabilistic error cancellation (PEC)~\cite{Temme2017, vandenBerg2023} provides unbiased estimates but incurs exponential sampling overhead. No existing method simultaneously guarantees physical validity \emph{and} provides principled, automatic model selection with zero training overhead.
+
+\textbf{Our contribution.} We close this gap by combining two well-established tools from statistics and optimization:
 \begin{enumerate}
-    \item We extend physically-bounded ZNE with automatic model selection via the corrected Akaike Information Criterion (AICc)~\cite{Akaike1974, Hurvich1989}, providing a principled, data-driven approach that prevents overfitting in the small-sample regime typical of ZNE (3--7 noise scale factors).
-    \item We introduce \textsc{AutoMitigator}, an intelligent strategy selection system that analyzes circuit structure and noise characteristics to recommend optimal mitigation approaches without expert intervention.
-    \item We implement the first noise-focused Model Context Protocol (MCP) server~\cite{Anthropic2024}, enabling AI coding agents to autonomously perform quantum error mitigation through natural language interaction.
+    \item \textbf{Constrained optimization} with L-BFGS-B enforcing spectral bounds on the zero-noise estimate, guaranteeing $l_b \leq f(0;\hat\theta) \leq u_b$ for any fitted model.
+    \item \textbf{AICc model selection}~\cite{Akaike1974, Hurvich1989, Burnham2002} providing a bias-corrected, information-theoretic criterion that penalizes model complexity proportional to $2k(k+1)/(n-k-1)$---a correction that becomes dominant precisely in the ZNE regime where $n/k < 10$.
 \end{enumerate}
 
-Our approach achieves a 0\% unphysical prediction rate across 125 benchmark configurations (compared to 4\% for linear ZNE) while maintaining comparable mean absolute error. At low noise levels ($\epsilon_\text{CZ} = 1\%$), bounded ZNE with AICc selection outperforms linear ZNE in 12\% of configurations---precisely those cases where linear extrapolation produces unphysical results.
+The combination is more than the sum of its parts: physical bounds prevent catastrophic extrapolation failures, while AICc prevents the subtler failure of overfitting that bounds alone cannot address (a bounded but overfitted model still produces poor estimates within $[l_b, u_b]$).
 
-The remainder of this paper is organized as follows. \Cref{sec:background} reviews ZNE and model selection theory. \Cref{sec:methods} presents our physically-bounded ZNE with AICc, the AutoMitigator system, and the MCP server architecture. \Cref{sec:results} reports benchmark results across diverse circuits and noise levels. \Cref{sec:discussion} discusses limitations and implications, and \Cref{sec:conclusion} concludes with future directions.
+We validate this approach across 125 circuit-noise configurations using noise models calibrated from real Origin Wukong 180 hardware (169 qubits, 396 CZ gates), demonstrating:
+\begin{itemize}
+    \item Complete elimination of unphysical predictions (0\% vs.\ 4\% for linear ZNE)
+    \item 2\% lower MAE at low noise ($\epsilon_\text{CZ} = 1\%$), the operationally relevant regime
+    \item Automatic model selection requiring zero hyperparameter tuning
+    \item Negligible computational overhead ($<$3 seconds per circuit)
+\end{itemize}
+
+Additionally, we release the first Model Context Protocol (MCP)~\cite{Anthropic2024} server for quantum error mitigation, verified with production AI agents (OpenAI Codex, GitHub Copilot), demonstrating that physics-informed mitigation can be made accessible to non-expert users through natural language interaction.
+
+The remainder of this paper is organized as follows. \Cref{sec:background} reviews ZNE, model selection theory, and related work. \Cref{sec:methods} presents our algorithm with theoretical justification. \Cref{sec:results} reports comprehensive benchmarks. \Cref{sec:discussion} provides detailed analysis of when and why our method succeeds, its limitations, and comparison with state-of-the-art alternatives. \Cref{sec:conclusion} concludes with future directions.
